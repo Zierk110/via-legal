@@ -69,7 +69,7 @@ function renderTipos(ramaKey) {
       </a>`
     )
     .join("");
-  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div>${rows}`;
+  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div><div class="stack-grid">${rows}</div>`;
 }
 
 function renderProcesosBotones(ramaKey, tipoKey) {
@@ -80,7 +80,7 @@ function renderProcesosBotones(ramaKey, tipoKey) {
   const botones = tipo.procesos
     .map((p) => `<a class="proc-btn" href="#/proceso/${p.id}"><span>${p.titulo}</span><span>›</span></a>`)
     .join("");
-  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div>${botones}`;
+  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div><div class="stack-grid">${botones}</div>`;
 }
 
 function renderProcesoDetalle(id) {
@@ -92,21 +92,23 @@ function renderProcesoDetalle(id) {
   setHeader(proceso.titulo, `Inicio › ${ramaObj.nombre} › ${tipoObj.nombre}`, true);
 
   app.innerHTML = `
-    <span class="placeholder-tag">Contenido de ejemplo</span>
-    <div class="proc-card">
-      <h3>${proceso.titulo}</h3>
-      <div class="lbl">¿En qué consiste?</div><p>${proceso.consiste}</p>
-      <div class="lbl">¿Cuándo aplica?</div><p>${proceso.aplica}</p>
-      <div class="lbl">¿Qué necesitas?</div>
-      <ul>${proceso.requisitos.map((r) => `<li>${r}</li>`).join("")}</ul>
-      <div class="lbl">Video de audiencia</div>
-      <div class="video-block">
-        <div class="play-circle">▶</div>
-        <small>${proceso.video.url ? proceso.video.titulo : "Video de referencia — pendiente de cargar"}</small>
+    <div class="proc-wrap">
+      <span class="placeholder-tag">Contenido de ejemplo</span>
+      <div class="proc-card">
+        <h3>${proceso.titulo}</h3>
+        <div class="lbl">¿En qué consiste?</div><p>${proceso.consiste}</p>
+        <div class="lbl">¿Cuándo aplica?</div><p>${proceso.aplica}</p>
+        <div class="lbl">¿Qué necesitas?</div>
+        <ul>${proceso.requisitos.map((r) => `<li>${r}</li>`).join("")}</ul>
+        <div class="lbl">Video de audiencia</div>
+        <div class="video-block">
+          <div class="play-circle">▶</div>
+          <small>${proceso.video.url ? proceso.video.titulo : "Video de referencia — pendiente de cargar"}</small>
+        </div>
       </div>
+      <hr class="divider">
+      <div id="quizWrap"></div>
     </div>
-    <hr class="divider">
-    <div id="quizWrap"></div>
   `;
 
   renderQuiz(proceso.quiz);
