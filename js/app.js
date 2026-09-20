@@ -1,0 +1,192 @@
+/* ============================================================
+   app.js
+   Router simple basado en el hash de la URL, sin frameworks.
+   Cada función render_xxx() dibuja una pantalla dentro de #app.
+   ============================================================ */
+
+const app = document.getElementById("app");
+const backBtn = document.getElementById("backBtn");
+const appTitle = document.getElementById("appTitle");
+const crumbEl = document.getElementById("crumb");
+
+function findProceso(id) {
+  for (const ramaKey in SITE_DATA.ramas) {
+    const rama = SITE_DATA.ramas[ramaKey];
+    for (const tipoKey in rama.tipos) {
+      const tipo = rama.tipos[tipoKey];
+      const p = tipo.procesos.find((x) => x.id === id);
+      if (p) return { rama: ramaKey, tipo: tipoKey, proceso: p };
+    }
+  }
+  return null;
+}
+
+function setHeader(title, crumb, showBack) {
+  appTitle.textContent = title;
+  crumbEl.textContent = crumb;
+  backBtn.classList.toggle("show", showBack);
+}
+
+/* ---------- pantallas ---------- */
+
+function renderHome() {
+  setHeader("Vía Legal", "Inicio", false);
+  app.innerHTML = `
+    <span class="hero-tag">Orientación jurídica</span>
+    <h1>Entiende tu proceso legal, paso a paso.</h1>
+    <p class="lead">Un espacio para aprender, en lenguaje claro, cómo funcionan los procesos jurídicos de cada rama del derecho.</p>
+    <a class="cta-btn" href="#/ramas"><span>Explorar ramas del derecho</span><span>›</span></a>
+  `;
+}
+
+function renderRamas() {
+  setHeader("Ramas del derecho", "Inicio › Ramas", true);
+  const cards = Object.entries(SITE_DATA.ramas)
+    .map(([key, r]) => {
+      if (r.activa) {
+        const totalTipos = Object.keys(r.tipos).length;
+        return `<a class="branch-card active" href="#/ramas/${key}">
+          <span class="branch-dot"></span>
+          <div><div class="branch-name">${r.nombre}</div><div class="branch-count">${totalTipos} tipos de proceso</div></div>
+        </a>`;
+      }
+      return `<div class="branch-card soon"><div class="soon-txt">${r.nombre}<div class="soon-pill">Próximamente</div></div></div>`;
+    })
+    .join("");
+  app.innerHTML = `<div class="branch-pill">Rama del derecho</div><div class="grid2">${cards}</div>`;
+}
+
+function renderTipos(ramaKey) {
+  const rama = SITE_DATA.ramas[ramaKey];
+  if (!rama || !rama.activa) return (location.hash = "#/ramas");
+  setHeader(rama.nombre, `Inicio › Ramas › ${rama.nombre}`, true);
+  const rows = Object.entries(rama.tipos)
+    .map(
+      ([key, t]) => `
+      <a class="type-row" href="#/ramas/${ramaKey}/${key}">
+        <div><div class="type-title">${t.nombre}</div><div class="type-sub">${t.descripcion}</div></div>
+        <div class="chev">›</div>
+      </a>`
+    )
+    .join("");
+  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div>${rows}`;
+}
+
+function renderProcesosBotones(ramaKey, tipoKey) {
+  const rama = SITE_DATA.ramas[ramaKey];
+  const tipo = rama && rama.tipos[tipoKey];
+  if (!tipo) return (location.hash = `#/ramas/${ramaKey}`);
+  setHeader(tipo.nombre, `Inicio › ${rama.nombre} › ${tipo.nombre}`, true);
+  const botones = tipo.procesos
+    .map((p) => `<a class="proc-btn" href="#/proceso/${p.id}"><span>${p.titulo}</span><span>›</span></a>`)
+    .join("");
+  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div>${botones}`;
+}
+
+function renderProcesoDetalle(id) {
+  const found = findProceso(id);
+  if (!found) return (location.hash = "#/ramas");
+  const { rama, tipo, proceso } = found;
+  const ramaObj = SITE_DATA.ramas[rama];
+  const tipoObj = ramaObj.tipos[tipo];
+  setHeader(proceso.titulo, `Inicio › ${ramaObj.nombre} › ${tipoObj.nombre}`, true);
+
+  app.innerHTML = `
+    <span class="placeholder-tag">Contenido de ejemplo</span>
+    <div class="proc-card">
+      <h3>${proceso.titulo}</h3>
+      <div class="lbl">¿En qué consiste?</div><p>${proceso.consiste}</p>
+      <div class="lbl">¿Cuándo aplica?</div><p>${proceso.aplica}</p>
+      <div class="lbl">¿Qué necesitas?</div>
+      <ul>${proceso.requisitos.map((r) => `<li>${r}</li>`).join("")}</ul>
+      <div class="lbl">Video de audiencia</div>
+      <div class="video-block">
+        <div class="play-circle">▶</div>
+        <small>${proceso.video.url ? proceso.video.titulo : "Video de referencia — pendiente de cargar"}</small>
+      </div>
+    </div>
+    <hr class="divider">
+    <div id="quizWrap"></div>
+  `;
+
+  renderQuiz(proceso.quiz);
+}
+
+/* ---------- mini-quiz por proceso ---------- */
+
+function renderQuiz(preguntas) {
+  let index = 0;
+  let score = 0;
+  const wrap = document.getElementById("quizWrap");
+
+  function draw() {
+    if (index >= preguntas.length) {
+      wrap.innerHTML = `
+        <div class="q-score">
+          <div class="q-progress">Resultado de tu quiz</div>
+          <div class="big">${score}/${preguntas.length}</div>
+          <button class="q-next" id="retryBtn">Volver a intentar</button>
+        </div>`;
+      document.getElementById("retryBtn").onclick = () => {
+        index = 0;
+        score = 0;
+        draw();
+      };
+      return;
+    }
+    const item = preguntas[index];
+    wrap.innerHTML = `
+      <div class="q-progress">Pregunta ${index + 1} de ${preguntas.length}</div>
+      <div class="q-text">${item.pregunta}</div>
+      <div id="optsWrap">${item.opciones
+        .map((o, i) => `<button class="opt-btn" data-i="${i}">${o}</button>`)
+        .join("")}</div>
+      <div id="qFeedback"></div>
+    `;
+    let answered = false;
+    wrap.querySelectorAll(".opt-btn").forEach((btn) => {
+      btn.onclick = () => {
+        if (answered) return;
+        answered = true;
+        const i = Number(btn.dataset.i);
+        wrap.querySelectorAll(".opt-btn").forEach((b, idx) => {
+          if (idx === item.correcta) b.classList.add("correct");
+          else if (idx === i) b.classList.add("wrong");
+        });
+        if (i === item.correcta) score++;
+        document.getElementById("qFeedback").innerHTML = `
+          <div class="q-feedback">${i === item.correcta ? "Correcto." : "No es la opción correcta."}</div>
+          <button class="q-next" id="nextBtn">${index === preguntas.length - 1 ? "Ver resultado" : "Siguiente"}</button>
+        `;
+        document.getElementById("nextBtn").onclick = () => {
+          index++;
+          draw();
+        };
+      };
+    });
+  }
+  draw();
+}
+
+/* ---------- router ---------- */
+
+function router() {
+  const hash = location.hash.replace(/^#\/?/, "");
+  const parts = hash.split("/").filter(Boolean);
+
+  if (parts.length === 0) return renderHome();
+  if (parts[0] === "ramas" && parts.length === 1) return renderRamas();
+  if (parts[0] === "ramas" && parts.length === 2) return renderTipos(parts[1]);
+  if (parts[0] === "ramas" && parts.length === 3) return renderProcesosBotones(parts[1], parts[2]);
+  if (parts[0] === "proceso" && parts.length === 2) return renderProcesoDetalle(parts[1]);
+
+  return renderHome();
+}
+
+function goBack() {
+  history.back();
+}
+backBtn.addEventListener("click", goBack);
+
+window.addEventListener("hashchange", router);
+window.addEventListener("DOMContentLoaded", router);
