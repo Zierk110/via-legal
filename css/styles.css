@@ -135,17 +135,37 @@ button{ font-family:inherit; }
 
 /* ramas */
 .branch-pill{ display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--ink-soft); margin-bottom:14px; }
+
+/* tarjetas con imagen (ramas y tipos de proceso) */
+.photo-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:18px 16px; }
+.photo-card-wrap{ display:flex; flex-direction:column; }
+.photo-card{
+  display:block; border-radius:14px; overflow:hidden; border:1px solid var(--line);
+  background:var(--paper-raised); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease;
+}
+.photo-card:hover{ box-shadow:0 8px 20px rgba(15,24,48,0.10); }
+.photo-card:active{ transform:scale(0.98); }
+.photo-card img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; background:var(--line); }
+.photo-card .band{
+  padding:10px 12px; color:#fff; font-family:'Newsreader',serif; font-weight:600; font-size:15px; text-align:center;
+}
+.photo-caption{ font-size:12px; color:var(--ink-soft); line-height:1.5; text-align:center; margin:8px 4px 0; }
+.photo-card.soon{
+  aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; text-align:center;
+  border-style:dashed; opacity:0.6; cursor:default; background:transparent;
+}
+.soon-txt{ font-size:12px; color:var(--ink-soft); }
+.soon-pill{ font-size:9.5px; background:var(--line); color:var(--ink-soft); padding:2px 7px; border-radius:10px; display:inline-block; margin-top:4px; }
+
+/* (se conserva por compatibilidad; ya no se usa en ramas/tipos) */
 .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
 .branch-card{ border-radius:16px; padding:20px 16px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid var(--line); }
-.branch-card.active{ background:var(--familia-soft); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease; }
-.branch-card.active:hover{ box-shadow:0 6px 18px rgba(15,24,48,0.08); }
+.branch-card.active{ background:var(--familia-soft); cursor:pointer; transition:transform .12s ease; }
 .branch-card.active:active{ transform:scale(0.98); }
 .branch-card.soon{ background:transparent; border-style:dashed; opacity:0.6; justify-content:center; align-items:center; text-align:center; }
 .branch-dot{ width:10px; height:10px; border-radius:50%; background:var(--familia); }
 .branch-name{ font-family:'Newsreader',serif; font-size:17px; font-weight:600; }
 .branch-count{ font-size:11.5px; color:var(--ink-soft); }
-.soon-txt{ font-size:12px; color:var(--ink-soft); }
-.soon-pill{ font-size:9.5px; background:var(--line); color:var(--ink-soft); padding:2px 7px; border-radius:10px; display:inline-block; margin-top:4px; }
 
 /* tipos de proceso y botones de proceso comparten un contenedor
    que en celular es lista y en pantallas grandes pasa a grilla */

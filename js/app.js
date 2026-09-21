@@ -44,32 +44,43 @@ function renderRamas() {
   const cards = Object.entries(SITE_DATA.ramas)
     .map(([key, r]) => {
       if (r.activa) {
-        const totalTipos = Object.keys(r.tipos).length;
-        return `<a class="branch-card active" href="#/ramas/${key}">
-          <span class="branch-dot"></span>
-          <div><div class="branch-name">${r.nombre}</div><div class="branch-count">${totalTipos} tipos de proceso</div></div>
-        </a>`;
+        return `
+        <div class="photo-card-wrap">
+          <a class="photo-card" href="#/ramas/${key}">
+            <img src="${r.imagen}" alt="${r.nombre}" loading="lazy">
+            <div class="band" style="background:${r.color}">${r.nombre}</div>
+          </a>
+          <p class="photo-caption">${r.descripcion || ""}</p>
+        </div>`;
       }
-      return `<div class="branch-card soon"><div class="soon-txt">${r.nombre}<div class="soon-pill">Próximamente</div></div></div>`;
+      return `
+        <div class="photo-card-wrap">
+          <div class="photo-card soon">
+            <div class="soon-txt">${r.nombre}<div class="soon-pill">Próximamente</div></div>
+          </div>
+        </div>`;
     })
     .join("");
-  app.innerHTML = `<div class="branch-pill">Rama del derecho</div><div class="grid2">${cards}</div>`;
+  app.innerHTML = `<div class="branch-pill">Rama del derecho</div><div class="photo-grid">${cards}</div>`;
 }
 
 function renderTipos(ramaKey) {
   const rama = SITE_DATA.ramas[ramaKey];
   if (!rama || !rama.activa) return (location.hash = "#/ramas");
   setHeader(rama.nombre, `Inicio › Ramas › ${rama.nombre}`, true);
-  const rows = Object.entries(rama.tipos)
+  const cards = Object.entries(rama.tipos)
     .map(
       ([key, t]) => `
-      <a class="type-row" href="#/ramas/${ramaKey}/${key}">
-        <div><div class="type-title">${t.nombre}</div><div class="type-sub">${t.descripcion}</div></div>
-        <div class="chev">›</div>
-      </a>`
+      <div class="photo-card-wrap">
+        <a class="photo-card" href="#/ramas/${ramaKey}/${key}">
+          <img src="${t.imagen}" alt="${t.nombre}" loading="lazy">
+          <div class="band" style="background:${t.color}">${t.nombre}</div>
+        </a>
+        <p class="photo-caption">${t.descripcion}</p>
+      </div>`
     )
     .join("");
-  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div><div class="stack-grid">${rows}</div>`;
+  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div><div class="photo-grid">${cards}</div>`;
 }
 
 function renderProcesosBotones(ramaKey, tipoKey) {

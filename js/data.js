@@ -10,10 +10,15 @@ const SITE_DATA = {
     familia: {
       nombre: "Familia",
       activa: true,
+      color: "#B5563C",
+      imagen: "assets/images/rama-familia.jpg",
+      descripcion: "Procesos relacionados con custodia, divorcio, alimentos y otros asuntos familiares.",
       tipos: {
         ejecutivo: {
           nombre: "Ejecutivo",
           descripcion: "Procesos para exigir el cumplimiento de una obligación familiar ya establecida.",
+          color: "#C9982F",
+          imagen: "assets/images/tipo-ejecutivo.jpg",
           procesos: [
             {
               id: "ejecutivo-alimentos",
@@ -43,6 +48,8 @@ const SITE_DATA = {
         declarativo: {
           nombre: "Declarativo",
           descripcion: "Procesos para que un juez determine derechos u obligaciones familiares que aún no son claras.",
+          color: "#2F7A6B",
+          imagen: "assets/images/tipo-declarativo.jpg",
           procesos: [
             {
               id: "divorcio-contencioso",
@@ -71,6 +78,8 @@ const SITE_DATA = {
         judicial: {
           nombre: "Judicial",
           descripcion: "Trámites que requieren una audiencia formal ante un juez de familia.",
+          color: "#3E6FA5",
+          imagen: "assets/images/tipo-judicial.jpg",
           procesos: [
             {
               id: "conciliacion-familiar",
