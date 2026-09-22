@@ -109,9 +109,31 @@ const SITE_DATA = {
     },
 
     /* Ramas visibles pero deshabilitadas: "Próximamente".
-       Cuando se activen, solo se agrega su bloque "tipos" como en Familia. */
-    civil:     { nombre: "Civil",     activa: false, tipos: {} },
-    comercial: { nombre: "Comercial", activa: false, tipos: {} },
-    penal:     { nombre: "Penal",     activa: false, tipos: {} }
+       Ya tienen imagen y descripción; cuando se activen, solo se
+       agrega su bloque "tipos" como en Familia. */
+    civil: {
+      nombre: "Civil",
+      activa: false,
+      color: "#6B4E9C",
+      imagen: "assets/images/rama-civil.jpg",
+      descripcion: "Procesos entre particulares sobre contratos, obligaciones, propiedad y responsabilidad civil.",
+      tipos: {}
+    },
+    comercial: {
+      nombre: "Comercial",
+      activa: false,
+      color: "#2F7A6B",
+      imagen: "assets/images/rama-comercial.jpg",
+      descripcion: "Procesos relacionados con sociedades, contratos mercantiles y conflictos entre empresas.",
+      tipos: {}
+    },
+    constitucional: {
+      nombre: "Constitucional",
+      activa: false,
+      color: "#16233F",
+      imagen: "assets/images/rama-constitucional.jpg",
+      descripcion: "Procesos para proteger derechos fundamentales, como la tutela y otras acciones constitucionales.",
+      tipos: {}
+    }
   }
 };

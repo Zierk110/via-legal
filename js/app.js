@@ -55,9 +55,12 @@ function renderRamas() {
       }
       return `
         <div class="photo-card-wrap">
-          <div class="photo-card soon">
-            <div class="soon-txt">${r.nombre}<div class="soon-pill">Próximamente</div></div>
+          <div class="photo-card soon-photo">
+            <img src="${r.imagen}" alt="${r.nombre}" loading="lazy">
+            <div class="band" style="background:${r.color}">${r.nombre}</div>
+            <div class="soon-pill soon-pill-overlay">Próximamente</div>
           </div>
+          <p class="photo-caption">${r.descripcion || ""}</p>
         </div>`;
     })
     .join("");

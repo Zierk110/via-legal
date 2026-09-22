@@ -157,6 +157,14 @@ button{ font-family:inherit; }
 .soon-txt{ font-size:12px; color:var(--ink-soft); }
 .soon-pill{ font-size:9.5px; background:var(--line); color:var(--ink-soft); padding:2px 7px; border-radius:10px; display:inline-block; margin-top:4px; }
 
+/* ramas "Próximamente" con imagen: igual que .photo-card pero atenuada y sin link */
+.photo-card.soon-photo{ position:relative; cursor:default; opacity:0.7; }
+.photo-card.soon-photo img{ filter:grayscale(35%); }
+.soon-pill-overlay{
+  position:absolute; top:8px; right:8px; background:rgba(15,24,48,0.72); color:#fff;
+  margin:0; font-weight:600;
+}
+
 /* (se conserva por compatibilidad; ya no se usa en ramas/tipos) */
 .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
 .branch-card{ border-radius:16px; padding:20px 16px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid var(--line); }
