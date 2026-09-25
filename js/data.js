@@ -75,11 +75,11 @@ const SITE_DATA = {
             }
           ]
         },
-        judicial: {
-          nombre: "Judicial",
-          descripcion: "Trámites que requieren una audiencia formal ante un juez de familia.",
+        jurisdiccionVoluntaria: {
+          nombre: "Jurisdicción voluntaria",
+          descripcion: "Trámites sin conflicto entre partes, resueltos ante un juez de familia para darles validez legal.",
           color: "#3E6FA5",
-          imagen: "assets/images/tipo-judicial.jpg",
+          imagen: "assets/images/tipo-jurisdiccion-voluntaria.jpg",
           procesos: [
             {
               id: "conciliacion-familiar",
