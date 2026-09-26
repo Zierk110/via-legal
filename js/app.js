@@ -91,10 +91,24 @@ function renderProcesosBotones(ramaKey, tipoKey) {
   const tipo = rama && rama.tipos[tipoKey];
   if (!tipo) return (location.hash = `#/ramas/${ramaKey}`);
   setHeader(tipo.nombre, `Inicio › ${rama.nombre} › ${tipo.nombre}`, true);
-  const botones = tipo.procesos
-    .map((p) => `<a class="proc-btn" href="#/proceso/${p.id}"><span>${p.titulo}</span><span>›</span></a>`)
+
+  /* Solo "Procesos declarativos" se ordena alfabéticamente y usa botones
+     centrados; los demás tipos de proceso conservan su orden y diseño de
+     siempre. */
+  const esDeclarativo = tipoKey === "declarativo";
+  const listaProcesos = esDeclarativo
+    ? [...tipo.procesos].sort((a, b) => a.titulo.localeCompare(b.titulo, "es"))
+    : tipo.procesos;
+
+  const botones = listaProcesos
+    .map((p) =>
+      esDeclarativo
+        ? `<a class="proc-btn proc-btn-centered" href="#/proceso/${p.id}"><span>${p.titulo}</span></a>`
+        : `<a class="proc-btn" href="#/proceso/${p.id}"><span>${p.titulo}</span><span>›</span></a>`
+    )
     .join("");
-  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div><div class="stack-grid">${botones}</div>`;
+  const gridClass = esDeclarativo ? "stack-grid decl-grid" : "stack-grid";
+  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div><div class="${gridClass}">${botones}</div>`;
 }
 
 function renderProcesoDetalle(id) {
@@ -139,25 +153,66 @@ function renderProcesoDetalle(id) {
 /* ---------- ficha de "Procesos declarativos" ---------- */
 
 function renderProcesoDeclarativo(ramaKey, tipoKey, proceso) {
-  const bloque = (etiqueta, texto) =>
-    texto ? `<div class="lbl">${etiqueta}</div><p>${texto}</p>` : "";
+  // queEs / comoFunciona pueden venir como texto único o como arreglo de
+  // párrafos (cada elemento puede llevar { subtitulo, texto }).
+  const parrafos = (etiqueta, valor) => {
+    if (!valor) return "";
+    const items = Array.isArray(valor) ? valor : [valor];
+    const cuerpo = items
+      .map((it) => {
+        if (typeof it === "string") return `<p>${it}</p>`;
+        const sub = it.subtitulo ? `<div class="decl-subtitulo">${it.subtitulo}</div>` : "";
+        return `${sub}<p>${it.texto}</p>`;
+      })
+      .join("");
+    return `<div class="lbl">${etiqueta}</div>${cuerpo}`;
+  };
 
   const lista = (etiqueta, items) =>
     items && items.length
       ? `<div class="lbl">${etiqueta}</div><ul>${items.map((x) => `<li>${x}</li>`).join("")}</ul>`
       : "";
 
+  // material puede traer objetos {texto, url}; si hay url, se muestra como enlace real.
+  const listaMaterial = (etiqueta, items) =>
+    items && items.length
+      ? `<div class="lbl">${etiqueta}</div><ul>${items
+          .map((x) => {
+            if (typeof x === "string") return `<li>${x}</li>`;
+            return x.url
+              ? `<li>${x.texto} — <a href="${x.url}" target="_blank" rel="noopener">ver fuente</a></li>`
+              : `<li>${x.texto}</li>`;
+          })
+          .join("")}</ul>`
+      : "";
+
+  const tabla = (t) => {
+    if (!t || !t.filas || !t.filas.length) return "";
+    const filas = t.filas
+      .map((f) => `<tr><td>${f[0]}</td><td>${f[1]}</td></tr>`)
+      .join("");
+    return `
+      <div class="lbl">${t.titulo || "Cuadro"}</div>
+      <div class="decl-table-wrap">
+        <table class="decl-table">
+          <thead><tr><th>${t.columnas[0]}</th><th>${t.columnas[1]}</th></tr></thead>
+          <tbody>${filas}</tbody>
+        </table>
+      </div>`;
+  };
+
   app.innerHTML = `
     <div class="proc-wrap decl-wrap">
       <a class="decl-back" href="#/ramas/${ramaKey}/${tipoKey}">‹ Volver a Procesos declarativos</a>
-      <div class="proc-card">
+      <div class="proc-card decl-card">
         <h3>${proceso.titulo}</h3>
         ${proceso.tipoProceso ? `<span class="decl-tipo-pill">${proceso.tipoProceso}</span>` : ""}
-        ${bloque("¿Qué es?", proceso.queEs)}
-        ${bloque("¿Cómo funciona?", proceso.comoFunciona)}
-        ${bloque("¿Quién puede iniciarlo? / ¿Ante quién se presenta?", proceso.antePresenta)}
-        ${bloque("Partes que intervienen", proceso.partes)}
+        ${parrafos("¿Qué es?", proceso.queEs)}
+        ${parrafos("¿Cómo funciona?", proceso.comoFunciona)}
+        ${parrafos("¿Quién puede iniciarlo? / ¿Ante quién se presenta?", proceso.antePresenta)}
+        ${parrafos("Partes que intervienen", proceso.partes)}
         ${lista("Características y aspectos relevantes", proceso.caracteristicas)}
+        ${tabla(proceso.tabla)}
       </div>
 
       <div class="decl-tabs">
@@ -173,7 +228,7 @@ function renderProcesoDeclarativo(ramaKey, tipoKey, proceso) {
   const panelesContenido = {
     etapas: lista("Etapas del proceso", proceso.etapas),
     documentos: lista("Documentos necesarios", proceso.documentos),
-    material: lista("Material para revisar", proceso.material)
+    material: listaMaterial("Material para revisar", proceso.material)
   };
   const botones = Array.from(document.querySelectorAll(".decl-tab-btn"));
 

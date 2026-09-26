@@ -56,13 +56,26 @@ const SITE_DATA = {
               "titulo": "Nulidad de matrimonio civil",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Según la sentencia T-574 de 2016, la nulidad de matrimonio civil consiste en que la voluntad declarada por parte de los contrayentes es diferente a su voluntad real, como cuando se finge la celebración de un matrimonio y, al mismo tiempo, las partes han determinado no celebrarlo. Es improcedente predicar la causa ilícita del contrato de matrimonio, sino que, en otra dirección, no existe la voluntad real de celebrarlo. La causa ilícita se predica de la causa existente y, en este caso, la verdad es que nunca se pretendió perfeccionar el vínculo matrimonial. No es posible que un contrato nupcial sea celebrado con objeto y causa ilícitos; tales elementos, prima facie, siempre estarán acordes con el ordenamiento jurídico al ser inmodificables. Ello supone que cuando dos personas utilizan la figura jurídica del “contrato civil de matrimonio” y, en realidad, lo hacen con un propósito diferente que se mantiene oculto, se debe entender que su consentimiento fue otorgado para celebrar otro tipo de negocio contractual, en el que posiblemente pudo existir objeto y/o causa ilícita.",
+              "queEs": [
+                "Según la sentencia T-574 de 2016, la nulidad de matrimonio civil consiste en que la voluntad declarada por parte de los contrayentes es diferente a su voluntad real, como cuando se finge la celebración de un matrimonio y, al mismo tiempo, las partes han determinado no celebrarlo. Es improcedente predicar la causa ilícita del contrato de matrimonio, sino que, en otra dirección, no existe la voluntad real de celebrarlo.",
+                "La causa ilícita se predica de la causa existente y, en este caso, la verdad es que nunca se pretendió perfeccionar el vínculo matrimonial. No es posible que un contrato nupcial sea celebrado con objeto y causa ilícitos; tales elementos, prima facie, siempre estarán acordes con el ordenamiento jurídico al ser inmodificables.",
+                "Ello supone que cuando dos personas utilizan la figura jurídica del “contrato civil de matrimonio” y, en realidad, lo hacen con un propósito diferente que se mantiene oculto, se debe entender que su consentimiento fue otorgado para celebrar otro tipo de negocio contractual, en el que posiblemente pudo existir objeto y/o causa ilícita."
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso uno, este proceso se presenta ante un juez de familia en primera instancia: “De los procesos contenciosos de nulidad, divorcio de matrimonio civil, cesación de efectos civiles del matrimonio religioso y separación de cuerpos y de bienes.”",
-              "partes": "En este proceso existe el demandado y el demandante; este último generalmente es la persona afectada por la nulidad. Sin embargo, se debe considerar que el demandante depende del tipo de nulidad, y en segundo lugar, la Corte Constitucional en la sentencia T-574 de 2016 menciona que si un tercero tiene interés directo puede también presentar la acción de nulidad.",
+              "partes": [
+                "En este proceso existe el demandado y el demandante; este último generalmente es la persona afectada por la nulidad. Sin embargo, se debe considerar que el demandante depende del tipo de nulidad, y en segundo lugar, la Corte Constitucional en la sentencia T-574 de 2016 menciona que si un tercero tiene interés directo puede también presentar la acción de nulidad."
+              ],
               "caracteristicas": [
-                "Qué tipos de nulidades existen en Colombia (art. 140 C.C.): 1) Error acerca de las personas de ambos contrayentes o de uno de ellos. 2) Cuando se ha contraído con un menor de 18 años o entre menores de 18 años. 3) Cuando para celebrarlo haya faltado el consentimiento de alguno de los contrayentes o de ambos (la ley presume falta de consentimiento en los furiosos locos, mientras permanecieran en la locura, y en los mentecatos a quienes se haya impuesto interdicción judicial para el manejo de sus bienes; los sordomudos que puedan expresar con claridad su consentimiento por signos manifiestos, contraerán válidamente matrimonio). 5) Cuando se ha contraído por fuerza o miedo suficientes para obligar a alguno a obrar sin libertad (la fuerza o miedo no será causa de nulidad si después de disipada se ratifica el matrimonio con palabras expresas, o por la sola cohabitación de los consortes). 6) Cuando no ha habido libertad en el consentimiento de la mujer, por haber sido robada violentamente, a menos que consienta en él estando fuera del poder del raptor. 8) Cuando uno de los contrayentes ha matado o hecho matar al cónyuge con quien estaba unido en un matrimonio anterior. 9) Cuando los contrayentes están en la misma línea de ascendientes y descendientes o son hermanos. 11) Cuando se ha contraído entre el padre adoptante y la hija adoptiva, o entre el hijo adoptivo y la madre adoptante, o la mujer que fue esposa del adoptante. 12) Cuando respecto del hombre o de la mujer, o de ambos, estuviere subsistente el vínculo de un matrimonio anterior.",
-                "Quién puede demandar según el tipo de nulidad: error en contrayentes — solo puede solicitarla la persona que sufrió el engaño (art. 142 C.C.); contrayente menor de 18 años — art. 143 C.C. señala cómo funciona, quién puede promover la acción y cómo se puede celebrar el matrimonio bajo estas condiciones sin que sea nulo; error en el consentimiento — el art. 144 C.C. menciona que pueden presentarla los contrayentes o los padres; matrimonio contraído por fuerza o miedo — el art. 146 C.C. menciona que puede presentarla la persona en la que se ejerció la fuerza."
+                "1) Cuando ha habido error acerca de las personas de ambos contrayentes o de la de uno de ellos.",
+                "2) Cuando se ha contraído con un menor de 18 años o entre menores de 18 años.",
+                "3) Cuando para celebrarlo haya faltado el consentimiento de alguno de los contrayentes o de ambos. La ley presume falta de consentimiento en los furiosos locos, mientras permanecieran en la locura, y en los mentecatos a quienes se haya impuesto interdicción judicial para el manejo de sus bienes. Pero los sordomudos, si pueden expresar con claridad su consentimiento por signos manifiestos, contraerán válidamente matrimonio.",
+                "5) Cuando se ha contraído por fuerza o miedo que sean suficientes para obligar a alguno a obrar sin libertad, bien sea que la fuerza se cause por el que quiere contraer matrimonio o por otra persona. La fuerza o miedo no será causa de nulidad del matrimonio si, después de disipada la fuerza, se ratifica el matrimonio con palabras expresas, o por la sola cohabitación de los consortes.",
+                "6) Cuando no ha habido libertad en el consentimiento de la mujer, por haber sido esta robada violentamente, a menos que consienta en él, estando fuera del poder del raptor.",
+                "8) Cuando uno de los contrayentes ha matado o hecho matar al cónyuge con quien estaba unido en un matrimonio anterior.",
+                "9) Cuando los contrayentes están en la misma línea de ascendientes y descendientes o son hermanos.",
+                "11) Cuando se ha contraído entre el padre adoptante y la hija adoptiva; o entre el hijo adoptivo y la madre adoptante, o la mujer que fue esposa del adoptante.",
+                "12) Cuando respecto del hombre o de la mujer, o de ambos, estuviere subsistente el vínculo de un matrimonio anterior."
               ],
               "etapas": [
                 "La ley colombiana no contempla un requisito de procedibilidad como la conciliación, que en muchos casos en materia de familia es de obligatorio cumplimiento (art. 69, Ley 2220 de 2022).",
@@ -81,13 +94,57 @@ const SITE_DATA = {
                 "Copia de la sentencia que decrete la nulidad del matrimonio civil se enviará al respectivo funcionario del estado civil para su inscripción en el folio de matrimonio y en el de nacimiento de cada uno de los cónyuges."
               ],
               "material": [
-                "Código Civil, artículo 140 (causales de nulidad del matrimonio).",
-                "Código Civil, artículos 142, 143, 144 y 146 (legitimados según el tipo de nulidad).",
-                "Código General del Proceso, artículo 22, inciso 1 (competencia del juez de familia).",
-                "Código General del Proceso, artículo 387.",
-                "Ley 2220 de 2022, artículo 69.",
-                "Corte Constitucional, Sentencia T-574 de 2016."
-              ]
+                {
+                  "texto": "Código Civil, artículo 140 (causales de nulidad del matrimonio).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículos 142, 143, 144 y 146 (legitimados según el tipo de nulidad).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22, inciso 1 (competencia del juez de familia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 387.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Corte Constitucional, Sentencia T-574 de 2016.",
+                  "url": null
+                }
+              ],
+              "caracteristicasTitulo": "¿Qué tipos de nulidades existen en Colombia? (artículo 140, Código Civil)",
+              "tabla": {
+                "titulo": "Legitimados para demandar, según el tipo de nulidad",
+                "columnas": [
+                  "Tipo de nulidad",
+                  "Demandante"
+                ],
+                "filas": [
+                  [
+                    "Error en contrayentes",
+                    "El artículo 142 C.C. menciona que solo puede solicitarse la nulidad por parte de la persona que sufrió el engaño."
+                  ],
+                  [
+                    "Uno de los contrayentes es menor de 18 años",
+                    "El artículo 143 C.C. menciona cómo funciona, qué persona puede promover la acción de nulidad y cómo se puede celebrar un matrimonio bajo estas condiciones sin que necesariamente sea nulo."
+                  ],
+                  [
+                    "Cuando exista error en el consentimiento",
+                    "El artículo 144 C.C. menciona que las personas que pueden presentar la nulidad son los contrayentes o los padres."
+                  ],
+                  [
+                    "Cuando se haya contraído por fuerza o miedo",
+                    "El artículo 146 C.C. menciona que esta nulidad se puede presentar por la persona en la que se ejerció la fuerza."
+                  ]
+                ]
+              }
             },
             {
               "id": "divorcio-matrimonio-civil",
@@ -95,7 +152,10 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
               "queEs": "Para que el divorcio se dé, tiene que existir un contrato de matrimonio válidamente celebrado entre dos personas, porque con el divorcio no se busca una nulidad como en otros casos, sino la terminación de este.",
-              "comoFunciona": "El divorcio se puede dar por causales como: la muerte real o presunta de uno de los cónyuges (art. 152 C.C.), o por las causales especificadas en el artículo 154 del Código Civil. Es importante recalcar que estas causales deben tener una carga probatoria importante para poderlas demostrar en el proceso, debido a que, por ejemplo, la infidelidad a la hora de probarse puede llegar a afectar el derecho a la intimidad de una de las partes; es decir, existen causales subjetivas y otras objetivas que se pueden probar con facilidad. Todas las causales deben revisarse con jurisprudencia de la Corte Constitucional, debido a que a la hora de aplicarlas no son estrictas, sino que, por el contrario, se pueden flexibilizar porque la jurisprudencia tiene en cuenta cada situación en específico (Sentencias C-096 de 2024, C-111 de 2022 y C-589 de 2019). La ley colombiana no contempla la conciliación como requisito de procedibilidad para este proceso; sin embargo, sí contempla una terminación del matrimonio por mutuo acuerdo ante un notario (Decreto 4436 de 2005), que menciona los requisitos y la documentación necesaria para ese trámite.",
+              "comoFunciona": [
+                "El divorcio se puede dar por causales como: la muerte real o presunta de uno de los cónyuges (art. 152 C.C.), o por las causales especificadas en el artículo 154 del Código Civil. Es importante recalcar que estas causales deben tener una carga probatoria importante para poderlas demostrar en el proceso, debido a que, por ejemplo, la infidelidad a la hora de probarse puede llegar a afectar el derecho a la intimidad de una de las partes; es decir, existen causales subjetivas y otras objetivas que se pueden probar con facilidad.",
+                "Todas las causales deben revisarse con jurisprudencia de la Corte Constitucional, debido a que a la hora de aplicarlas no son estrictas, sino que, por el contrario, se pueden flexibilizar porque la jurisprudencia tiene en cuenta cada situación en específico (Sentencias C-096 de 2024, C-111 de 2022 y C-589 de 2019). La ley colombiana no contempla la conciliación como requisito de procedibilidad para este proceso; sin embargo, sí contempla una terminación del matrimonio por mutuo acuerdo ante un notario (Decreto 4436 de 2005), que menciona los requisitos y la documentación necesaria para ese trámite."
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso uno, este proceso se presenta ante un juez de familia en primera instancia: “De los procesos contenciosos de nulidad, divorcio de matrimonio civil, cesación de efectos civiles del matrimonio religioso y separación de cuerpos y de bienes.”",
               "partes": "",
               "caracteristicas": [],
@@ -115,13 +175,34 @@ const SITE_DATA = {
                 "En caso de la causal 10, la propuesta de divorcio exigida por el artículo 156 del Código Civil."
               ],
               "material": [
-                "Código Civil, artículo 152 (causales y efectos de la disolución).",
-                "Código Civil, artículo 154 (causales de divorcio).",
-                "Código Civil, artículo 156 (legitimación y oportunidad para presentar la demanda).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Decreto 4436 de 2005 (terminación del matrimonio por mutuo acuerdo ante notario).",
-                "Jurisprudencia: Corte Constitucional, Sentencias C-096 de 2024, C-111 de 2022 y C-589 de 2019."
+                {
+                  "texto": "Código Civil, artículo 152 (causales y efectos de la disolución).",
+                  "url": "https://leyes.co/codigo_civil/152.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 154 (causales de divorcio).",
+                  "url": "https://leyes.co/codigo_civil/154.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 156 (legitimación y oportunidad para presentar la demanda).",
+                  "url": "https://leyes.co/codigo_civil/156.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Decreto 4436 de 2005 (terminación del matrimonio por mutuo acuerdo ante notario).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=18346"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencias C-096 de 2024, C-111 de 2022 y C-589 de 2019.",
+                  "url": null
+                }
               ]
             },
             {
@@ -151,12 +232,30 @@ const SITE_DATA = {
                 "Pruebas de los hechos que fundamentan la causal, cuando sea una separación contenciosa."
               ],
               "material": [
-                "Código Civil, artículo 154 (causales de divorcio, aplicables a la separación).",
-                "Código Civil, artículo 165 (causales de separación de cuerpos).",
-                "Código Civil, artículo 167 (efectos de la separación de cuerpos).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 7 y artículo 70."
+                {
+                  "texto": "Código Civil, artículo 154 (causales de divorcio, aplicables a la separación).",
+                  "url": "https://leyes.co/codigo_civil/154.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 165 (causales de separación de cuerpos).",
+                  "url": "https://leyes.co/codigo_civil/165.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 167 (efectos de la separación de cuerpos).",
+                  "url": "https://leyes.co/codigo_civil/167.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 7 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                }
               ]
             },
             {
@@ -164,7 +263,9 @@ const SITE_DATA = {
               "titulo": "Separación de bienes",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Es un proceso en el cual se liquida la sociedad patrimonial en caso de la sociedad de hecho, o se liquida la sociedad conyugal en caso del matrimonio; este proceso se inicia naturalmente por las partes que conforman la sociedad. Como lo indica el artículo 197 del Código Civil, no simboliza un divorcio ni la terminación de la relación, sino que se puede presentar porque las partes manifiestan que patrimonialmente no funcionan de forma correcta, o que desean que cada bien que obtengan pertenezca únicamente a la persona que realice todas las actuaciones jurídicas y patrimoniales para su apropiación.",
+              "queEs": [
+                "Es un proceso en el cual se liquida la sociedad patrimonial en caso de la sociedad de hecho, o se liquida la sociedad conyugal en caso del matrimonio; este proceso se inicia naturalmente por las partes que conforman la sociedad. Como lo indica el artículo 197 del Código Civil, no simboliza un divorcio ni la terminación de la relación, sino que se puede presentar porque las partes manifiestan que patrimonialmente no funcionan de forma correcta, o que desean que cada bien que obtengan pertenezca únicamente a la persona que realice todas las actuaciones jurídicas y patrimoniales para su apropiación."
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso uno, este proceso se presenta ante un juez de familia en primera instancia: “De los procesos contenciosos de nulidad, divorcio de matrimonio civil, cesación de efectos civiles del matrimonio religioso y separación de cuerpos y de bienes.”",
               "partes": "",
@@ -189,12 +290,30 @@ const SITE_DATA = {
                 "Documentos bancarios, financieros, empresariales o contables, según el caso."
               ],
               "material": [
-                "Código Civil, artículo 154 (causales).",
-                "Código Civil, artículo 197 (separación de bienes).",
-                "Código Civil, artículo 200 (causales de separación de bienes).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 7 y artículo 70."
+                {
+                  "texto": "Código Civil, artículo 154 (causales).",
+                  "url": "https://leyes.co/codigo_civil/154.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 197 (separación de bienes).",
+                  "url": "https://leyes.co/codigo_civil/197.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 200 (causales de separación de bienes).",
+                  "url": "https://leyes.co/codigo_civil/200.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 7 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                }
               ]
             },
             {
@@ -202,7 +321,10 @@ const SITE_DATA = {
               "titulo": "Disolución de la sociedad conyugal",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Es un proceso en el cual la sociedad conyugal deja de existir y de producir efectos. Esta proviene de la celebración del matrimonio entre dos partes, puesto que después de la celebración se entiende que la sociedad conyugal se instaura, lo que simboliza que los bienes que adquieran entrarán al patrimonio conjunto de las partes; con la disolución se da la terminación de esto. La sentencia T-401 de 2021 de la Corte Constitucional menciona que la disolución de la sociedad conyugal no produce por sí misma la terminación del matrimonio, ni tampoco una separación de cuerpos; solo produce efectos a nivel patrimonial, siempre que no haya un acuerdo en contrario.",
+              "queEs": [
+                "Es un proceso en el cual la sociedad conyugal deja de existir y de producir efectos. Esta proviene de la celebración del matrimonio entre dos partes, puesto que después de la celebración se entiende que la sociedad conyugal se instaura, lo que simboliza que los bienes que adquieran entrarán al patrimonio conjunto de las partes; con la disolución se da la terminación de esto.",
+                "La sentencia T-401 de 2021 de la Corte Constitucional menciona que la disolución de la sociedad conyugal no produce por sí misma la terminación del matrimonio, ni tampoco una separación de cuerpos; solo produce efectos a nivel patrimonial, siempre que no haya un acuerdo en contrario."
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso tres, este proceso se presenta ante un juez de familia en primera instancia: “De la liquidación de sociedades conyugales o patrimoniales por causa distinta de la muerte de los cónyuges, o cuando la disolución haya sido declarada ante notario, o por juez diferente al de familia, sin perjuicio de la competencia atribuida por la ley a los notarios.”",
               "partes": "",
@@ -229,11 +351,26 @@ const SITE_DATA = {
                 "Constancia de la conciliación extrajudicial."
               ],
               "material": [
-                "Código Civil, artículo 1820 (causales de disolución de la sociedad conyugal).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 3.",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-401 de 2021."
+                {
+                  "texto": "Código Civil, artículo 1820 (causales de disolución de la sociedad conyugal).",
+                  "url": "https://leyes.co/codigo_civil/1820.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 3.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-401 de 2021.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2021/t-401-21.htm"
+                }
               ]
             },
             {
@@ -241,8 +378,12 @@ const SITE_DATA = {
               "titulo": "Inexistencia de capitulaciones matrimoniales",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Las capitulaciones matrimoniales son un contrato que se celebra entre dos personas que van a contraer matrimonio, con la finalidad de regular las cuestiones patrimoniales de los bienes entre los cónyuges; por ejemplo, que cualquier bien que se obtenga durante el matrimonio pertenezca a la persona que realizó todas las actuaciones jurídicas y patrimoniales para su apropiación (art. 1771 C.C.). En caso de que, a la hora de la celebración de las capitulaciones, faltara algún elemento de la existencia —como la declaración de la voluntad, algún requisito esencial de las capitulaciones o las solemnidades legales—, se puede declarar la inexistencia, lo que quiere decir que las capitulaciones nunca existieron.",
-              "comoFunciona": "La sentencia SC4115 de 2024 explica la inexistencia de las capitulaciones matrimoniales así: “Las capitulaciones, entonces, son fruto de la voluntad de los futuros consortes o compañeros, a través del cual se definen las reglas que han de regir su sociedad de bienes o, incluso, desechar su nacimiento. Su eficacia, por tanto, está supeditada a que se satisfagan las exigencias del artículo 1502 del estatuto civil”.",
+              "queEs": [
+                "Las capitulaciones matrimoniales son un contrato que se celebra entre dos personas que van a contraer matrimonio, con la finalidad de regular las cuestiones patrimoniales de los bienes entre los cónyuges; por ejemplo, que cualquier bien que se obtenga durante el matrimonio pertenezca a la persona que realizó todas las actuaciones jurídicas y patrimoniales para su apropiación (art. 1771 C.C.). En caso de que, a la hora de la celebración de las capitulaciones, faltara algún elemento de la existencia —como la declaración de la voluntad, algún requisito esencial de las capitulaciones o las solemnidades legales—, se puede declarar la inexistencia, lo que quiere decir que las capitulaciones nunca existieron."
+              ],
+              "comoFunciona": [
+                "La sentencia SC4115 de 2024 explica la inexistencia de las capitulaciones matrimoniales así: “Las capitulaciones, entonces, son fruto de la voluntad de los futuros consortes o compañeros, a través del cual se definen las reglas que han de regir su sociedad de bienes o, incluso, desechar su nacimiento. Su eficacia, por tanto, está supeditada a que se satisfagan las exigencias del artículo 1502 del estatuto civil”."
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 14, este proceso se presenta ante un juez de familia en primera instancia: “De las acciones relativas a la caducidad, a la inexistencia o a la nulidad de las capitulaciones matrimoniales.”",
               "partes": "",
               "caracteristicas": [
@@ -266,14 +407,38 @@ const SITE_DATA = {
                 "Cualquier documento que permita demostrar que el supuesto negocio jurídico nunca llegó a perfeccionarse."
               ],
               "material": [
-                "Código Civil, artículo 1502 (requisitos para obligarse).",
-                "Código Civil, artículo 1771 (definición de capitulaciones matrimoniales).",
-                "Código Civil, artículo 1772 (formalidades de las capitulaciones matrimoniales).",
-                "Código Civil, artículo 1773 (limitaciones a las estipulaciones).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 5 y artículo 70.",
-                "Jurisprudencia: SC4115-2021 (2015-00327-01)."
+                {
+                  "texto": "Código Civil, artículo 1502 (requisitos para obligarse).",
+                  "url": "https://leyes.co/codigo_civil/1502.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1771 (definición de capitulaciones matrimoniales).",
+                  "url": "https://leyes.co/codigo_civil/1771.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1772 (formalidades de las capitulaciones matrimoniales).",
+                  "url": "https://leyes.co/codigo_civil/1772.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1773 (limitaciones a las estipulaciones).",
+                  "url": "https://leyes.co/codigo_civil/1773.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 5 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: SC4115-2021 (2015-00327-01).",
+                  "url": "https://cortesuprema.gov.co/corte/wp-content/uploads/2021/11/SC4115-2021-2015-00327-01.pdf"
+                }
               ]
             },
             {
@@ -281,7 +446,10 @@ const SITE_DATA = {
               "titulo": "Nulidad de capitulaciones matrimoniales",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Para que se pueda dar este proceso, deben existir primero las capitulaciones matrimoniales, consignadas en el artículo 1771 del Código Civil. Para que se pueda declarar la nulidad tiene que existir algún vicio que permita cuestionar la validez del contrato. Estas nulidades se originan por elementos como la capacidad de las partes, o que exista algún vicio en la persona, el objeto o la causa, como lo menciona el artículo 1502 del Código Civil.",
+              "queEs": [
+                "Para que se pueda dar este proceso, deben existir primero las capitulaciones matrimoniales, consignadas en el artículo 1771 del Código Civil. Para que se pueda declarar la nulidad tiene que existir algún vicio que permita cuestionar la validez del contrato.",
+                "Estas nulidades se originan por elementos como la capacidad de las partes, o que exista algún vicio en la persona, el objeto o la causa, como lo menciona el artículo 1502 del Código Civil."
+              ],
               "comoFunciona": "Puede declararse nulidad absoluta, que quiere decir que el vicio o elemento ilícito que crea la nulidad no se puede sanear ni corregir, como por ejemplo el vicio de fuerza; también se puede declarar la nulidad relativa, que indica que los vicios o elementos que dan origen a la nulidad sí se pueden sanear o corregir, es decir, que después de saneado el contrato sigue produciendo efectos (arts. 1741 y 1743 C.C.).",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 14, este proceso se presenta ante un juez de familia en primera instancia: “De las acciones relativas a la caducidad, a la inexistencia o a la nulidad de las capitulaciones matrimoniales.”",
               "partes": "",
@@ -305,13 +473,34 @@ const SITE_DATA = {
                 "Poder del abogado."
               ],
               "material": [
-                "Código Civil, artículo 1502 (requisitos para obligarse).",
-                "Código Civil, artículo 1741 (nulidad absoluta y relativa).",
-                "Código Civil, artículo 1743 (declaración de nulidad relativa).",
-                "Código Civil, artículo 1771 (definición de capitulaciones matrimoniales).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Jurisprudencia: SC2130-2021 (2015-00085-01)."
+                {
+                  "texto": "Código Civil, artículo 1502 (requisitos para obligarse).",
+                  "url": "https://leyes.co/codigo_civil/1502.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1741 (nulidad absoluta y relativa).",
+                  "url": "https://leyes.co/codigo_civil/1741.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1743 (declaración de nulidad relativa).",
+                  "url": "https://leyes.co/codigo_civil/1743.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 1771 (definición de capitulaciones matrimoniales).",
+                  "url": "https://leyes.co/codigo_civil/1771.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: SC2130-2021 (2015-00085-01).",
+                  "url": "https://cortesuprema.gov.co/corte/wp-content/uploads/2021/06/SC2130-2021-2015-00085-01_1.pdf"
+                }
               ]
             },
             {
@@ -320,7 +509,10 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
               "queEs": "La unión marital de hecho se define en el artículo 1 de la Ley 54 de 1990 como la situación en que dos personas mayores de 18 años, sin estar casadas, hacen una comunidad de vida permanente.",
-              "comoFunciona": "Para que se declare la unión marital de hecho se tienen que probar sus elementos, entre ellos la comunidad de vida permanente. La sentencia SC3462 de 2021 lo explica así: “conciencia de que forman un núcleo familiar, exteriorizado en la convivencia y la participación en todos los aspectos esenciales de su existencia, dispensándose afecto y socorro, guardándose mutuo respeto, propendiendo por el crecimiento personal, social y profesional del otro (…). Se trata de la exteriorización de la voluntad interna con ánimo serio e inequívoco de formar una pareja en su condición de acto jurídico hacia un proyecto vital”.",
+              "comoFunciona": [
+                "Para que se declare la unión marital de hecho se tienen que probar sus elementos, entre ellos la comunidad de vida permanente. La sentencia SC3462 de 2021 lo explica así: “conciencia de que forman un núcleo familiar, exteriorizado en la convivencia y la participación en todos los aspectos esenciales de su existencia, dispensándose afecto y socorro, guardándose mutuo respeto, propendiendo por el crecimiento personal, social y profesional del otro (…).",
+                "Se trata de la exteriorización de la voluntad interna con ánimo serio e inequívoco de formar una pareja en su condición de acto jurídico hacia un proyecto vital”."
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 14, este proceso se presenta ante un juez de familia en primera instancia: “De los procesos sobre declaración de existencia de unión marital de hecho y de la sociedad patrimonial entre compañeros permanentes, sin perjuicio de la competencia atribuida a los notarios.”",
               "partes": "",
               "caracteristicas": [],
@@ -345,11 +537,26 @@ const SITE_DATA = {
                 "Poder otorgado al abogado."
               ],
               "material": [
-                "Ley 54 de 1990, artículo 1 (definición de unión marital de hecho).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70.",
-                "Jurisprudencia: SC3462-2021 (2017-00070-01)."
+                {
+                  "texto": "Ley 54 de 1990, artículo 1 (definición de unión marital de hecho).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30896"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: SC3462-2021 (2017-00070-01).",
+                  "url": "https://cortesuprema.gov.co/corte/wp-content/uploads/2021/09/SC3462-2021-2017-00070-01.pdf"
+                }
               ]
             },
             {
@@ -357,7 +564,10 @@ const SITE_DATA = {
               "titulo": "Declaración de existencia de sociedad patrimonial entre compañeros permanentes",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "La sociedad patrimonial nace con la existencia de la unión marital de hecho; esta última debe haber cumplido los requisitos exigidos por la ley, como haber existido durante dos años (art. 1, Ley 979 de 2005). Es un régimen económico que nace entre las personas que componen la unión marital de hecho, un patrimonio conjunto entre las dos partes. La sentencia SC2222 de 2020 menciona: “La sociedad patrimonial irradia sus efectos solamente en el plano económico y deriva, en primer lugar, de la existencia de una unión marital de hecho y, en segundo término, de que como consecuencia del trabajo, ayuda y socorro mutuos de los compañeros permanentes, se haya consolidado un patrimonio o capital común.”",
+              "queEs": [
+                "La sociedad patrimonial nace con la existencia de la unión marital de hecho; esta última debe haber cumplido los requisitos exigidos por la ley, como haber existido durante dos años (art. 1, Ley 979 de 2005). Es un régimen económico que nace entre las personas que componen la unión marital de hecho, un patrimonio conjunto entre las dos partes.",
+                "La sentencia SC2222 de 2020 menciona: “La sociedad patrimonial irradia sus efectos solamente en el plano económico y deriva, en primer lugar, de la existencia de una unión marital de hecho y, en segundo término, de que como consecuencia del trabajo, ayuda y socorro mutuos de los compañeros permanentes, se haya consolidado un patrimonio o capital común.”"
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 14, este proceso se presenta ante un juez de familia en primera instancia: “De los procesos sobre declaración de existencia de unión marital de hecho y de la sociedad patrimonial entre compañeros permanentes, sin perjuicio de la competencia atribuida a los notarios.”",
               "partes": "",
@@ -388,13 +598,34 @@ const SITE_DATA = {
                 "Poder otorgado al abogado."
               ],
               "material": [
-                "Ley 979 de 2005, artículo 1 (requisito de duración de la unión marital de hecho).",
-                "Ley 979 de 2005, artículo 2 (formas de declarar la existencia).",
-                "Ley 979 de 2005, artículo 4 (legitimados para actuar).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70.",
-                "Jurisprudencia: SC2222-2020."
+                {
+                  "texto": "Ley 979 de 2005, artículo 1 (requisito de duración de la unión marital de hecho).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30898"
+                },
+                {
+                  "texto": "Ley 979 de 2005, artículo 2 (formas de declarar la existencia).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30898"
+                },
+                {
+                  "texto": "Ley 979 de 2005, artículo 4 (legitimados para actuar).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30898"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: SC2222-2020.",
+                  "url": "https://cortesuprema.gov.co/corte/wp-content/uploads/2020/07/SC2222-2020-2.pdf"
+                }
               ]
             },
             {
@@ -402,7 +633,9 @@ const SITE_DATA = {
               "titulo": "Disolución de la sociedad patrimonial",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "La disolución de la sociedad patrimonial es, como su nombre lo indica, la terminación de esta misma; sin embargo, aquí no se hace la liquidación, es decir, no se realiza un conteo de bienes para calcular el valor correspondiente que le pertenece a cada una de las partes que hizo parte de la sociedad. Las causas de disolución están en el artículo 5 de la Ley 54 de 1990.",
+              "queEs": [
+                "La disolución de la sociedad patrimonial es, como su nombre lo indica, la terminación de esta misma; sin embargo, aquí no se hace la liquidación, es decir, no se realiza un conteo de bienes para calcular el valor correspondiente que le pertenece a cada una de las partes que hizo parte de la sociedad. Las causas de disolución están en el artículo 5 de la Ley 54 de 1990."
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso tres, este proceso se presenta ante un juez de familia en primera instancia: “De la liquidación de sociedades conyugales o patrimoniales por causa distinta de la muerte de los cónyuges, o cuando la disolución haya sido declarada ante notario, o por juez diferente al de familia, sin perjuicio de la competencia atribuida por la ley a los notarios.”",
               "partes": "",
@@ -432,11 +665,26 @@ const SITE_DATA = {
                 "Poder otorgado al abogado."
               ],
               "material": [
-                "Ley 54 de 1990, artículo 5 (causas de disolución).",
-                "Ley 979 de 2005, artículo 6 (legitimados para actuar).",
-                "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
-                "Código General del Proceso, artículo 369 (traslado de la demanda).",
-                "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70."
+                {
+                  "texto": "Ley 54 de 1990, artículo 5 (causas de disolución).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30896"
+                },
+                {
+                  "texto": "Ley 979 de 2005, artículo 6 (legitimados para actuar).",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30898"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 22 (competencia de los jueces de familia en primera instancia).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/22.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 369 (traslado de la demanda).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/369.htm"
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69 numeral 3 y artículo 70.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                }
               ]
             },
             {
@@ -444,7 +692,9 @@ const SITE_DATA = {
               "titulo": "Investigación de paternidad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "La Corte Constitucional la define así: “La investigación de paternidad es un proceso de carácter judicial que se halla totalmente reglado, y que restituye el derecho a la filiación de las personas, cuando no son reconocidas voluntariamente por sus padres; se adelanta ante la Jurisdicción de Familia y para emitir sentencia el juez debe solicitar y practicar pruebas, que le permitan determinar la paternidad, incluida la prueba biológica de ADN, prueba que puede ser ordenada por la autoridad competente, o aportada por las partes interesadas en el proceso.” Tiene la finalidad de proteger la filiación: “La filiación es el derecho que tiene todo individuo al reconocimiento de su personalidad jurídica y conlleva atributos inherentes a su condición humana como el estado civil, la relación de patria potestad, orden sucesoral, obligaciones alimentarias, nacionalidad, entre otros. Además, a través de la protección del derecho a la filiación se concreta el contenido de otras garantías superiores como tener una familia, el libre desarrollo de la personalidad y la dignidad humana.”",
+              "queEs": [
+                "La Corte Constitucional la define así: “La investigación de paternidad es un proceso de carácter judicial que se halla totalmente reglado, y que restituye el derecho a la filiación de las personas, cuando no son reconocidas voluntariamente por sus padres; se adelanta ante la Jurisdicción de Familia y para emitir sentencia el juez debe solicitar y practicar pruebas, que le permitan determinar la paternidad, incluida la prueba biológica de ADN, prueba que puede ser ordenada por la autoridad competente, o aportada por las partes interesadas en el proceso.” Tiene la finalidad de proteger la filiación: “La filiación es el derecho que tiene todo individuo al reconocimiento de su personalidad jurídica y conlleva atributos inherentes a su condición humana como el estado civil, la relación de patria potestad, orden sucesoral, obligaciones alimentarias, nacionalidad, entre otros. Además, a través de la protección del derecho a la filiación se concreta el contenido de otras garantías superiores como tener una familia, el libre desarrollo de la personalidad y la dignidad humana.”"
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 2, este proceso se presenta ante un juez de familia en primera instancia: “De la investigación e impugnación de la paternidad y maternidad y de los demás asuntos referentes al estado civil que lo modifiquen o alteren.”",
               "partes": "",
@@ -467,8 +717,14 @@ const SITE_DATA = {
                 "Prueba de ADN."
               ],
               "material": [
-                "Corte Constitucional, Sentencia C-258 de 2015.",
-                "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad)."
+                {
+                  "texto": "Corte Constitucional, Sentencia C-258 de 2015.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2015/c-258-15.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/386.htm"
+                }
               ]
             },
             {
@@ -477,7 +733,12 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
               "queEs": "La Corte Constitucional la define así: “La investigación de paternidad es un proceso de carácter judicial que se halla totalmente reglado, y que restituye el derecho a la filiación de las personas, cuando no son reconocidas voluntariamente por sus padres; se adelanta ante la Jurisdicción de Familia y para emitir sentencia el juez debe solicitar y practicar pruebas, que le permitan determinar la paternidad, incluida la prueba biológica de ADN, prueba que puede ser ordenada por la autoridad competente, o aportada por las partes interesadas en el proceso.”",
-              "comoFunciona": "La particularidad de este proceso es que no solo depende de la prueba de ADN, sino también de la condición social de madre: “La maternidad o la condición de madre trasciende la mera condición biológica de la gestación y del parto. Se conforma por elementos psicológicos, sociales, culturales y afectivos. Implica también un querer ser libre, consciente y responsable. El reconocimiento, por ello, comprende la manifestación externa de esa voluntad. Ser madre es un estado natural y sociocultural de la mujer, a la vez, la conciencia plena de serlo, pero también es ejercicio de la libertad personal. Se refleja en su actitud plena hacia el cuidado personal del hijo y correlativamente cimienta en éste el derecho a ser tratado como hijo. La maternidad, como derecho humano, se protege en cualquier circunstancia fáctica y jurídica. Empero, no es absoluta, pues cederá siempre ante las prerrogativas del mismo hijo, o frente a cualquier otra garantía fundamental, según lo determine el contexto litigioso.” También es relevante que el reconocimiento puede ser voluntario por parte de la madre.",
+              "comoFunciona": [
+                "La particularidad de este proceso es que no solo depende de la prueba de ADN, sino también de la condición social de madre: “La maternidad o la condición de madre trasciende la mera condición biológica de la gestación y del parto. Se conforma por elementos psicológicos, sociales, culturales y afectivos.",
+                "Implica también un querer ser libre, consciente y responsable. El reconocimiento, por ello, comprende la manifestación externa de esa voluntad.",
+                "Ser madre es un estado natural y sociocultural de la mujer, a la vez, la conciencia plena de serlo, pero también es ejercicio de la libertad personal. Se refleja en su actitud plena hacia el cuidado personal del hijo y correlativamente cimienta en éste el derecho a ser tratado como hijo.",
+                "La maternidad, como derecho humano, se protege en cualquier circunstancia fáctica y jurídica. Empero, no es absoluta, pues cederá siempre ante las prerrogativas del mismo hijo, o frente a cualquier otra garantía fundamental, según lo determine el contexto litigioso.” También es relevante que el reconocimiento puede ser voluntario por parte de la madre."
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 2, este proceso se presenta ante un juez de familia en primera instancia: “De la investigación e impugnación de la paternidad y maternidad y de los demás asuntos referentes al estado civil que lo modifiquen o alteren.”",
               "partes": "",
               "caracteristicas": [],
@@ -499,9 +760,18 @@ const SITE_DATA = {
                 "Prueba de ADN."
               ],
               "material": [
-                "Corte Constitucional, Sentencia C-258 de 2015.",
-                "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
-                "Jurisprudencia: SC4856-2021 (2014-00340-01)."
+                {
+                  "texto": "Corte Constitucional, Sentencia C-258 de 2015.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2015/c-258-15.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/386.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: SC4856-2021 (2014-00340-01).",
+                  "url": "https://cortesuprema.gov.co/corte/wp-content/uploads/2021/12/SC4856-2021-2014-00340-01.pdf"
+                }
               ]
             },
             {
@@ -509,7 +779,9 @@ const SITE_DATA = {
               "titulo": "Impugnación de paternidad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "La Corte Constitucional define la impugnación así: “en cuanto a los procesos de impugnación de la maternidad y la paternidad, se debe decir que en términos generales, la impugnación es el fenómeno jurídico en virtud del cual, se pretende atacar una relación filial que contraría la realidad para que se declare su inexistencia.” Es “la oportunidad que tiene una persona para refutar la relación filial que fue reconocida en virtud de la ley. Dicha figura opera: i) para desvirtuar la presunción establecida en el artículo 214 del Código Civil; ii) para impugnar el reconocimiento que se dio a través de una manifestación voluntaria de quien aceptó ser padre; o, iii) cuando se repele la maternidad en el caso de un falso parto o de la suplantación del menor.”",
+              "queEs": [
+                "La Corte Constitucional define la impugnación así: “en cuanto a los procesos de impugnación de la maternidad y la paternidad, se debe decir que en términos generales, la impugnación es el fenómeno jurídico en virtud del cual, se pretende atacar una relación filial que contraría la realidad para que se declare su inexistencia.” Es “la oportunidad que tiene una persona para refutar la relación filial que fue reconocida en virtud de la ley. Dicha figura opera: i) para desvirtuar la presunción establecida en el artículo 214 del Código Civil; ii) para impugnar el reconocimiento que se dio a través de una manifestación voluntaria de quien aceptó ser padre; o, iii) cuando se repele la maternidad en el caso de un falso parto o de la suplantación del menor.”"
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 2, este proceso se presenta ante un juez de familia en primera instancia: “De la investigación e impugnación de la paternidad y maternidad y de los demás asuntos referentes al estado civil que lo modifiquen o alteren.”",
               "partes": "",
@@ -536,12 +808,30 @@ const SITE_DATA = {
                 "Pruebas que sustenten la impugnación."
               ],
               "material": [
-                "Corte Constitucional, Sentencia C-258 de 2015.",
-                "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
-                "Código Civil, artículo 216 (titulares de la acción de impugnación).",
-                "Código Civil, artículo 217 (plazo para impugnar).",
-                "Código Civil, artículo 219 (impugnación por terceros).",
-                "Código Civil, artículo 222 (impugnación por ascendientes)."
+                {
+                  "texto": "Corte Constitucional, Sentencia C-258 de 2015.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2015/c-258-15.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/386.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 216 (titulares de la acción de impugnación).",
+                  "url": "https://leyes.co/codigo_civil/216.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 217 (plazo para impugnar).",
+                  "url": "https://leyes.co/codigo_civil/217.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 219 (impugnación por terceros).",
+                  "url": "https://leyes.co/codigo_civil/219.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 222 (impugnación por ascendientes).",
+                  "url": "https://leyes.co/codigo_civil/222.htm"
+                }
               ]
             },
             {
@@ -549,7 +839,9 @@ const SITE_DATA = {
               "titulo": "Impugnación de maternidad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "La Corte Constitucional define la impugnación así: “en cuanto a los procesos de impugnación de la maternidad y la paternidad, se debe decir que en términos generales, la impugnación es el fenómeno jurídico en virtud del cual, se pretende atacar una relación filial que contraría la realidad para que se declare su inexistencia.” La principal diferencia con la impugnación de paternidad es que aquí la motivación principal o fundamental es el falso parto o la suplantación del verdadero hijo, conforme al artículo 335 del Código Civil. La Corte Constitucional lo define así: “lo cierto e indiscutible es que la acción así propuesta tiene como soporte fundamental la falsedad de la maternidad afirmada en la partida; falsedad que implica desde luego, que el parto es irreal, haya participado o no en el fraude, como luego se verá, la supuesta madre.”",
+              "queEs": [
+                "La Corte Constitucional define la impugnación así: “en cuanto a los procesos de impugnación de la maternidad y la paternidad, se debe decir que en términos generales, la impugnación es el fenómeno jurídico en virtud del cual, se pretende atacar una relación filial que contraría la realidad para que se declare su inexistencia.” La principal diferencia con la impugnación de paternidad es que aquí la motivación principal o fundamental es el falso parto o la suplantación del verdadero hijo, conforme al artículo 335 del Código Civil. La Corte Constitucional lo define así: “lo cierto e indiscutible es que la acción así propuesta tiene como soporte fundamental la falsedad de la maternidad afirmada en la partida; falsedad que implica desde luego, que el parto es irreal, haya participado o no en el fraude, como luego se verá, la supuesta madre.”"
+              ],
               "comoFunciona": "",
               "antePresenta": "Teniendo en cuenta el artículo 22 del Código General del Proceso, en su inciso 2, este proceso se presenta ante un juez de familia en primera instancia: “De la investigación e impugnación de la paternidad y maternidad y de los demás asuntos referentes al estado civil que lo modifiquen o alteren.”",
               "partes": "",
@@ -576,14 +868,38 @@ const SITE_DATA = {
                 "Pruebas que sustenten la impugnación."
               ],
               "material": [
-                "Corte Constitucional, Sentencia C-258 de 2015.",
-                "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
-                "Código Civil, artículo 216 (titulares de la acción de impugnación).",
-                "Código Civil, artículo 217 (plazo para impugnar).",
-                "Código Civil, artículo 219 (impugnación por terceros).",
-                "Código Civil, artículo 222 (impugnación por ascendientes).",
-                "Código Civil, artículo 335 (impugnación de la maternidad).",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-390 de 2005."
+                {
+                  "texto": "Corte Constitucional, Sentencia C-258 de 2015.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2015/c-258-15.htm"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 386 (investigación o impugnación de la paternidad o la maternidad).",
+                  "url": "https://leyes.co/codigo_general_del_proceso/386.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 216 (titulares de la acción de impugnación).",
+                  "url": "https://leyes.co/codigo_civil/216.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 217 (plazo para impugnar).",
+                  "url": "https://leyes.co/codigo_civil/217.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 219 (impugnación por terceros).",
+                  "url": "https://leyes.co/codigo_civil/219.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 222 (impugnación por ascendientes).",
+                  "url": "https://leyes.co/codigo_civil/222.htm"
+                },
+                {
+                  "texto": "Código Civil, artículo 335 (impugnación de la maternidad).",
+                  "url": "https://leyes.co/codigo_civil/335.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-390 de 2005.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2005/T-390-05.htm"
+                }
               ]
             },
             {
@@ -591,8 +907,13 @@ const SITE_DATA = {
               "titulo": "Declaración de hijo/a de crianza",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / jurisdicción voluntaria (según el caso)",
-              "queEs": "Es un reconocimiento de una situación jurídica parental que tiene la finalidad de incluir en el núcleo familiar a una persona con la que se ha estado compartiendo vínculos familiares durante un determinado periodo de tiempo. La Ley 2388 de 2024 define al hijo(a) de crianza como la “persona que ha sido acogida para su cuidado, protección y educación durante un periodo de tiempo no menor a cinco (5) años, por una familia o personas diferente a la de sus padres biológicos; sean estas familias consanguíneas o no.”",
-              "comoFunciona": "Se puede presentar por dos vías: un proceso declarativo o un proceso de jurisdicción voluntaria. La primera vía implica que solo el hijo quiere ser reconocido y que la otra parte no asistirá por voluntad propia o por consenso entre las partes, como lo menciona la sentencia C-029 de 2026: “la jurisprudencia ha reconocido dos vías para obtener la declaración de hijos e hijas de crianza. La primera, mediante un proceso de jurisdicción voluntaria que supone el consenso entre las partes; la segunda, mediante un proceso declarativo verbal, al cual puede acudir cualquiera de ellas en ausencia de dicho acuerdo.”",
+              "queEs": [
+                "Es un reconocimiento de una situación jurídica parental que tiene la finalidad de incluir en el núcleo familiar a una persona con la que se ha estado compartiendo vínculos familiares durante un determinado periodo de tiempo. La Ley 2388 de 2024 define al hijo(a) de crianza como la “persona que ha sido acogida para su cuidado, protección y educación durante un periodo de tiempo no menor a cinco (5) años, por una familia o personas diferente a la de sus padres biológicos; sean estas familias consanguíneas o no.”"
+              ],
+              "comoFunciona": [
+                "Se puede presentar por dos vías: un proceso declarativo o un proceso de jurisdicción voluntaria. La primera vía implica que solo el hijo quiere ser reconocido y que la otra parte no asistirá por voluntad propia o por consenso entre las partes, como lo menciona la sentencia C-029 de 2026: “la jurisprudencia ha reconocido dos vías para obtener la declaración de hijos e hijas de crianza.",
+                "La primera, mediante un proceso de jurisdicción voluntaria que supone el consenso entre las partes; la segunda, mediante un proceso declarativo verbal, al cual puede acudir cualquiera de ellas en ausencia de dicho acuerdo.”"
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 21 del Código General del Proceso, en su inciso 21, incluido por la Ley 2388 de 2024, este proceso se presenta ante un juez de familia de única instancia: “De la declaración como hijo/a de crianza así como el reconocimiento como padre o madre de crianza.”",
               "partes": "",
               "caracteristicas": [
@@ -620,12 +941,30 @@ const SITE_DATA = {
                 "Nombre y dirección del demandado cuando sea posible."
               ],
               "material": [
-                "Ley 2388 de 2024, artículo 2 (definición de hijo/a de crianza y de padre/madre de crianza).",
-                "Ley 2388 de 2024, artículo 3 (declaración de reconocimiento).",
-                "Ley 2388 de 2024, artículo 5 (competencia del juez de familia).",
-                "Código General del Proceso, artículo 165.",
-                "Ley 2338 de 2024, artículo 6.",
-                "Jurisprudencia: Corte Constitucional, Sentencia C-029 de 2026."
+                {
+                  "texto": "Ley 2388 de 2024, artículo 2 (definición de hijo/a de crianza y de padre/madre de crianza).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Ley 2388 de 2024, artículo 3 (declaración de reconocimiento).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Ley 2388 de 2024, artículo 5 (competencia del juez de familia).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 165.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2338 de 2024, artículo 6.",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia C-029 de 2026.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2026/C-029-26.htm"
+                }
               ]
             },
             {
@@ -633,8 +972,13 @@ const SITE_DATA = {
               "titulo": "Reconocimiento como padre o madre de crianza",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / jurisdicción voluntaria (según el caso)",
-              "queEs": "Es el reconocimiento de una situación jurídica parental que tiene la finalidad de incluir en el núcleo familiar a una persona con la que se ha estado compartiendo vínculos familiares durante un determinado periodo de tiempo. La Ley 2388 de 2024 define al padre o madre de crianza como la “persona(s) que de forma voluntaria y en virtud de lazos afectivos y emotivos ha(n) acogido dentro de su núcleo familiar a un menor del cual no son sus progenitores, pero que pueden tener o no una filiación biológica, y se encargan de su protección y cuidado como uno más de sus hijos durante un periodo de tiempo no menor a cinco (5) años.”",
-              "comoFunciona": "Se puede presentar por dos vías: un proceso declarativo o un proceso de jurisdicción voluntaria. En este caso, la vía declarativa implica que una de las partes no quiere ser reconocida con esta calidad, por lo que existe controversia que deberá ser sometida ante un juez, como lo menciona la sentencia C-029 de 2026: “la jurisprudencia ha reconocido dos vías para obtener la declaración de hijos e hijas de crianza. La primera, mediante un proceso de jurisdicción voluntaria que supone el consenso entre las partes; la segunda, mediante un proceso declarativo verbal, al cual puede acudir cualquiera de ellas en ausencia de dicho acuerdo.”",
+              "queEs": [
+                "Es el reconocimiento de una situación jurídica parental que tiene la finalidad de incluir en el núcleo familiar a una persona con la que se ha estado compartiendo vínculos familiares durante un determinado periodo de tiempo. La Ley 2388 de 2024 define al padre o madre de crianza como la “persona(s) que de forma voluntaria y en virtud de lazos afectivos y emotivos ha(n) acogido dentro de su núcleo familiar a un menor del cual no son sus progenitores, pero que pueden tener o no una filiación biológica, y se encargan de su protección y cuidado como uno más de sus hijos durante un periodo de tiempo no menor a cinco (5) años.”"
+              ],
+              "comoFunciona": [
+                "Se puede presentar por dos vías: un proceso declarativo o un proceso de jurisdicción voluntaria. En este caso, la vía declarativa implica que una de las partes no quiere ser reconocida con esta calidad, por lo que existe controversia que deberá ser sometida ante un juez, como lo menciona la sentencia C-029 de 2026: “la jurisprudencia ha reconocido dos vías para obtener la declaración de hijos e hijas de crianza.",
+                "La primera, mediante un proceso de jurisdicción voluntaria que supone el consenso entre las partes; la segunda, mediante un proceso declarativo verbal, al cual puede acudir cualquiera de ellas en ausencia de dicho acuerdo.”"
+              ],
               "antePresenta": "Teniendo en cuenta el artículo 21 del Código General del Proceso, en su inciso 21, incluido por la Ley 2388 de 2024, este proceso se presenta ante un juez de familia de única instancia: “De la declaración como hijo/a de crianza así como el reconocimiento como padre o madre de crianza.”",
               "partes": "",
               "caracteristicas": [
@@ -662,12 +1006,30 @@ const SITE_DATA = {
                 "Nombre y dirección del demandado cuando sea posible."
               ],
               "material": [
-                "Ley 2388 de 2024, artículo 2 (definición de hijo/a de crianza y de padre/madre de crianza).",
-                "Ley 2388 de 2024, artículo 3 (declaración de reconocimiento).",
-                "Ley 2388 de 2024, artículo 5 (competencia del juez de familia).",
-                "Código General del Proceso, artículo 165.",
-                "Ley 2338 de 2024, artículo 6.",
-                "Jurisprudencia: Corte Constitucional, Sentencia C-029 de 2026."
+                {
+                  "texto": "Ley 2388 de 2024, artículo 2 (definición de hijo/a de crianza y de padre/madre de crianza).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Ley 2388 de 2024, artículo 3 (declaración de reconocimiento).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Ley 2388 de 2024, artículo 5 (competencia del juez de familia).",
+                  "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/ley/Ley_2388_2024.pdf"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 165.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2338 de 2024, artículo 6.",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia C-029 de 2026.",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2026/C-029-26.htm"
+                }
               ]
             },
             {
@@ -675,8 +1037,13 @@ const SITE_DATA = {
               "titulo": "Custodia y cuidado personal",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / verbal sumario / de única instancia",
-              "queEs": "Es el proceso mediante el cual se busca determinar quién tendrá a su cargo la custodia y el cuidado personal de un niño, niña o adolescente, cuando los padres no logran ponerse de acuerdo o cuando resulta necesario que una autoridad judicial establezca las condiciones de cuidado. La custodia se relaciona con la atención directa del menor y con las condiciones en las que desarrolla su vida cotidiana; esto no significa que el padre o madre que no tenga la custodia deje de tener obligaciones frente a su hijo. El numeral 3 del artículo 21 del CGP atribuye a los jueces de familia el conocimiento en única instancia de la custodia, cuidado personal y visitas de niños, niñas y adolescentes.",
-              "comoFunciona": "El juez analiza las circunstancias particulares del niño y de su familia para determinar cuál es la medida que mejor garantiza sus derechos; no se basa en decidir cuál de los padres “gana” la custodia, sino en establecer qué situación y ambiente protege de mejor manera el interés superior del menor. La decisión puede establecer también condiciones relacionadas con las visitas del otro progenitor.",
+              "queEs": [
+                "Es el proceso mediante el cual se busca determinar quién tendrá a su cargo la custodia y el cuidado personal de un niño, niña o adolescente, cuando los padres no logran ponerse de acuerdo o cuando resulta necesario que una autoridad judicial establezca las condiciones de cuidado. La custodia se relaciona con la atención directa del menor y con las condiciones en las que desarrolla su vida cotidiana; esto no significa que el padre o madre que no tenga la custodia deje de tener obligaciones frente a su hijo.",
+                "El numeral 3 del artículo 21 del CGP atribuye a los jueces de familia el conocimiento en única instancia de la custodia, cuidado personal y visitas de niños, niñas y adolescentes."
+              ],
+              "comoFunciona": [
+                "El juez analiza las circunstancias particulares del niño y de su familia para determinar cuál es la medida que mejor garantiza sus derechos; no se basa en decidir cuál de los padres “gana” la custodia, sino en establecer qué situación y ambiente protege de mejor manera el interés superior del menor. La decisión puede establecer también condiciones relacionadas con las visitas del otro progenitor."
+              ],
               "antePresenta": "Ante el juez de familia, en única instancia. Cuando interviene un niño, niña o adolescente, la competencia territorial corresponde al juez de su domicilio o residencia, de acuerdo con las reglas especiales de competencia del artículo 28, numeral 2, del CGP.",
               "partes": "",
               "caracteristicas": [
@@ -699,13 +1066,34 @@ const SITE_DATA = {
                 "Poder otorgado al abogado, cuando se actúe mediante apoderado judicial."
               ],
               "material": [
-                "Constitución Política, artículo 44.",
-                "Ley 1098 de 2006, artículos 22 y 23.",
-                "Código Civil, artículo 253.",
-                "Código General del Proceso, artículo 21 numeral 3.",
-                "Código General del Proceso, artículo 390.",
-                "Ley 2220 de 2022, artículo 69.",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-311 de 2017 (la custodia y el cuidado personal comprenden la atención directa del niño, el contacto físico y la comunicación afectiva; aunque la custodia sea confiada a uno de los padres, el otro no queda liberado de sus deberes frente al hijo)."
+                {
+                  "texto": "Constitución Política, artículo 44.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículos 22 y 23.",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 253.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 numeral 3.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 390.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-311 de 2017 (la custodia y el cuidado personal comprenden la atención directa del niño, el contacto físico y la comunicación afectiva; aunque la custodia sea confiada a uno de los padres, el otro no queda liberado de sus deberes frente al hijo).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2017/t-311-17.htm"
+                }
               ]
             },
             {
@@ -713,8 +1101,13 @@ const SITE_DATA = {
               "titulo": "Regulación y modificación de visitas",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / verbal sumario / de única instancia",
-              "queEs": "Es el proceso mediante el cual se establece o modifica el régimen de visitas de un niño, niña o adolescente respecto del padre, madre o familiar que no convive permanentemente con él. La finalidad es garantizar que el menor pueda mantener relaciones familiares y afectivas, siempre que ello sea compatible con su interés superior; por eso el régimen de visitas no debe entenderse únicamente como un derecho del padre o de la madre, sino también como una forma de proteger el derecho del niño a mantener vínculos familiares. El artículo 21, numeral 3, del CGP incluye expresamente las visitas dentro de los asuntos de competencia del juez de familia en única instancia.",
-              "comoFunciona": "El juez puede establecer aspectos como los días, horarios, fines de semana, vacaciones, fechas especiales, forma de entrega y retorno del menor y, dependiendo de las circunstancias, otras condiciones como acompañamiento o supervisión cuando exista alguna situación que lo justifique, para garantizar que las visitas se desarrollen adecuadamente. Si ya existe un régimen de visitas y las circunstancias familiares cambiaron, se puede solicitar su modificación, lo cual no constituye un proceso diferente.",
+              "queEs": [
+                "Es el proceso mediante el cual se establece o modifica el régimen de visitas de un niño, niña o adolescente respecto del padre, madre o familiar que no convive permanentemente con él. La finalidad es garantizar que el menor pueda mantener relaciones familiares y afectivas, siempre que ello sea compatible con su interés superior; por eso el régimen de visitas no debe entenderse únicamente como un derecho del padre o de la madre, sino también como una forma de proteger el derecho del niño a mantener vínculos familiares.",
+                "El artículo 21, numeral 3, del CGP incluye expresamente las visitas dentro de los asuntos de competencia del juez de familia en única instancia."
+              ],
+              "comoFunciona": [
+                "El juez puede establecer aspectos como los días, horarios, fines de semana, vacaciones, fechas especiales, forma de entrega y retorno del menor y, dependiendo de las circunstancias, otras condiciones como acompañamiento o supervisión cuando exista alguna situación que lo justifique, para garantizar que las visitas se desarrollen adecuadamente. Si ya existe un régimen de visitas y las circunstancias familiares cambiaron, se puede solicitar su modificación, lo cual no constituye un proceso diferente."
+              ],
               "antePresenta": "Ante el juez de familia, en única instancia.",
               "partes": "",
               "caracteristicas": [
@@ -738,12 +1131,30 @@ const SITE_DATA = {
                 "Poder, si se actúa mediante abogado."
               ],
               "material": [
-                "Constitución Política, artículo 44.",
-                "Ley 1098 de 2006, artículo 23.",
-                "Código Civil, artículo 256.",
-                "Código General del Proceso, artículo 21 numeral 3.",
-                "Ley 2220 de 2022, artículo 69.",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-311 de 2017 (las visitas permiten que los niños mantengan y desarrollen relaciones afectivas con sus progenitores; el régimen debe interpretarse teniendo en cuenta el interés superior del menor)."
+                {
+                  "texto": "Constitución Política, artículo 44.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículo 23.",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 256.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 numeral 3.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-311 de 2017 (las visitas permiten que los niños mantengan y desarrollen relaciones afectivas con sus progenitores; el régimen debe interpretarse teniendo en cuenta el interés superior del menor).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2017/t-311-17.htm"
+                }
               ]
             },
             {
@@ -751,8 +1162,12 @@ const SITE_DATA = {
               "titulo": "Controversias sobre el ejercicio de la patria potestad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / verbal sumario / de única instancia",
-              "queEs": "Es el proceso utilizado para resolver los desacuerdos que puedan surgir entre los padres respecto del ejercicio de la patria potestad o autoridad parental sobre sus hijos menores de edad. Aquí no se está solicitando necesariamente que uno de los padres pierda la patria potestad; lo que se busca es que el juez resuelva una controversia concreta sobre su ejercicio.",
-              "comoFunciona": "La patria potestad comprende facultades y deberes de los padres frente a sus hijos no emancipados; cuando los padres no logran ponerse de acuerdo sobre su ejercicio, puede ser necesaria la intervención judicial. La suspensión de la patria potestad procede por las circunstancias previstas en el artículo 310 del Código Civil, entre ellas la demencia del padre o madre, la situación de estar en entredicho de administrar sus propios bienes y la larga ausencia, conforme al texto de dicha disposición.",
+              "queEs": [
+                "Es el proceso utilizado para resolver los desacuerdos que puedan surgir entre los padres respecto del ejercicio de la patria potestad o autoridad parental sobre sus hijos menores de edad. Aquí no se está solicitando necesariamente que uno de los padres pierda la patria potestad; lo que se busca es que el juez resuelva una controversia concreta sobre su ejercicio."
+              ],
+              "comoFunciona": [
+                "La patria potestad comprende facultades y deberes de los padres frente a sus hijos no emancipados; cuando los padres no logran ponerse de acuerdo sobre su ejercicio, puede ser necesaria la intervención judicial. La suspensión de la patria potestad procede por las circunstancias previstas en el artículo 310 del Código Civil, entre ellas la demencia del padre o madre, la situación de estar en entredicho de administrar sus propios bienes y la larga ausencia, conforme al texto de dicha disposición."
+              ],
               "antePresenta": "Ante el juez de familia, en única instancia.",
               "partes": "",
               "caracteristicas": [],
@@ -774,10 +1189,22 @@ const SITE_DATA = {
                 "Poder, cuando se actúe mediante abogado."
               ],
               "material": [
-                "Código Civil, artículos 288 y siguientes.",
-                "Código General del Proceso, artículos 21 y 390.",
-                "Ley 1098 de 2006.",
-                "Ley 2220 de 2022, artículo 69."
+                {
+                  "texto": "Código Civil, artículos 288 y siguientes.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 21 y 390.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 2220 de 2022, artículo 69.",
+                  "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=188766"
+                }
               ]
             },
             {
@@ -785,8 +1212,12 @@ const SITE_DATA = {
               "titulo": "Pérdida de la patria potestad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Proceso especial de familia",
-              "queEs": "Es el proceso mediante el cual se solicita al juez que declare la pérdida de la patria potestad de uno de los padres, cuando se configura alguna de las causales establecidas legalmente, como maltrato habitual del hijo, abandono del hijo, condena privativa de la libertad superior a un año, entre otros. La pérdida de la patria potestad es diferente de la pérdida de la custodia: un padre puede no tener la custodia del hijo y aun así conservar la patria potestad.",
-              "comoFunciona": "El juez debe comprobar que efectivamente se presenta una de las causales legales y adoptar la decisión teniendo en cuenta los derechos y el interés superior del niño. No basta con que exista un conflicto entre los padres; debe demostrarse una causal legal de pérdida.",
+              "queEs": [
+                "Es el proceso mediante el cual se solicita al juez que declare la pérdida de la patria potestad de uno de los padres, cuando se configura alguna de las causales establecidas legalmente, como maltrato habitual del hijo, abandono del hijo, condena privativa de la libertad superior a un año, entre otros. La pérdida de la patria potestad es diferente de la pérdida de la custodia: un padre puede no tener la custodia del hijo y aun así conservar la patria potestad."
+              ],
+              "comoFunciona": [
+                "El juez debe comprobar que efectivamente se presenta una de las causales legales y adoptar la decisión teniendo en cuenta los derechos y el interés superior del niño. No basta con que exista un conflicto entre los padres; debe demostrarse una causal legal de pérdida."
+              ],
               "antePresenta": "Ante el juez de familia en primera instancia; el CGP lo atribuye expresamente en el artículo 22, y el artículo 119 de la Ley 1098 de 2006 asigna a estos jueces los procesos de pérdida, suspensión y restablecimiento de la patria potestad.",
               "partes": "",
               "caracteristicas": [
@@ -810,9 +1241,18 @@ const SITE_DATA = {
                 "Poder, cuando se actúe mediante abogado."
               ],
               "material": [
-                "Código Civil, artículo 315.",
-                "Código General del Proceso, artículos 22 y 395.",
-                "Ley 1098 de 2006, artículo 119."
+                {
+                  "texto": "Código Civil, artículo 315.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 22 y 395.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículo 119.",
+                  "url": null
+                }
               ]
             },
             {
@@ -820,7 +1260,9 @@ const SITE_DATA = {
               "titulo": "Suspensión de la patria potestad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Proceso especial de familia / de primera instancia",
-              "queEs": "Es el proceso mediante el cual se solicita que el juez suspenda temporalmente el ejercicio de la patria potestad de uno de los padres, cuando se configura alguna de las circunstancias establecidas por la ley, por ejemplo la larga ausencia, entre otras. A diferencia de la pérdida, la suspensión tiene un carácter temporal y puede dar lugar posteriormente a un proceso de restablecimiento cuando desaparezcan las circunstancias que la originaron.",
+              "queEs": [
+                "Es el proceso mediante el cual se solicita que el juez suspenda temporalmente el ejercicio de la patria potestad de uno de los padres, cuando se configura alguna de las circunstancias establecidas por la ley, por ejemplo la larga ausencia, entre otras. A diferencia de la pérdida, la suspensión tiene un carácter temporal y puede dar lugar posteriormente a un proceso de restablecimiento cuando desaparezcan las circunstancias que la originaron."
+              ],
               "comoFunciona": "El juez estudia la situación del padre, del hijo y las pruebas aportadas para determinar si existe una causal que justifique la suspensión; la decisión debe orientarse siempre a la protección integral del menor.",
               "antePresenta": "Ante el juez de familia en primera instancia.",
               "partes": "",
@@ -843,10 +1285,22 @@ const SITE_DATA = {
                 "Poder, cuando corresponda."
               ],
               "material": [
-                "Código Civil, artículos 310 y siguientes.",
-                "Código General del Proceso, artículos 22 y 395.",
-                "Ley 1098 de 2006.",
-                "Jurisprudencia: Corte Constitucional, Sentencia C-145 de 2010 (diferencia los efectos de la suspensión y de la pérdida de la patria potestad: la suspensión tiene carácter temporal y puede ser objeto de restablecimiento cuando desaparecen las circunstancias que la originaron)."
+                {
+                  "texto": "Código Civil, artículos 310 y siguientes.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 22 y 395.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006.",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia C-145 de 2010 (diferencia los efectos de la suspensión y de la pérdida de la patria potestad: la suspensión tiene carácter temporal y puede ser objeto de restablecimiento cuando desaparecen las circunstancias que la originaron).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2010/c-145-10.htm"
+                }
               ]
             },
             {
@@ -876,9 +1330,18 @@ const SITE_DATA = {
                 "Poder."
               ],
               "material": [
-                "Código Civil, artículo 310.",
-                "Código General del Proceso, artículos 22 y 395.",
-                "Ley 1098 de 2006, artículo 119."
+                {
+                  "texto": "Código Civil, artículo 310.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 22 y 395.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículo 119.",
+                  "url": null
+                }
               ]
             },
             {
@@ -886,8 +1349,13 @@ const SITE_DATA = {
               "titulo": "Privación de la administración de los bienes del hijo",
               "formato": "declarativoDetallado",
               "tipoProceso": "Proceso especial de familia / de primera instancia",
-              "queEs": "Es el proceso mediante el cual se solicita que uno de los padres sea privado de la administración de los bienes de su hijo, cuando se presenta una situación que, conforme a la ley, justifica retirar esa facultad. El artículo 299 del Código Civil establece que la administración y el usufructo legal de los bienes del hijo cesan, entre otros casos, cuando por sentencia judicial se declara a los padres responsables de dolo o culpa grave en la administración; el artículo 395 del Código General del Proceso regula específicamente el trámite judicial para la privación de la administración de los bienes del hijo. No debe confundirse con la autorización para vender o gravar un bien: en este proceso se pretende retirar la facultad de administración.",
-              "comoFunciona": "El juez estudia las circunstancias que afectan la administración de los bienes del menor y determina si existe fundamento para privar al padre o madre de esa facultad. El artículo 395 del CGP incluye expresamente esta privación dentro de este trámite especial.",
+              "queEs": [
+                "Es el proceso mediante el cual se solicita que uno de los padres sea privado de la administración de los bienes de su hijo, cuando se presenta una situación que, conforme a la ley, justifica retirar esa facultad. El artículo 299 del Código Civil establece que la administración y el usufructo legal de los bienes del hijo cesan, entre otros casos, cuando por sentencia judicial se declara a los padres responsables de dolo o culpa grave en la administración; el artículo 395 del Código General del Proceso regula específicamente el trámite judicial para la privación de la administración de los bienes del hijo.",
+                "No debe confundirse con la autorización para vender o gravar un bien: en este proceso se pretende retirar la facultad de administración."
+              ],
+              "comoFunciona": [
+                "El juez estudia las circunstancias que afectan la administración de los bienes del menor y determina si existe fundamento para privar al padre o madre de esa facultad. El artículo 395 del CGP incluye expresamente esta privación dentro de este trámite especial."
+              ],
               "antePresenta": "Ante el juez de familia en primera instancia.",
               "partes": "",
               "caracteristicas": [
@@ -912,8 +1380,14 @@ const SITE_DATA = {
                 "Poder, cuando corresponda."
               ],
               "material": [
-                "Código Civil, artículos 295 al 300.",
-                "Código General del Proceso, artículos 22 y 395."
+                {
+                  "texto": "Código Civil, artículos 295 al 300.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 22 y 395.",
+                  "url": null
+                }
               ]
             },
             {
@@ -922,7 +1396,10 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Procedimiento especial de familia",
               "queEs": "Es el mecanismo destinado a facilitar o establecer el contacto entre un niño, niña o adolescente y uno de sus padres, cuando estos se encuentran en diferentes países; su finalidad es proteger el vínculo familiar del menor, pero teniendo siempre como límite el interés superior del niño.",
-              "comoFunciona": "Involucra cooperación entre las autoridades de los Estados donde se encuentran el menor y el progenitor; no existe un único procedimiento interno que pueda describirse como si todos los casos de visitas internacionales fueran iguales. La regulación internacional de visitas puede solicitarse de manera independiente a la restitución internacional. La Ley 2524 de 2025 establece que no es necesario que haya existido previamente un traslado o retención ilícitos, ni que exista un régimen de visitas establecido con anterioridad. El derecho de visitas puede comprender, entre otras formas de contacto, visitas personales, comunicación por medios tecnológicos y el traslado temporal del niño al país de residencia habitual del progenitor o a otro Estado.",
+              "comoFunciona": [
+                "Involucra cooperación entre las autoridades de los Estados donde se encuentran el menor y el progenitor; no existe un único procedimiento interno que pueda describirse como si todos los casos de visitas internacionales fueran iguales. La regulación internacional de visitas puede solicitarse de manera independiente a la restitución internacional.",
+                "La Ley 2524 de 2025 establece que no es necesario que haya existido previamente un traslado o retención ilícitos, ni que exista un régimen de visitas establecido con anterioridad. El derecho de visitas puede comprender, entre otras formas de contacto, visitas personales, comunicación por medios tecnológicos y el traslado temporal del niño al país de residencia habitual del progenitor o a otro Estado."
+              ],
               "antePresenta": "El ICBF actúa como Autoridad Central colombiana en la fase administrativa. Cuando la solicitud llega a la fase judicial, conoce el juez de familia o promiscuo de familia del lugar donde se encuentre el niño, niña o adolescente menor de dieciséis (16) años, de conformidad con el artículo 25 de la Ley 2524 de 2025.",
               "partes": "",
               "caracteristicas": [],
@@ -945,9 +1422,18 @@ const SITE_DATA = {
                 "Nota: además del formulario internacional correspondiente, pueden requerirse el registro civil de nacimiento del niño, documento de identidad del solicitante, fotografías recientes y datos que permitan ubicar al niño; si el caso lo requiere, pueden exigirse traducciones o documentos adicionales conforme a la legislación del país requerido."
               ],
               "material": [
-                "Ley 2524 de 2025, artículos 1, 25, 33 y 34.",
-                "Ley 173 de 1994.",
-                "Ley 880 de 2004."
+                {
+                  "texto": "Ley 2524 de 2025, artículos 1, 25, 33 y 34.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 173 de 1994.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 880 de 2004.",
+                  "url": null
+                }
               ]
             },
             {
@@ -956,7 +1442,9 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Actuación judicial especial de familia",
               "queEs": "Es el control judicial que se realiza sobre una declaratoria de adoptabilidad emitida por la autoridad administrativa; su finalidad es que el juez verifique que la decisión administrativa haya cumplido los requisitos legales y haya respetado los derechos y garantías del niño, niña o adolescente y de las demás personas involucradas.",
-              "comoFunciona": "El juez recibe el expediente administrativo y revisa la actuación adelantada por la autoridad administrativa; si encuentra que se cumplieron los requisitos, puede homologar la declaratoria. Si encuentra que falta algún requisito legal, no simplemente la confirma: el artículo 123 ordena devolver el expediente al Defensor de Familia para que subsane la irregularidad.",
+              "comoFunciona": [
+                "El juez recibe el expediente administrativo y revisa la actuación adelantada por la autoridad administrativa; si encuentra que se cumplieron los requisitos, puede homologar la declaratoria. Si encuentra que falta algún requisito legal, no simplemente la confirma: el artículo 123 ordena devolver el expediente al Defensor de Familia para que subsane la irregularidad."
+              ],
               "antePresenta": "Ante el juez de familia, de acuerdo con la competencia establecida en la Ley 1098 de 2006.",
               "partes": "",
               "caracteristicas": [
@@ -976,8 +1464,14 @@ const SITE_DATA = {
                 "Conceptos e informes correspondientes."
               ],
               "material": [
-                "Ley 1098 de 2006, artículos 119 y 123.",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-730 de 2015, retomada posteriormente en la Sentencia T-472 de 2025 (la homologación no constituye únicamente una revisión formal del procedimiento administrativo, sino que implica un control judicial tanto formal como material de la decisión de adoptabilidad; el juez debe verificar el respeto del debido proceso y también si la decisión administrativa resulta razonable y adecuada para proteger los derechos del niño, niña o adolescente)."
+                {
+                  "texto": "Ley 1098 de 2006, artículos 119 y 123.",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-730 de 2015, retomada posteriormente en la Sentencia T-472 de 2025 (la homologación no constituye únicamente una revisión formal del procedimiento administrativo, sino que implica un control judicial tanto formal como material de la decisión de adoptabilidad; el juez debe verificar el respeto del debido proceso y también si la decisión administrativa resulta razonable y adecuada para proteger los derechos del niño, niña o adolescente).",
+                  "url": null
+                }
               ]
             },
             {
@@ -986,16 +1480,27 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Procedimiento administrativo",
               "queEs": "El Proceso Administrativo de Restablecimiento de Derechos (PARD) es el procedimiento mediante el cual la autoridad administrativa busca restablecer los derechos de un niño, niña o adolescente cuando estos han sido amenazados o vulnerados.",
-              "comoFunciona": "La autoridad verifica la situación del menor, determina cuáles derechos están amenazados o vulnerados y adopta las medidas de restablecimiento correspondientes. El asunto pasa al juez, por ejemplo, cuando se requiere la homologación de la declaratoria de adoptabilidad, o cuando la ley atribuye al juez de familia la revisión de determinadas decisiones administrativas.",
+              "comoFunciona": [
+                "La autoridad verifica la situación del menor, determina cuáles derechos están amenazados o vulnerados y adopta las medidas de restablecimiento correspondientes. El asunto pasa al juez, por ejemplo, cuando se requiere la homologación de la declaratoria de adoptabilidad, o cuando la ley atribuye al juez de familia la revisión de determinadas decisiones administrativas."
+              ],
               "antePresenta": "Principalmente ante el Defensor de Familia y, en los casos que determine la ley, ante el Comisario de Familia.",
               "partes": "",
               "caracteristicas": [],
               "etapas": [],
               "documentos": [],
               "material": [
-                "Ley 1098 de 2006, especialmente artículos 50 y siguientes.",
-                "Ley 1098 de 2006, artículo 119 (competencias del juez de familia).",
-                "Ley 1098 de 2006, artículos 99 y siguientes (procedimiento administrativo de restablecimiento de derechos)."
+                {
+                  "texto": "Ley 1098 de 2006, especialmente artículos 50 y siguientes.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículo 119 (competencias del juez de familia).",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículos 99 y siguientes (procedimiento administrativo de restablecimiento de derechos).",
+                  "url": null
+                }
               ]
             },
             {
@@ -1003,7 +1508,9 @@ const SITE_DATA = {
               "titulo": "Proceso de adopción",
               "formato": "declarativoDetallado",
               "tipoProceso": "Proceso especial de familia / de primera instancia",
-              "queEs": "Es el proceso judicial mediante el cual se busca que el juez declare jurídicamente la adopción de un niño, niña o adolescente, creando entre el adoptante y el adoptado una relación de filiación con los efectos establecidos por la ley; por ejemplo, el adoptado adquiere los apellidos de los adoptantes, se extinguen por regla general los vínculos de parentesco con su familia de origen, y surgen entre adoptante y adoptado los derechos y deberes propios de la relación paterno-filial. Es importante diferenciarlo de la declaratoria de adoptabilidad: esta última no es la adopción misma; primero debe cumplirse la etapa administrativa y posteriormente se adelanta el proceso judicial de adopción.",
+              "queEs": [
+                "Es el proceso judicial mediante el cual se busca que el juez declare jurídicamente la adopción de un niño, niña o adolescente, creando entre el adoptante y el adoptado una relación de filiación con los efectos establecidos por la ley; por ejemplo, el adoptado adquiere los apellidos de los adoptantes, se extinguen por regla general los vínculos de parentesco con su familia de origen, y surgen entre adoptante y adoptado los derechos y deberes propios de la relación paterno-filial. Es importante diferenciarlo de la declaratoria de adoptabilidad: esta última no es la adopción misma; primero debe cumplirse la etapa administrativa y posteriormente se adelanta el proceso judicial de adopción."
+              ],
               "comoFunciona": "Los interesados presentan la demanda ante el juez de familia con los documentos exigidos por la Ley 1098 de 2006; el juez revisa los requisitos, decreta las pruebas necesarias y posteriormente decide sobre la adopción.",
               "antePresenta": "Ante el juez de familia en primera instancia del domicilio de los adoptantes. Cuando se trata de adopción internacional, es competente cualquier juez de familia del país. La demanda debe formularse mediante apoderado, según el artículo 124 de la Ley 1098 de 2006.",
               "partes": "",
@@ -1032,10 +1539,22 @@ const SITE_DATA = {
                 "En adopciones internacionales, además de los anteriores, los documentos previstos en el artículo 125 de la Ley 1098 de 2006, entre ellos la autorización del gobierno del país de residencia de los adoptantes para el ingreso del niño, niña o adolescente y el concepto favorable del Defensor de Familia."
               ],
               "material": [
-                "Constitución Política, artículo 44.",
-                "Ley 1098 de 2006, artículos 61 y siguientes, especialmente artículos 124 y 126.",
-                "Ley 1098 de 2006, artículo 125 (adopción internacional).",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-319 de 2019 (útil para comprender la relación entre la declaratoria de adoptabilidad, la patria potestad y los derechos del niño)."
+                {
+                  "texto": "Constitución Política, artículo 44.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículos 61 y siguientes, especialmente artículos 124 y 126.",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006, artículo 125 (adopción internacional).",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-319 de 2019 (útil para comprender la relación entre la declaratoria de adoptabilidad, la patria potestad y los derechos del niño).",
+                  "url": null
+                }
               ]
             },
             {
@@ -1043,7 +1562,9 @@ const SITE_DATA = {
               "titulo": "Revisión judicial de decisiones administrativas relacionadas con adoptabilidad",
               "formato": "declarativoDetallado",
               "tipoProceso": "Actuación judicial especial de familia",
-              "queEs": "Es la intervención del juez de familia para revisar determinadas decisiones adoptadas por el Defensor de Familia o el Comisario de Familia dentro de los procedimientos administrativos de protección. No debe confundirse con la homologación: la homologación tiene reglas específicas para la declaratoria de adoptabilidad, mientras que la revisión judicial comprende los demás eventos en los que la ley permite o exige la intervención judicial.",
+              "queEs": [
+                "Es la intervención del juez de familia para revisar determinadas decisiones adoptadas por el Defensor de Familia o el Comisario de Familia dentro de los procedimientos administrativos de protección. No debe confundirse con la homologación: la homologación tiene reglas específicas para la declaratoria de adoptabilidad, mientras que la revisión judicial comprende los demás eventos en los que la ley permite o exige la intervención judicial."
+              ],
               "comoFunciona": "El juez analiza la actuación administrativa y verifica si la decisión se ajustó a la ley y si fueron protegidos los derechos del niño, niña o adolescente.",
               "antePresenta": "Ante el juez de familia, en los casos expresamente previstos por la Ley 1098 de 2006.",
               "partes": "",
@@ -1063,21 +1584,30 @@ const SITE_DATA = {
                 "Recursos o solicitudes presentados durante el trámite, si existen."
               ],
               "material": [
-                "Ley 1098 de 2006, artículo 99, siguientes y 119."
+                {
+                  "texto": "Ley 1098 de 2006, artículo 99, siguientes y 119.",
+                  "url": null
+                }
               ]
             },
             {
-              "id": "proceso-de-alimentos",
-              "titulo": "Proceso de alimentos",
+              "id": "alimentos-fijacion",
+              "titulo": "Alimentos: fijación de cuota alimentaria",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo / verbal sumario (la fijación, aumento, disminución, exoneración de alimentos y restitución de pensiones alimenticias se tramitan por esta vía, conforme al artículo 390 del CGP)",
-              "queEs": "Es el proceso mediante el cual se busca que el juez de familia, la defensoría de familia o los centros de conciliación determinen la obligación alimentaria que una persona tiene frente a otra, en razón del vínculo de parentesco, matrimonio o unión marital de hecho que exista entre ellos. El derecho de alimentos se fundamenta en el principio de solidaridad: el alimentario (quien recibe) no está en capacidad de proveer su propia subsistencia, y el alimentante (quien paga) cuenta con los medios económicos para contribuir a la subsistencia del otro; esto se ve en el artículo 411 del Código Civil, que establece quiénes son los titulares de este derecho: el cónyuge, los descendientes, los ascendientes, los hermanos, entre otros. Bajo esta figura se tramitan cuatro modalidades con distintas pretensiones: Fijación (solicitud inicial para establecer por primera vez el monto de la cuota alimentaria, cuando no existe un acuerdo previo entre las partes; puede solicitarse también alimentos provisionales desde la presentación de la demanda, si se acredita al menos la prueba de la capacidad económica del demandado). Aumento (procede cuando las circunstancias que dieron origen a la cuota inicial han cambiado favorablemente para el alimentado o han aumentado sus necesidades, por ejemplo si mejoró la capacidad económica del obligado o si las necesidades del beneficiario se incrementaron). Disminución (procede cuando la capacidad económica del alimentante se ha visto reducida —pérdida de empleo, enfermedad, nuevas cargas familiares— o cuando las necesidades del alimentario han disminuido, sin que exista causal suficiente para la exoneración). Exoneración (solicitud para que cese por completo la obligación alimentaria, porque desaparecieron las circunstancias que la originaron; según la jurisprudencia T-854 de 2012 y el artículo 422 del Código Civil, la mayoría de edad no extingue automáticamente la obligación, sino que debe acreditarse que ya no se depende económicamente del alimentario para subsistir o que se perdieron las cualidades necesarias para que se deban alimentos).",
-              "comoFunciona": "El artículo 111 de la Ley 1098 de 2006 establece que, tratándose de menores de edad, la fijación puede iniciarse por vía administrativa ante el Defensor o Comisario de Familia, o en un centro de conciliación, quien cita a audiencia de conciliación al obligado; si el obligado no concurre o no se logra conciliar, el defensor/comisario puede fijar una cuota provisional, y si alguna de las partes lo solicita dentro de los cinco días siguientes, el asunto se remite al juez de familia para que dé inicio al proceso judicial. Cuando el asunto llega a sede judicial, se tramita como proceso verbal sumario de única instancia (artículo 390 y siguientes del CGP), armonizado con el artículo 397 del CGP para las reglas específicas de alimentos, y con el artículo 129 del Código de la Infancia y la Adolescencia cuando el beneficiario es menor de edad. El artículo 397 del CGP es la norma central: establece que desde la presentación de la demanda el juez puede fijar alimentos provisionales desde la admisión de la demanda, teniendo en cuenta los elementos aportados sobre las necesidades del alimentario y la capacidad económica del obligado; regula el cobro ejecutivo de lo debido y faculta al juez para decretar pruebas de oficio sobre capacidad económica y necesidades. Las solicitudes de aumento, disminución o exoneración se tramitan mediante el procedimiento previsto para los asuntos de alimentos; cuando existe un proceso o decisión judicial previa, debe verificarse la regla específica de competencia y el mecanismo procesal aplicable al caso concreto.",
-              "antePresenta": "En primera instancia administrativa (para menores): ante el Defensor de Familia, el Comisario de Familia o un centro de conciliación. Si no hay acuerdo o no se conoce la dirección del obligado, el defensor/comisario/conciliador remite un acta que sirve de base al juez de familia. Vía judicial: ante el juez de familia (o promiscuo de familia/municipal donde no hay juez de familia), quien tramita el proceso verbal sumario de única instancia conforme al artículo 21, numeral 3 y siguientes, del CGP.",
-              "partes": "",
-              "caracteristicas": [
-                "Fijación, aumento, disminución y exoneración son las cuatro pretensiones que se tramitan bajo esta figura, con requisitos y prueba distintos entre sí (ver «Qué es»)."
+              "queEs": [
+                "Bajo la figura de alimentos se tramitan cuatro pretensiones distintas, cada una con su propia situación y explicación procesal: fijación, aumento, disminución y exoneración. El derecho de alimentos se fundamenta en el principio de solidaridad: el alimentario (quien recibe) no está en capacidad de proveer su propia subsistencia, y el alimentante (quien paga) cuenta con los medios económicos para contribuir a la subsistencia del otro; esto se ve en el artículo 411 del Código Civil, que establece quiénes son los titulares de este derecho: el cónyuge, los descendientes, los ascendientes, los hermanos, entre otros.",
+                "Fijación: es la solicitud inicial para el proceso en la comisaría, centro de conciliación y para llegar al respectivo juez; es donde se establecerá por primera vez el monto de la cuota alimentaria, cuando no existe un acuerdo previo entre las partes. Puede solicitarse también alimentos provisionales desde la presentación de la demanda, si se acredita al menos la prueba de la capacidad económica del demandado."
               ],
+              "comoFunciona": [
+                "El artículo 111 de la Ley 1098 de 2006 establece que, tratándose de menores de edad, la fijación puede iniciarse por vía administrativa ante el Defensor o Comisario de Familia, o en un centro de conciliación, quien cita a audiencia de conciliación al obligado; si el obligado no concurre o no se logra conciliar, el defensor/comisario puede fijar una cuota provisional, y si alguna de las partes lo solicita dentro de los cinco días siguientes, el asunto se remite al juez de familia para que dé inicio al proceso judicial. Cuando el asunto llega a sede judicial, se tramita como proceso verbal sumario de única instancia (artículo 390 y siguientes del CGP), armonizado con el artículo 397 del CGP para las reglas específicas de alimentos, y con el artículo 129 del Código de la Infancia y la Adolescencia cuando el beneficiario es menor de edad.",
+                "El artículo 397 del CGP es la norma central: establece que desde la presentación de la demanda el juez puede fijar alimentos provisionales desde la admisión de la demanda, teniendo en cuenta los elementos aportados sobre las necesidades del alimentario y la capacidad económica del obligado; regula el cobro ejecutivo de lo debido y faculta al juez para decretar pruebas de oficio sobre capacidad económica y necesidades. Las solicitudes de aumento, disminución o exoneración se tramitan mediante el procedimiento previsto para los asuntos de alimentos; cuando existe un proceso o decisión judicial previa, debe verificarse la regla específica de competencia y el mecanismo procesal aplicable al caso concreto."
+              ],
+              "antePresenta": [
+                "En primera instancia administrativa (para menores): ante el Defensor de Familia, el Comisario de Familia o un centro de conciliación. Si no hay acuerdo o no se conoce la dirección del obligado, el defensor/comisario/conciliador remite un acta que sirve de base al juez de familia. Vía judicial: ante el juez de familia (o promiscuo de familia/municipal donde no hay juez de familia), quien tramita el proceso verbal sumario de única instancia conforme al artículo 21, numeral 3 y siguientes, del CGP."
+              ],
+              "partes": "",
+              "caracteristicas": [],
               "etapas": [
                 "Vía administrativa (conciliación) previa, si el beneficiario es menor de edad: solicitud ante el Defensor, Comisario de Familia o centro de conciliación; citación a audiencia de conciliación al obligado; si no hay acuerdo o no comparece, se fija cuota provisional y se remite el informe al juez si alguna parte lo pide.",
                 "Presentación de la demanda (o remisión del informe administrativo que hace sus veces).",
@@ -1091,26 +1621,290 @@ const SITE_DATA = {
               "documentos": [
                 "Registro civil de nacimiento del alimentario (acredita el vínculo) o registro civil de matrimonio (si el alimentario es el cónyuge).",
                 "Documentos de identidad de las partes.",
-                "Prueba siquiera sumaria de la capacidad económica del demandado (certificado laboral, extractos, declaración de renta, etc.).",
-                "Prueba de las necesidades del alimentario, cuando se pida una cuota superior a 1 SMLMV.",
                 "Constancia de la conciliación administrativa (o de la inasistencia/no acuerdo), cuando el trámite provino del Defensor o Comisario de Familia.",
-                "Para incidentes de aumento: pruebas del cambio favorable en la capacidad económica del alimentante o del incremento de necesidades del alimentario.",
-                "Para incidentes de disminución: pruebas de la reducción de ingresos o de nuevas cargas del alimentante.",
-                "Para exoneración: pruebas de que el alimentario alcanzó la mayoría de edad sin estar estudiando ni tener impedimento, que se emancipó, que trabaja, o que dejó de tener las cualidades que originaron la obligación.",
-                "Poder otorgado al abogado, cuando se actúe mediante apoderado."
+                "Poder otorgado al abogado, cuando se actúe mediante apoderado.",
+                "Prueba siquiera sumaria de la capacidad económica del demandado (certificado laboral, extractos, declaración de renta, etc.).",
+                "Prueba de las necesidades del alimentario, cuando se pida una cuota superior a 1 SMLMV."
               ],
               "material": [
-                "Código Civil, artículo 411 (titulares del derecho de alimentos).",
-                "Código Civil, artículo 413 (alimentos congruos y necesarios).",
-                "Código Civil, artículo 422 (duración de la obligación).",
-                "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), artículos 24 y 111.",
-                "Código General del Proceso, artículo 21 (competencia).",
-                "Código General del Proceso, artículo 390 (proceso verbal sumario).",
-                "Código General del Proceso, artículos 391 y 392 (audiencia concentrada).",
-                "Código General del Proceso, artículo 397 (reglas especiales de alimentos, incluido el trámite de incremento/disminución/exoneración en el mismo expediente).",
-                "Código Penal, artículo 233 (inasistencia alimentaria).",
-                "Jurisprudencia: Corte Constitucional, Sentencia T-854 de 2012 (debido proceso en trámites de exoneración de la obligación alimentaria).",
-                "Jurisprudencia: Corte Suprema de Justicia, Sala de Casación Penal, SP1897-2025 (capacidad económica real del obligado y ausencia de justa causa en el delito de inasistencia alimentaria; no puede presumirse capacidad económica suficiente para atribuir responsabilidad penal)."
+                {
+                  "texto": "Código Civil, artículo 411 (titulares del derecho de alimentos).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_civil_pr012.html"
+                },
+                {
+                  "texto": "Código Civil, artículo 413 (alimentos congruos y necesarios).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 422 (duración de la obligación).",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), artículos 24 y 111.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 (competencia).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1564_2012.html"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 390 (proceso verbal sumario).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 391 y 392 (audiencia concentrada).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 397 (reglas especiales de alimentos, incluido el trámite de incremento/disminución/exoneración en el mismo expediente).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Penal, artículo 233 (inasistencia alimentaria).",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-854 de 2012 (debido proceso en trámites de exoneración de la obligación alimentaria).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2012/t-854-12.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Suprema de Justicia, Sala de Casación Penal, SP1897-2025 (capacidad económica real del obligado y ausencia de justa causa en el delito de inasistencia alimentaria; no puede presumirse capacidad económica suficiente para atribuir responsabilidad penal).",
+                  "url": "https://cortesuprema.gov.co/sala-de-casacion-penal-absuelve-a-trabajador-informal-ante-imposibilidad-material-de-cumplir-con-obligacion-alimentaria/"
+                }
+              ]
+            },
+            {
+              "id": "alimentos-aumento",
+              "titulo": "Alimentos: aumento de cuota alimentaria",
+              "formato": "declarativoDetallado",
+              "tipoProceso": "Declarativo / verbal sumario (la fijación, aumento, disminución, exoneración de alimentos y restitución de pensiones alimenticias se tramitan por esta vía, conforme al artículo 390 del CGP)",
+              "queEs": [
+                "Bajo la figura de alimentos se tramitan cuatro pretensiones distintas, cada una con su propia situación y explicación procesal: fijación, aumento, disminución y exoneración. El derecho de alimentos se fundamenta en el principio de solidaridad: el alimentario (quien recibe) no está en capacidad de proveer su propia subsistencia, y el alimentante (quien paga) cuenta con los medios económicos para contribuir a la subsistencia del otro; esto se ve en el artículo 411 del Código Civil, que establece quiénes son los titulares de este derecho: el cónyuge, los descendientes, los ascendientes, los hermanos, entre otros.",
+                "Aumento: procede cuando las circunstancias que dieron origen a la cuota inicial han cambiado favorablemente para el alimentado o han aumentado sus necesidades; por ejemplo, si mejoró la capacidad económica del obligado o si las necesidades (salud, educación, etc.) del beneficiario se incrementaron."
+              ],
+              "comoFunciona": [
+                "El artículo 111 de la Ley 1098 de 2006 establece que, tratándose de menores de edad, la fijación puede iniciarse por vía administrativa ante el Defensor o Comisario de Familia, o en un centro de conciliación, quien cita a audiencia de conciliación al obligado; si el obligado no concurre o no se logra conciliar, el defensor/comisario puede fijar una cuota provisional, y si alguna de las partes lo solicita dentro de los cinco días siguientes, el asunto se remite al juez de familia para que dé inicio al proceso judicial. Cuando el asunto llega a sede judicial, se tramita como proceso verbal sumario de única instancia (artículo 390 y siguientes del CGP), armonizado con el artículo 397 del CGP para las reglas específicas de alimentos, y con el artículo 129 del Código de la Infancia y la Adolescencia cuando el beneficiario es menor de edad.",
+                "El artículo 397 del CGP es la norma central: establece que desde la presentación de la demanda el juez puede fijar alimentos provisionales desde la admisión de la demanda, teniendo en cuenta los elementos aportados sobre las necesidades del alimentario y la capacidad económica del obligado; regula el cobro ejecutivo de lo debido y faculta al juez para decretar pruebas de oficio sobre capacidad económica y necesidades. Las solicitudes de aumento, disminución o exoneración se tramitan mediante el procedimiento previsto para los asuntos de alimentos; cuando existe un proceso o decisión judicial previa, debe verificarse la regla específica de competencia y el mecanismo procesal aplicable al caso concreto."
+              ],
+              "antePresenta": [
+                "En primera instancia administrativa (para menores): ante el Defensor de Familia, el Comisario de Familia o un centro de conciliación. Si no hay acuerdo o no se conoce la dirección del obligado, el defensor/comisario/conciliador remite un acta que sirve de base al juez de familia. Vía judicial: ante el juez de familia (o promiscuo de familia/municipal donde no hay juez de familia), quien tramita el proceso verbal sumario de única instancia conforme al artículo 21, numeral 3 y siguientes, del CGP."
+              ],
+              "partes": "",
+              "caracteristicas": [
+                "El incidente de aumento se tramita en el mismo expediente, ante el mismo juez, en audiencia, previa citación de la contraparte (artículo 397, numeral 6, del CGP); no requiere nueva demanda ni nuevo proceso."
+              ],
+              "etapas": [
+                "Incidente de aumento: se tramita en el mismo expediente del proceso de alimentos ya existente, ante el mismo juez, en audiencia, previa citación de la contraparte (art. 397 num. 6 CGP).",
+                "Si no existe un proceso previo, se sigue el trámite general: presentación de la demanda, admisión y notificación, contestación, audiencia (art. 392 CGP) y sentencia."
+              ],
+              "documentos": [
+                "Registro civil de nacimiento del alimentario (acredita el vínculo) o registro civil de matrimonio (si el alimentario es el cónyuge).",
+                "Documentos de identidad de las partes.",
+                "Constancia de la conciliación administrativa (o de la inasistencia/no acuerdo), cuando el trámite provino del Defensor o Comisario de Familia.",
+                "Poder otorgado al abogado, cuando se actúe mediante apoderado.",
+                "Pruebas del cambio favorable en la capacidad económica del alimentante o del incremento de necesidades del alimentario."
+              ],
+              "material": [
+                {
+                  "texto": "Código Civil, artículo 411 (titulares del derecho de alimentos).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_civil_pr012.html"
+                },
+                {
+                  "texto": "Código Civil, artículo 413 (alimentos congruos y necesarios).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 422 (duración de la obligación).",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), artículos 24 y 111.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 (competencia).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1564_2012.html"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 390 (proceso verbal sumario).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 391 y 392 (audiencia concentrada).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 397 (reglas especiales de alimentos, incluido el trámite de incremento/disminución/exoneración en el mismo expediente).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Penal, artículo 233 (inasistencia alimentaria).",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-854 de 2012 (debido proceso en trámites de exoneración de la obligación alimentaria).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2012/t-854-12.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Suprema de Justicia, Sala de Casación Penal, SP1897-2025 (capacidad económica real del obligado y ausencia de justa causa en el delito de inasistencia alimentaria; no puede presumirse capacidad económica suficiente para atribuir responsabilidad penal).",
+                  "url": "https://cortesuprema.gov.co/sala-de-casacion-penal-absuelve-a-trabajador-informal-ante-imposibilidad-material-de-cumplir-con-obligacion-alimentaria/"
+                }
+              ]
+            },
+            {
+              "id": "alimentos-disminucion",
+              "titulo": "Alimentos: disminución de cuota alimentaria",
+              "formato": "declarativoDetallado",
+              "tipoProceso": "Declarativo / verbal sumario (la fijación, aumento, disminución, exoneración de alimentos y restitución de pensiones alimenticias se tramitan por esta vía, conforme al artículo 390 del CGP)",
+              "queEs": [
+                "Bajo la figura de alimentos se tramitan cuatro pretensiones distintas, cada una con su propia situación y explicación procesal: fijación, aumento, disminución y exoneración. El derecho de alimentos se fundamenta en el principio de solidaridad: el alimentario (quien recibe) no está en capacidad de proveer su propia subsistencia, y el alimentante (quien paga) cuenta con los medios económicos para contribuir a la subsistencia del otro; esto se ve en el artículo 411 del Código Civil, que establece quiénes son los titulares de este derecho: el cónyuge, los descendientes, los ascendientes, los hermanos, entre otros.",
+                "Disminución: procede cuando la capacidad económica del alimentante se ha visto reducida (pérdida de empleo, enfermedad, nuevas cargas familiares) o cuando las necesidades del alimentario han disminuido, sin que exista una causal suficiente para la exoneración."
+              ],
+              "comoFunciona": [
+                "El artículo 111 de la Ley 1098 de 2006 establece que, tratándose de menores de edad, la fijación puede iniciarse por vía administrativa ante el Defensor o Comisario de Familia, o en un centro de conciliación, quien cita a audiencia de conciliación al obligado; si el obligado no concurre o no se logra conciliar, el defensor/comisario puede fijar una cuota provisional, y si alguna de las partes lo solicita dentro de los cinco días siguientes, el asunto se remite al juez de familia para que dé inicio al proceso judicial. Cuando el asunto llega a sede judicial, se tramita como proceso verbal sumario de única instancia (artículo 390 y siguientes del CGP), armonizado con el artículo 397 del CGP para las reglas específicas de alimentos, y con el artículo 129 del Código de la Infancia y la Adolescencia cuando el beneficiario es menor de edad.",
+                "El artículo 397 del CGP es la norma central: establece que desde la presentación de la demanda el juez puede fijar alimentos provisionales desde la admisión de la demanda, teniendo en cuenta los elementos aportados sobre las necesidades del alimentario y la capacidad económica del obligado; regula el cobro ejecutivo de lo debido y faculta al juez para decretar pruebas de oficio sobre capacidad económica y necesidades. Las solicitudes de aumento, disminución o exoneración se tramitan mediante el procedimiento previsto para los asuntos de alimentos; cuando existe un proceso o decisión judicial previa, debe verificarse la regla específica de competencia y el mecanismo procesal aplicable al caso concreto."
+              ],
+              "antePresenta": [
+                "En primera instancia administrativa (para menores): ante el Defensor de Familia, el Comisario de Familia o un centro de conciliación. Si no hay acuerdo o no se conoce la dirección del obligado, el defensor/comisario/conciliador remite un acta que sirve de base al juez de familia. Vía judicial: ante el juez de familia (o promiscuo de familia/municipal donde no hay juez de familia), quien tramita el proceso verbal sumario de única instancia conforme al artículo 21, numeral 3 y siguientes, del CGP."
+              ],
+              "partes": "",
+              "caracteristicas": [
+                "El incidente de disminución se tramita en el mismo expediente, ante el mismo juez, en audiencia, previa citación de la contraparte (artículo 397, numeral 6, del CGP); no requiere nueva demanda ni nuevo proceso."
+              ],
+              "etapas": [
+                "Incidente de disminución: se tramita en el mismo expediente del proceso de alimentos ya existente, ante el mismo juez, en audiencia, previa citación de la contraparte (art. 397 num. 6 CGP).",
+                "Si no existe un proceso previo, se sigue el trámite general: presentación de la demanda, admisión y notificación, contestación, audiencia (art. 392 CGP) y sentencia."
+              ],
+              "documentos": [
+                "Registro civil de nacimiento del alimentario (acredita el vínculo) o registro civil de matrimonio (si el alimentario es el cónyuge).",
+                "Documentos de identidad de las partes.",
+                "Constancia de la conciliación administrativa (o de la inasistencia/no acuerdo), cuando el trámite provino del Defensor o Comisario de Familia.",
+                "Poder otorgado al abogado, cuando se actúe mediante apoderado.",
+                "Pruebas de la reducción de ingresos o de nuevas cargas del alimentante."
+              ],
+              "material": [
+                {
+                  "texto": "Código Civil, artículo 411 (titulares del derecho de alimentos).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_civil_pr012.html"
+                },
+                {
+                  "texto": "Código Civil, artículo 413 (alimentos congruos y necesarios).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 422 (duración de la obligación).",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), artículos 24 y 111.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 (competencia).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1564_2012.html"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 390 (proceso verbal sumario).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 391 y 392 (audiencia concentrada).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 397 (reglas especiales de alimentos, incluido el trámite de incremento/disminución/exoneración en el mismo expediente).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Penal, artículo 233 (inasistencia alimentaria).",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-854 de 2012 (debido proceso en trámites de exoneración de la obligación alimentaria).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2012/t-854-12.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Suprema de Justicia, Sala de Casación Penal, SP1897-2025 (capacidad económica real del obligado y ausencia de justa causa en el delito de inasistencia alimentaria; no puede presumirse capacidad económica suficiente para atribuir responsabilidad penal).",
+                  "url": "https://cortesuprema.gov.co/sala-de-casacion-penal-absuelve-a-trabajador-informal-ante-imposibilidad-material-de-cumplir-con-obligacion-alimentaria/"
+                }
+              ]
+            },
+            {
+              "id": "alimentos-exoneracion",
+              "titulo": "Alimentos: exoneración de cuota alimentaria",
+              "formato": "declarativoDetallado",
+              "tipoProceso": "Declarativo / verbal sumario (la fijación, aumento, disminución, exoneración de alimentos y restitución de pensiones alimenticias se tramitan por esta vía, conforme al artículo 390 del CGP)",
+              "queEs": [
+                "Bajo la figura de alimentos se tramitan cuatro pretensiones distintas, cada una con su propia situación y explicación procesal: fijación, aumento, disminución y exoneración. El derecho de alimentos se fundamenta en el principio de solidaridad: el alimentario (quien recibe) no está en capacidad de proveer su propia subsistencia, y el alimentante (quien paga) cuenta con los medios económicos para contribuir a la subsistencia del otro; esto se ve en el artículo 411 del Código Civil, que establece quiénes son los titulares de este derecho: el cónyuge, los descendientes, los ascendientes, los hermanos, entre otros.",
+                "Exoneración: es la solicitud para que cese por completo la obligación alimentaria, porque desaparecieron las circunstancias que la originaron. Las causas más comunes, según la jurisprudencia T-854 de 2012 y el artículo 422 del Código Civil, son: la mayoría de edad —aunque por sí sola no extingue automáticamente la obligación alimentaria— y la pérdida de las cualidades necesarias para que se deban alimentos. La exoneración procede cuando desaparecen las circunstancias que justificaban la obligación, lo cual debe ser acreditado y decidido mediante el procedimiento correspondiente: se debe llegar a probar que el alimentario ya no depende económicamente del alimentante para subsistir, o que perdió las cualidades necesarias para que se le deban alimentos."
+              ],
+              "comoFunciona": [
+                "El artículo 111 de la Ley 1098 de 2006 establece que, tratándose de menores de edad, la fijación puede iniciarse por vía administrativa ante el Defensor o Comisario de Familia, o en un centro de conciliación, quien cita a audiencia de conciliación al obligado; si el obligado no concurre o no se logra conciliar, el defensor/comisario puede fijar una cuota provisional, y si alguna de las partes lo solicita dentro de los cinco días siguientes, el asunto se remite al juez de familia para que dé inicio al proceso judicial. Cuando el asunto llega a sede judicial, se tramita como proceso verbal sumario de única instancia (artículo 390 y siguientes del CGP), armonizado con el artículo 397 del CGP para las reglas específicas de alimentos, y con el artículo 129 del Código de la Infancia y la Adolescencia cuando el beneficiario es menor de edad.",
+                "El artículo 397 del CGP es la norma central: establece que desde la presentación de la demanda el juez puede fijar alimentos provisionales desde la admisión de la demanda, teniendo en cuenta los elementos aportados sobre las necesidades del alimentario y la capacidad económica del obligado; regula el cobro ejecutivo de lo debido y faculta al juez para decretar pruebas de oficio sobre capacidad económica y necesidades. Las solicitudes de aumento, disminución o exoneración se tramitan mediante el procedimiento previsto para los asuntos de alimentos; cuando existe un proceso o decisión judicial previa, debe verificarse la regla específica de competencia y el mecanismo procesal aplicable al caso concreto."
+              ],
+              "antePresenta": [
+                "En primera instancia administrativa (para menores): ante el Defensor de Familia, el Comisario de Familia o un centro de conciliación. Si no hay acuerdo o no se conoce la dirección del obligado, el defensor/comisario/conciliador remite un acta que sirve de base al juez de familia. Vía judicial: ante el juez de familia (o promiscuo de familia/municipal donde no hay juez de familia), quien tramita el proceso verbal sumario de única instancia conforme al artículo 21, numeral 3 y siguientes, del CGP."
+              ],
+              "partes": "",
+              "caracteristicas": [
+                "El incidente de exoneración se tramita en el mismo expediente, ante el mismo juez, en audiencia, previa citación de la contraparte (artículo 397, numeral 6, del CGP); no requiere nueva demanda ni nuevo proceso."
+              ],
+              "etapas": [
+                "Incidente de exoneración: se tramita en el mismo expediente del proceso de alimentos ya existente, ante el mismo juez, en audiencia, previa citación de la contraparte (art. 397 num. 6 CGP).",
+                "Si no existe un proceso previo, se sigue el trámite general: presentación de la demanda, admisión y notificación, contestación, audiencia (art. 392 CGP) y sentencia."
+              ],
+              "documentos": [
+                "Registro civil de nacimiento del alimentario (acredita el vínculo) o registro civil de matrimonio (si el alimentario es el cónyuge).",
+                "Documentos de identidad de las partes.",
+                "Constancia de la conciliación administrativa (o de la inasistencia/no acuerdo), cuando el trámite provino del Defensor o Comisario de Familia.",
+                "Poder otorgado al abogado, cuando se actúe mediante apoderado.",
+                "Pruebas de que el alimentario alcanzó la mayoría de edad sin estar estudiando ni tener impedimento, que se emancipó, que trabaja, o que dejó de tener las cualidades que originaron la obligación."
+              ],
+              "material": [
+                {
+                  "texto": "Código Civil, artículo 411 (titulares del derecho de alimentos).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_civil_pr012.html"
+                },
+                {
+                  "texto": "Código Civil, artículo 413 (alimentos congruos y necesarios).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículo 422 (duración de la obligación).",
+                  "url": null
+                },
+                {
+                  "texto": "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), artículos 24 y 111.",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 21 (competencia).",
+                  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1564_2012.html"
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 390 (proceso verbal sumario).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículos 391 y 392 (audiencia concentrada).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso, artículo 397 (reglas especiales de alimentos, incluido el trámite de incremento/disminución/exoneración en el mismo expediente).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Penal, artículo 233 (inasistencia alimentaria).",
+                  "url": null
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Constitucional, Sentencia T-854 de 2012 (debido proceso en trámites de exoneración de la obligación alimentaria).",
+                  "url": "https://www.corteconstitucional.gov.co/relatoria/2012/t-854-12.htm"
+                },
+                {
+                  "texto": "Jurisprudencia: Corte Suprema de Justicia, Sala de Casación Penal, SP1897-2025 (capacidad económica real del obligado y ausencia de justa causa en el delito de inasistencia alimentaria; no puede presumirse capacidad económica suficiente para atribuir responsabilidad penal).",
+                  "url": "https://cortesuprema.gov.co/sala-de-casacion-penal-absuelve-a-trabajador-informal-ante-imposibilidad-material-de-cumplir-con-obligacion-alimentaria/"
+                }
               ]
             },
             {
@@ -1118,8 +1912,12 @@ const SITE_DATA = {
               "titulo": "Petición de herencia",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo (el trámite se determina conforme a las reglas del Código General del Proceso y la cuantía)",
-              "queEs": "Es la acción mediante la cual una persona que se considera heredero reclama el reconocimiento de esa calidad y la entrega de los bienes de la herencia (o de su cuota) frente a quien los posee sin ese derecho, o frente a quienes fueron reconocidos como herederos sin que se hubiera incluido a todos los llamados a suceder. Está consagrada en el artículo 1321 del Código Civil.",
-              "comoFunciona": "Se dirige contra el heredero putativo o contra quien tenga los bienes hereditarios. Es distinta de la nulidad de la partición o de la escritura de liquidación notarial: procede cuando quien tiene derecho a suceder reclama judicialmente la herencia o la cuota hereditaria frente a quien la posee invocando una calidad hereditaria que corresponde total o parcialmente al demandante.",
+              "queEs": [
+                "Es la acción mediante la cual una persona que se considera heredero reclama el reconocimiento de esa calidad y la entrega de los bienes de la herencia (o de su cuota) frente a quien los posee sin ese derecho, o frente a quienes fueron reconocidos como herederos sin que se hubiera incluido a todos los llamados a suceder. Está consagrada en el artículo 1321 del Código Civil."
+              ],
+              "comoFunciona": [
+                "Se dirige contra el heredero putativo o contra quien tenga los bienes hereditarios. Es distinta de la nulidad de la partición o de la escritura de liquidación notarial: procede cuando quien tiene derecho a suceder reclama judicialmente la herencia o la cuota hereditaria frente a quien la posee invocando una calidad hereditaria que corresponde total o parcialmente al demandante."
+              ],
               "antePresenta": "Ante el juez de familia (o civil, según la ubicación) del domicilio del demandado, conforme a las reglas generales de competencia del CGP.",
               "partes": "",
               "caracteristicas": [],
@@ -1139,8 +1937,14 @@ const SITE_DATA = {
                 "Poder al abogado."
               ],
               "material": [
-                "Código Civil, artículo 1321 y siguientes (de la petición de herencia).",
-                "Código General del Proceso (trámite declarativo según cuantía)."
+                {
+                  "texto": "Código Civil, artículo 1321 y siguientes (de la petición de herencia).",
+                  "url": null
+                },
+                {
+                  "texto": "Código General del Proceso (trámite declarativo según cuantía).",
+                  "url": null
+                }
               ]
             },
             {
@@ -1149,7 +1953,10 @@ const SITE_DATA = {
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
               "queEs": "Es el proceso mediante el cual se solicita al juez que declare inválido un testamento porque, al momento de su otorgamiento, no se cumplieron los requisitos de fondo o de forma exigidos por la ley.",
-              "comoFunciona": "Debe acreditarse al menos una de las causales legales. La demanda se dirige contra los demás herederos o interesados en la validez del testamento. La consecuencia jurídica de los defectos del testamento depende de la naturaleza de la causal invocada y de las reglas de nulidad aplicables; debe distinguirse entre nulidad absoluta y relativa, y determinarse si el defecto afecta la capacidad, el consentimiento, las solemnidades o el contenido del acto.",
+              "comoFunciona": [
+                "Debe acreditarse al menos una de las causales legales. La demanda se dirige contra los demás herederos o interesados en la validez del testamento.",
+                "La consecuencia jurídica de los defectos del testamento depende de la naturaleza de la causal invocada y de las reglas de nulidad aplicables; debe distinguirse entre nulidad absoluta y relativa, y determinarse si el defecto afecta la capacidad, el consentimiento, las solemnidades o el contenido del acto."
+              ],
               "antePresenta": "Ante el juez de familia del domicilio pertinente, o en su defecto el juez civil.",
               "partes": "",
               "caracteristicas": [
@@ -1177,8 +1984,14 @@ const SITE_DATA = {
                 "Poder al abogado."
               ],
               "material": [
-                "Código Civil, artículos 1061, 1063 y concordantes (requisitos y vicios del testamento).",
-                "Código Civil, artículos 1740 a 1743 (nulidad absoluta y relativa, en lo aplicable)."
+                {
+                  "texto": "Código Civil, artículos 1061, 1063 y concordantes (requisitos y vicios del testamento).",
+                  "url": null
+                },
+                {
+                  "texto": "Código Civil, artículos 1740 a 1743 (nulidad absoluta y relativa, en lo aplicable).",
+                  "url": null
+                }
               ]
             },
             {
@@ -1186,7 +1999,9 @@ const SITE_DATA = {
               "titulo": "Reforma del testamento (acción de reforma por lesión a la legítima)",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo",
-              "queEs": "Es la acción que pueden ejercer los legitimarios (hijos, cónyuge y, a falta de estos, otros asignatarios forzosos) cuando el testador dispuso de sus bienes vulnerando las asignaciones forzosas que la ley les reconoce (legítima rigorosa o efectiva, porción conyugal). No busca anular el testamento, sino ajustarlo para que se respeten esas asignaciones.",
+              "queEs": [
+                "Es la acción que pueden ejercer los legitimarios (hijos, cónyuge y, a falta de estos, otros asignatarios forzosos) cuando el testador dispuso de sus bienes vulnerando las asignaciones forzosas que la ley les reconoce (legítima rigorosa o efectiva, porción conyugal). No busca anular el testamento, sino ajustarlo para que se respeten esas asignaciones."
+              ],
               "comoFunciona": "El juez revisa si el testamento efectivamente desconoció la legítima u otra asignación forzosa y, de ser así, ordena reformar las disposiciones testamentarias en la medida necesaria para restablecer el derecho del legitimario afectado.",
               "antePresenta": "Ante el juez de familia del domicilio.",
               "partes": "",
@@ -1206,7 +2021,10 @@ const SITE_DATA = {
                 "Poder al abogado."
               ],
               "material": [
-                "Código Civil, artículo 1226 y artículos relativos a las asignaciones forzosas y a la acción de reforma del testamento (Libro III, título de las asignaciones forzosas)."
+                {
+                  "texto": "Código Civil, artículo 1226 y artículos relativos a las asignaciones forzosas y a la acción de reforma del testamento (Libro III, título de las asignaciones forzosas).",
+                  "url": null
+                }
               ]
             },
             {
@@ -1234,7 +2052,10 @@ const SITE_DATA = {
                 "Poder al abogado."
               ],
               "material": [
-                "Código Civil, artículos 1025 y siguientes, con las modificaciones introducidas por la Ley 1893 de 2018 y demás normas concordantes."
+                {
+                  "texto": "Código Civil, artículos 1025 y siguientes, con las modificaciones introducidas por la Ley 1893 de 2018 y demás normas concordantes.",
+                  "url": null
+                }
               ]
             },
             {
@@ -1242,7 +2063,9 @@ const SITE_DATA = {
               "titulo": "Desheredamiento",
               "formato": "declarativoDetallado",
               "tipoProceso": "Declarativo (normalmente se discute dentro de un proceso sobre la validez o eficacia del testamento que contiene la cláusula de desheredamiento)",
-              "queEs": "Es la disposición mediante la cual el testador priva a un legitimario de todo o parte de su legítima, por una causa legal expresamente señalada en el testamento (por ejemplo, injuria grave contra el testador). A diferencia de la indignidad, aquí es el propio causante quien, en vida y mediante testamento, decide excluir al heredero.",
+              "queEs": [
+                "Es la disposición mediante la cual el testador priva a un legitimario de todo o parte de su legítima, por una causa legal expresamente señalada en el testamento (por ejemplo, injuria grave contra el testador). A diferencia de la indignidad, aquí es el propio causante quien, en vida y mediante testamento, decide excluir al heredero."
+              ],
               "comoFunciona": "El desheredamiento debe fundarse en una causal legal, expresarse en el testamento y, si es controvertido después de la muerte del testador (por ejemplo, porque el desheredado niega la causal), se discute mediante proceso declarativo ante el juez.",
               "antePresenta": "Ante el juez de familia del domicilio pertinente, cuando se controvierte la validez o procedencia del desheredamiento.",
               "partes": "",
@@ -1255,7 +2078,10 @@ const SITE_DATA = {
                 "Poder al abogado."
               ],
               "material": [
-                "Código Civil, artículo 1266, título de las asignaciones forzosas y del desheredamiento."
+                {
+                  "texto": "Código Civil, artículo 1266, título de las asignaciones forzosas y del desheredamiento.",
+                  "url": null
+                }
               ]
             }
           ]
