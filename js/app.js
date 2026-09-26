@@ -105,6 +105,14 @@ function renderProcesoDetalle(id) {
   const tipoObj = ramaObj.tipos[tipo];
   setHeader(proceso.titulo, `Inicio › ${ramaObj.nombre} › ${tipoObj.nombre}`, true);
 
+  /* Los procesos declarativos (sección "Procesos declarativos") usan una
+     ficha propia: Qué es / Cómo funciona / Ante quién / Partes /
+     Características, más tres botones (Etapas, Documentos, Material para
+     revisar). No afecta el render de los demás tipos de proceso. */
+  if (proceso.formato === "declarativoDetallado") {
+    return renderProcesoDeclarativo(rama, tipo, proceso);
+  }
+
   app.innerHTML = `
     <div class="proc-wrap">
       <span class="placeholder-tag">Contenido de ejemplo</span>
@@ -126,6 +134,68 @@ function renderProcesoDetalle(id) {
   `;
 
   renderQuiz(proceso.quiz);
+}
+
+/* ---------- ficha de "Procesos declarativos" ---------- */
+
+function renderProcesoDeclarativo(ramaKey, tipoKey, proceso) {
+  const bloque = (etiqueta, texto) =>
+    texto ? `<div class="lbl">${etiqueta}</div><p>${texto}</p>` : "";
+
+  const lista = (etiqueta, items) =>
+    items && items.length
+      ? `<div class="lbl">${etiqueta}</div><ul>${items.map((x) => `<li>${x}</li>`).join("")}</ul>`
+      : "";
+
+  app.innerHTML = `
+    <div class="proc-wrap decl-wrap">
+      <a class="decl-back" href="#/ramas/${ramaKey}/${tipoKey}">‹ Volver a Procesos declarativos</a>
+      <div class="proc-card">
+        <h3>${proceso.titulo}</h3>
+        ${proceso.tipoProceso ? `<span class="decl-tipo-pill">${proceso.tipoProceso}</span>` : ""}
+        ${bloque("¿Qué es?", proceso.queEs)}
+        ${bloque("¿Cómo funciona?", proceso.comoFunciona)}
+        ${bloque("¿Quién puede iniciarlo? / ¿Ante quién se presenta?", proceso.antePresenta)}
+        ${bloque("Partes que intervienen", proceso.partes)}
+        ${lista("Características y aspectos relevantes", proceso.caracteristicas)}
+      </div>
+
+      <div class="decl-tabs">
+        <button class="decl-tab-btn" data-panel="etapas">ETAPAS</button>
+        <button class="decl-tab-btn" data-panel="documentos">DOCUMENTOS</button>
+        <button class="decl-tab-btn" data-panel="material">Material para revisar</button>
+      </div>
+      <div id="declPanel" class="decl-panel"></div>
+    </div>
+  `;
+
+  const panelEl = document.getElementById("declPanel");
+  const panelesContenido = {
+    etapas: lista("Etapas del proceso", proceso.etapas),
+    documentos: lista("Documentos necesarios", proceso.documentos),
+    material: lista("Material para revisar", proceso.material)
+  };
+  const botones = Array.from(document.querySelectorAll(".decl-tab-btn"));
+
+  function mostrarPanel(key, btn) {
+    const yaActivo = btn.classList.contains("active");
+    botones.forEach((b) => b.classList.remove("active"));
+    if (yaActivo) {
+      panelEl.innerHTML = "";
+      panelEl.classList.remove("show");
+      return;
+    }
+    btn.classList.add("active");
+    panelEl.innerHTML = panelesContenido[key] || `<p>No hay información disponible en el documento fuente para esta sección.</p>`;
+    panelEl.classList.add("show");
+    if (typeof panelEl.scrollIntoView === "function") {
+      panelEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }
+
+  botones.forEach((btn) => {
+    btn.addEventListener("click", () => mostrarPanel(btn.dataset.panel, btn));
+  });
 }
 
 /* ---------- mini-quiz por proceso ---------- */
