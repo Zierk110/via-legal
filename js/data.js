@@ -11,7 +11,7 @@ const SITE_DATA = {
       nombre: "Familia",
       activa: true,
       color: "#B5563C",
-      imagen: "assets/images/rama-familia.jpg",
+      imagen: "assets/images/rama-familia.jpeg",  
       descripcion: "Procesos relacionados con custodia, divorcio, alimentos y otros asuntos familiares.",
       tipos: {
         ejecutivo: {
@@ -2126,7 +2126,7 @@ const SITE_DATA = {
       nombre: "Civil",
       activa: false,
       color: "#6B4E9C",
-      imagen: "assets/images/rama-civil.jpg",
+      imagen: "assets/images/rama-civil.jpeg",
       descripcion: "Procesos entre particulares sobre contratos, obligaciones, propiedad y responsabilidad civil.",
       tipos: {}
     },
@@ -2134,7 +2134,7 @@ const SITE_DATA = {
       nombre: "Comercial",
       activa: false,
       color: "#2F7A6B",
-      imagen: "assets/images/rama-comercial.jpg",
+      imagen: "assets/images/rama-comercial.jpeg",
       descripcion: "Procesos relacionados con sociedades, contratos mercantiles y conflictos entre empresas.",
       tipos: {}
     },
@@ -2142,7 +2142,7 @@ const SITE_DATA = {
       nombre: "Constitucional",
       activa: false,
       color: "#16233F",
-      imagen: "assets/images/rama-constitucional.jpg",
+      imagen: "assets/images/rama-constitucional.jpeg",
       descripcion: "Procesos para proteger derechos fundamentales, como la tutela y otras acciones constitucionales.",
       tipos: {}
     }
