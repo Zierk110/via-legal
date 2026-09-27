@@ -6,8 +6,9 @@
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
-const appTitle = document.getElementById("appTitle");
 const crumbEl = document.getElementById("crumb");
+const subbarEl = document.getElementById("subbar");
+const mainNavEl = document.getElementById("mainNav");
 
 function findProceso(id) {
   for (const ramaKey in SITE_DATA.ramas) {
@@ -21,26 +22,44 @@ function findProceso(id) {
   return null;
 }
 
-function setHeader(title, crumb, showBack) {
-  appTitle.textContent = title;
-  crumbEl.textContent = crumb;
-  backBtn.classList.toggle("show", showBack);
+/* crumb: texto del breadcrumb (vacío/omitido = sin barra secundaria, como
+   en Inicio). showBack: si se muestra la flecha de volver. activeRoute:
+   "home" | "ramas" para resaltar el enlace correspondiente en la nav. */
+function setHeader(crumb, showBack, activeRoute) {
+  if (crumb) {
+    crumbEl.textContent = crumb;
+    subbarEl.classList.add("show");
+  } else {
+    subbarEl.classList.remove("show");
+  }
+  backBtn.classList.toggle("show", !!showBack);
+
+  mainNavEl.querySelectorAll(".nav-link").forEach((a) => {
+    a.classList.toggle("active", a.dataset.route === activeRoute);
+  });
 }
 
 /* ---------- pantallas ---------- */
 
 function renderHome() {
-  setHeader("Vía Legal", "Inicio", false);
+  setHeader("", false, "home");
   app.innerHTML = `
-    <span class="hero-tag">Orientación jurídica</span>
-    <h1>Entiende tu proceso legal, paso a paso.</h1>
-    <p class="lead">Un espacio para aprender, en lenguaje claro, cómo funcionan los procesos jurídicos de cada rama del derecho.</p>
-    <a class="cta-btn" href="#/ramas"><span>Explorar ramas del derecho</span><span>›</span></a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="hero-tag">Orientación jurídica</span>
+        <h1>Entiende tu proceso legal, paso a paso.</h1>
+        <p class="lead">Un espacio para aprender, en lenguaje claro, cómo funcionan los procesos jurídicos de cada rama del derecho.</p>
+        <a class="cta-btn" href="#/ramas"><span>Explorar ramas del derecho</span><span>›</span></a>
+      </div>
+      <div class="hero-art">
+        <img src="assets/images/pagina principal.jpg" alt="Ilustración de una balanza de justicia y un libro de leyes" loading="lazy">
+      </div>
+    </div>
   `;
 }
 
 function renderRamas() {
-  setHeader("Ramas del derecho", "Inicio › Ramas", true);
+  setHeader("Inicio › Ramas", true, "ramas");
   const cards = Object.entries(SITE_DATA.ramas)
     .map(([key, r]) => {
       if (r.activa) {
@@ -67,10 +86,25 @@ function renderRamas() {
   app.innerHTML = `<div class="branch-pill">Rama del derecho</div><div class="photo-grid">${cards}</div>`;
 }
 
+/* Subnav con las 4 ramas: la actual queda resaltada; las que aún no están
+   activas se muestran como texto inerte (no navegan a ningún lado). */
+function ramaSubnav(ramaActualKey) {
+  const items = Object.entries(SITE_DATA.ramas)
+    .map(([key, r]) => {
+      const esActual = key === ramaActualKey;
+      if (r.activa) {
+        return `<a class="rama-subnav-item${esActual ? " current" : ""}" href="#/ramas/${key}">${r.nombre}</a>`;
+      }
+      return `<span class="rama-subnav-item disabled">${r.nombre}</span>`;
+    })
+    .join("");
+  return `<div class="rama-subnav">${items}</div>`;
+}
+
 function renderTipos(ramaKey) {
   const rama = SITE_DATA.ramas[ramaKey];
   if (!rama || !rama.activa) return (location.hash = "#/ramas");
-  setHeader(rama.nombre, `Inicio › Ramas › ${rama.nombre}`, true);
+  setHeader(`Inicio › Ramas › ${rama.nombre}`, true, "ramas");
   const cards = Object.entries(rama.tipos)
     .map(
       ([key, t]) => `
@@ -83,14 +117,18 @@ function renderTipos(ramaKey) {
       </div>`
     )
     .join("");
-  app.innerHTML = `<div class="branch-pill">${rama.nombre} · Tipos de proceso</div><div class="photo-grid">${cards}</div>`;
+  app.innerHTML = `
+    ${ramaSubnav(ramaKey)}
+    <div class="branch-pill">${rama.nombre} · Tipos de proceso</div>
+    <div class="photo-grid">${cards}</div>
+  `;
 }
 
 function renderProcesosBotones(ramaKey, tipoKey) {
   const rama = SITE_DATA.ramas[ramaKey];
   const tipo = rama && rama.tipos[tipoKey];
   if (!tipo) return (location.hash = `#/ramas/${ramaKey}`);
-  setHeader(tipo.nombre, `Inicio › ${rama.nombre} › ${tipo.nombre}`, true);
+  setHeader(`Inicio › ${rama.nombre} › ${tipo.nombre}`, true, "ramas");
 
   /* Solo "Procesos declarativos" se ordena alfabéticamente y usa botones
      centrados; los demás tipos de proceso conservan su orden y diseño de
@@ -117,7 +155,7 @@ function renderProcesoDetalle(id) {
   const { rama, tipo, proceso } = found;
   const ramaObj = SITE_DATA.ramas[rama];
   const tipoObj = ramaObj.tipos[tipo];
-  setHeader(proceso.titulo, `Inicio › ${ramaObj.nombre} › ${tipoObj.nombre}`, true);
+  setHeader(`Inicio › ${ramaObj.nombre} › ${tipoObj.nombre} › ${proceso.titulo}`, true, "ramas");
 
   /* Los procesos declarativos (sección "Procesos declarativos") usan una
      ficha propia: Qué es / Cómo funciona / Ante quién / Partes /

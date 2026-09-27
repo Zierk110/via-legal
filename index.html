@@ -15,21 +15,22 @@
 
 <header class="appbar">
   <div class="appbar-inner">
-    <div class="brand-row">
+    <a class="brand-row" href="#/" aria-label="Ir al inicio de Vía Legal">
       <svg class="brand-mark" width="30" height="30" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
         <rect width="34" height="34" rx="9" fill="#0F1830"/>
         <text x="17" y="23" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">V</text>
         <rect x="7" y="25" width="20" height="2" rx="1" fill="#C9982F"/>
       </svg>
       <span class="brand-word">Vía Legal</span>
-    </div>
-    <div class="appbar-row">
-      <button class="back-btn" id="backBtn" aria-label="Volver">‹</button>
-      <div>
-        <div class="appbar-title" id="appTitle">Vía Legal</div>
-        <div class="crumb" id="crumb">Inicio</div>
-      </div>
-    </div>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#/" class="nav-link" data-route="home">Inicio</a>
+      <a href="#/ramas" class="nav-link" data-route="ramas">Ramas</a>
+    </nav>
+  </div>
+  <div class="subbar" id="subbar">
+    <button class="back-btn" id="backBtn" aria-label="Volver">‹</button>
+    <div class="crumb" id="crumb"></div>
   </div>
 </header>
 
