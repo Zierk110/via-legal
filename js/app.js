@@ -22,12 +22,16 @@ function findProceso(id) {
   return null;
 }
 
-/* crumb: texto del breadcrumb (vacío/omitido = sin barra secundaria, como
-   en Inicio). showBack: si se muestra la flecha de volver. activeRoute:
-   "home" | "ramas" para resaltar el enlace correspondiente en la nav. */
-function setHeader(crumb, showBack, activeRoute) {
-  if (crumb) {
-    crumbEl.textContent = crumb;
+/* crumbItems: arreglo de { label, href? } — el último sin href es la
+   página actual (no clicable); los anteriores navegan directo a ese
+   nivel. Un arreglo vacío/omitido = sin barra secundaria, como en Inicio.
+   showBack: si se muestra la flecha de volver. activeRoute: "home" |
+   "ramas" para resaltar el enlace correspondiente en la nav. */
+function setHeader(crumbItems, showBack, activeRoute) {
+  if (crumbItems && crumbItems.length) {
+    crumbEl.innerHTML = crumbItems
+      .map((c) => (c.href ? `<a href="${c.href}">${c.label}</a>` : `<span>${c.label}</span>`))
+      .join(' <span class="crumb-sep">›</span> ');
     subbarEl.classList.add("show");
   } else {
     subbarEl.classList.remove("show");
@@ -42,7 +46,7 @@ function setHeader(crumb, showBack, activeRoute) {
 /* ---------- pantallas ---------- */
 
 function renderHome() {
-  setHeader("", false, "home");
+  setHeader([], false, "home");
   app.innerHTML = `
     <div class="hero-grid">
       <div class="hero-copy">
@@ -59,7 +63,7 @@ function renderHome() {
 }
 
 function renderRamas() {
-  setHeader("Inicio › Ramas", true, "ramas");
+  setHeader([{ label: "Inicio", href: "#/" }, { label: "Ramas" }], true, "ramas");
   const cards = Object.entries(SITE_DATA.ramas)
     .map(([key, r]) => {
       if (r.activa) {
@@ -104,7 +108,11 @@ function ramaSubnav(ramaActualKey) {
 function renderTipos(ramaKey) {
   const rama = SITE_DATA.ramas[ramaKey];
   if (!rama || !rama.activa) return (location.hash = "#/ramas");
-  setHeader(`Inicio › Ramas › ${rama.nombre}`, true, "ramas");
+  setHeader(
+    [{ label: "Inicio", href: "#/" }, { label: "Ramas", href: "#/ramas" }, { label: rama.nombre }],
+    true,
+    "ramas"
+  );
   const cards = Object.entries(rama.tipos)
     .map(
       ([key, t]) => `
@@ -128,7 +136,15 @@ function renderProcesosBotones(ramaKey, tipoKey) {
   const rama = SITE_DATA.ramas[ramaKey];
   const tipo = rama && rama.tipos[tipoKey];
   if (!tipo) return (location.hash = `#/ramas/${ramaKey}`);
-  setHeader(`Inicio › ${rama.nombre} › ${tipo.nombre}`, true, "ramas");
+  setHeader(
+    [
+      { label: "Inicio", href: "#/" },
+      { label: rama.nombre, href: `#/ramas/${ramaKey}` },
+      { label: tipo.nombre },
+    ],
+    true,
+    "ramas"
+  );
 
   /* Solo "Procesos declarativos" se ordena alfabéticamente y usa botones
      centrados; los demás tipos de proceso conservan su orden y diseño de
@@ -146,7 +162,7 @@ function renderProcesosBotones(ramaKey, tipoKey) {
     )
     .join("");
   const gridClass = esDeclarativo ? "stack-grid decl-grid" : "stack-grid";
-  app.innerHTML = `<div class="branch-pill">Procesos de ${tipo.nombre.toLowerCase()}</div><div class="${gridClass}">${botones}</div>`;
+  app.innerHTML = `<h2 class="section-title">Procesos de ${tipo.nombre}</h2><div class="${gridClass}">${botones}</div>`;
 }
 
 function renderProcesoDetalle(id) {
@@ -155,13 +171,23 @@ function renderProcesoDetalle(id) {
   const { rama, tipo, proceso } = found;
   const ramaObj = SITE_DATA.ramas[rama];
   const tipoObj = ramaObj.tipos[tipo];
-  setHeader(`Inicio › ${ramaObj.nombre} › ${tipoObj.nombre} › ${proceso.titulo}`, true, "ramas");
+  const esDeclarativo = proceso.formato === "declarativoDetallado";
 
-  /* Los procesos declarativos (sección "Procesos declarativos") usan una
-     ficha propia: Qué es / Cómo funciona / Ante quién / Partes /
-     Características, más tres botones (Etapas, Documentos, Material para
-     revisar). No afecta el render de los demás tipos de proceso. */
-  if (proceso.formato === "declarativoDetallado") {
+  /* Los procesos declarativos ya traen su propio enlace "‹ Volver a...";
+     se oculta la flecha del header para no repetir el mismo control dos
+     veces en la misma pantalla. */
+  setHeader(
+    [
+      { label: "Inicio", href: "#/" },
+      { label: ramaObj.nombre, href: `#/ramas/${rama}` },
+      { label: tipoObj.nombre, href: `#/ramas/${rama}/${tipo}` },
+      { label: proceso.titulo },
+    ],
+    !esDeclarativo,
+    "ramas"
+  );
+
+  if (esDeclarativo) {
     return renderProcesoDeclarativo(rama, tipo, proceso);
   }
 
