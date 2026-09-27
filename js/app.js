@@ -146,23 +146,25 @@ function renderProcesosBotones(ramaKey, tipoKey) {
     "ramas"
   );
 
-  /* Solo "Procesos declarativos" se ordena alfabéticamente y usa botones
-     centrados; los demás tipos de proceso conservan su orden y diseño de
-     siempre. */
-  const esDeclarativo = tipoKey === "declarativo";
-  const listaProcesos = esDeclarativo
-    ? [...tipo.procesos].sort((a, b) => a.titulo.localeCompare(b.titulo, "es"))
-    : tipo.procesos;
+  /* Todos los tipos de proceso se ordenan alfabéticamente y usan tarjetas
+     centradas. Un tipo puede además traer "notas": menciones cortas no
+     clicables (como "Alimentos") que se muestran como una tarjeta más,
+     con su propio subtítulo, sin llevar a ninguna ficha. */
+  const notas = (tipo.notas || []).map((n) => ({ esNota: true, titulo: n.titulo, texto: n.texto }));
+  const reales = tipo.procesos.map((p) => ({ esNota: false, titulo: p.titulo, id: p.id }));
+  const items = [...notas, ...reales].sort((a, b) => a.titulo.localeCompare(b.titulo, "es"));
 
-  const botones = listaProcesos
-    .map((p) =>
-      esDeclarativo
-        ? `<a class="proc-btn proc-btn-centered" href="#/proceso/${p.id}"><span>${p.titulo}</span></a>`
-        : `<a class="proc-btn" href="#/proceso/${p.id}"><span>${p.titulo}</span><span>›</span></a>`
+  const botones = items
+    .map((item) =>
+      item.esNota
+        ? `<div class="proc-btn proc-btn-centered proc-note">
+             <span class="proc-note-title">${item.titulo}</span>
+             <span class="proc-note-sub">${item.texto}</span>
+           </div>`
+        : `<a class="proc-btn proc-btn-centered" href="#/proceso/${item.id}"><span>${item.titulo}</span></a>`
     )
     .join("");
-  const gridClass = esDeclarativo ? "stack-grid decl-grid" : "stack-grid";
-  app.innerHTML = `<h2 class="section-title">Procesos de ${tipo.nombre}</h2><div class="${gridClass}">${botones}</div>`;
+  app.innerHTML = `<h2 class="section-title">Procesos de ${tipo.nombre}</h2><div class="stack-grid decl-grid">${botones}</div>`;
 }
 
 function renderProcesoDetalle(id) {
@@ -393,5 +395,64 @@ function goBack() {
 }
 backBtn.addEventListener("click", goBack);
 
+/* ---------- búsqueda ---------- */
+
+function buildSearchIndex() {
+  const idx = [];
+  Object.entries(SITE_DATA.ramas).forEach(([ramaKey, rama]) => {
+    if (!rama.activa) return;
+    Object.entries(rama.tipos).forEach(([tipoKey, tipo]) => {
+      tipo.procesos.forEach((p) => {
+        idx.push({ id: p.id, titulo: p.titulo, rama: rama.nombre, tipo: tipo.nombre });
+      });
+    });
+  });
+  return idx;
+}
+
+function setupSearch() {
+  const input = document.getElementById("siteSearch");
+  const results = document.getElementById("searchResults");
+  if (!input || !results) return;
+  const index = buildSearchIndex();
+
+  function draw(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.classList.remove("show");
+      results.innerHTML = "";
+      return;
+    }
+    const matches = index.filter((x) => x.titulo.toLowerCase().includes(q)).slice(0, 8);
+    results.innerHTML = matches.length
+      ? matches
+          .map(
+            (m) =>
+              `<a class="search-result-item" href="#/proceso/${m.id}">
+                 <div class="search-result-title">${m.titulo}</div>
+                 <div class="search-result-path">${m.rama} › ${m.tipo}</div>
+               </a>`
+          )
+          .join("")
+      : `<div class="search-empty">Sin resultados para “${query}”.</div>`;
+    results.classList.add("show");
+  }
+
+  input.addEventListener("input", () => draw(input.value));
+  input.addEventListener("focus", () => {
+    if (input.value) draw(input.value);
+  });
+  results.addEventListener("click", () => {
+    results.classList.remove("show");
+    input.value = "";
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".search-wrap")) results.classList.remove("show");
+  });
+}
+
 window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", router);
+window.addEventListener("DOMContentLoaded", () => {
+  setupSearch();
+  router();
+});

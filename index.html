@@ -23,10 +23,17 @@
       </svg>
       <span class="brand-word">Vía Legal</span>
     </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="#/" class="nav-link" data-route="home">Inicio</a>
-      <a href="#/ramas" class="nav-link" data-route="ramas">Ramas</a>
-    </nav>
+    <div class="nav-search-group">
+      <nav class="main-nav" id="mainNav">
+        <a href="#/" class="nav-link" data-route="home">Inicio</a>
+        <a href="#/ramas" class="nav-link" data-route="ramas">Ramas</a>
+      </nav>
+      <div class="search-wrap">
+        <input type="search" id="siteSearch" class="search-input" placeholder="Buscar…" autocomplete="off">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
   </div>
   <div class="subbar" id="subbar">
     <button class="back-btn" id="backBtn" aria-label="Volver">‹</button>

@@ -19,31 +19,29 @@ const SITE_DATA = {
           descripcion: "Procesos para exigir el cumplimiento de una obligación familiar ya establecida.",
           color: "#C9982F",
           imagen: "assets/images/tipo-ejecutivo.jpg",
+          notas: [{ titulo: "Alimentos", texto: "Presta mérito ejecutivo." }],
           procesos: [
-            {
-              id: "ejecutivo-alimentos",
-              titulo: "Ejecutivo de alimentos",
-              consiste: "Se exige ante un juez el pago de cuotas de alimentos ya fijadas y que dejaron de cancelarse.",
-              aplica: "Cuando existe una obligación previa (sentencia o acta de conciliación) y hay cuotas atrasadas.",
-              requisitos: ["Título que fije la obligación", "Liquidación de lo adeudado", "Poder si actúa un abogado"],
-              video: { titulo: "Audiencia de ejecutivo de alimentos", url: "" },
-              quiz: [
-                { pregunta: "¿Cuándo se usa un ejecutivo de alimentos?", opciones: ["Cuando aún no existe ninguna obligación fijada", "Cuando ya existe una obligación y hay cuotas atrasadas", "Cuando se quiere adoptar un menor"], correcta: 1 },
-                { pregunta: "¿Qué se necesita para iniciarlo?", opciones: ["Solo la cédula", "Un título que fije la obligación de alimentos", "Una escritura pública de venta"], correcta: 1 }
-              ]
-            },
-            {
-              id: "ejecutivo-cuotas-acuerdo",
-              titulo: "Ejecutivo de cuotas atrasadas por acuerdo",
-              consiste: "Cobro de cuotas pactadas en un acuerdo privado de alimentos, cuando ese acuerdo tiene mérito ejecutivo.",
-              aplica: "Cuando existe un acuerdo firmado entre las partes y una de ellas incumple.",
-              requisitos: ["Acuerdo firmado", "Prueba del incumplimiento"],
-              video: { titulo: "Audiencia por incumplimiento de acuerdo", url: "" },
-              quiz: [
-                { pregunta: "¿Qué documento es indispensable aquí?", opciones: ["Un acuerdo firmado entre las partes", "Un certificado de tradición", "Un contrato comercial"], correcta: 0 }
-              ]
-            }
-          ]
+              {
+                "id": "ejecutivo-relacionado-sucesion",
+                "titulo": "Proceso ejecutivo relacionado con la sucesión",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Ejecutivo",
+                "queEs": "Cuando de la sentencia, escritura pública u otro documento que preste mérito ejecutivo resulte una obligación clara, expresa y exigible a cargo de una persona, su cumplimiento puede reclamarse mediante proceso ejecutivo, conforme a los artículos 422 y siguientes del Código General del Proceso.",
+                "comoFunciona": "Se presenta demanda ejecutiva acompañada del título (sentencia aprobatoria de la partición, escritura de liquidación notarial, u otro documento que preste mérito ejecutivo), solicitando el pago o la entrega correspondiente, con la posibilidad de solicitar medidas cautelares (embargo y secuestro).",
+                "antePresenta": "Ante el juez competente, según las reglas generales de competencia por cuantía y territorio del Código General del Proceso.",
+                "documentos": [
+                  "Título ejecutivo (sentencia aprobatoria de partición, escritura pública de liquidación notarial, u otro documento que preste mérito ejecutivo).",
+                  "Prueba del incumplimiento (falta de pago o entrega).",
+                  "Poder al abogado."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, título del proceso ejecutivo (artículos 422 y siguientes).",
+                    "url": null
+                  }
+                ]
+              }
+            ]
         },
         declarativo: {
           "nombre": "Declarativo",
@@ -2092,29 +2090,603 @@ const SITE_DATA = {
           color: "#3E6FA5",
           imagen: "assets/images/tipo-jurisdiccion-voluntaria.jpg",
           procesos: [
-            {
-              id: "conciliacion-familiar",
-              titulo: "Audiencia de conciliación familiar",
-              consiste: "Espacio dirigido por un juez o conciliador para que las partes lleguen a un acuerdo antes de litigar.",
-              aplica: "Como paso previo obligatorio en varios conflictos familiares.",
-              requisitos: ["Solicitud de conciliación", "Identificación de las partes"],
-              video: { titulo: "Cómo se ve una audiencia de conciliación", url: "" },
-              quiz: [
-                { pregunta: "¿Para qué sirve la conciliación familiar?", opciones: ["Para litigar directamente", "Para llegar a un acuerdo antes de litigar", "Para registrar un nacimiento"], correcta: 1 }
-              ]
-            },
-            {
-              id: "interdiccion",
-              titulo: "Proceso de interdicción",
-              consiste: "Determina judicialmente si una persona necesita un representante legal por no poder administrar sus asuntos.",
-              aplica: "Cuando una persona, por su condición, no puede tomar decisiones por sí misma.",
-              requisitos: ["Dictamen médico", "Pruebas de la condición de la persona"],
-              video: { titulo: "Audiencia de interdicción", url: "" },
-              quiz: [
-                { pregunta: "¿Qué prueba es clave en este proceso?", opciones: ["Un dictamen médico", "Un contrato de arriendo", "Una factura"], correcta: 0 }
-              ]
-            }
-          ]
+              {
+                "id": "licencia-enajenar-gravar-bienes-menor",
+                "titulo": "Licencia para enajenar o gravar bienes del menor",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": [
+                  "Es el trámite mediante el cual el padre, madre o guardador solicita autorización judicial para enajenar, gravar o realizar determinados actos sobre los bienes de un menor, cuando la ley exige obtener previamente una licencia judicial.",
+                  "Aquí no existe necesariamente una controversia entre dos partes; busca que el juez controle y autorice un acto que afecta los bienes del menor."
+                ],
+                "comoFunciona": [
+                  "La persona que administra los bienes explica al juez qué acto quiere realizar y por qué resulta necesario o conveniente para el menor, para que el juez revise la documentación y determine si concede o no la autorización.",
+                  "Se necesita cuando la ley exige autorización judicial previa para realizar el acto sobre los bienes del menor; por ejemplo, tratándose de bienes raíces pertenecientes a un hijo, el artículo 303 del Código Civil exige autorización judicial para su enajenación o hipoteca."
+                ],
+                "antePresenta": "Ante el juez de familia competente, mediante el trámite de jurisdicción voluntaria.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Admisión.",
+                  "Aporte y valoración de pruebas.",
+                  "Intervención de quienes deban participar.",
+                  "Decisión judicial."
+                ],
+                "documentos": [
+                  "Registro civil del menor, para acreditar su identidad y filiación.",
+                  "Documento que acredite la representación legal de quien solicita la licencia.",
+                  "Certificado de tradición y libertad, si se trata de un inmueble.",
+                  "Avalúo o información sobre el valor del bien, cuando resulte necesario para que el juez determine las condiciones de la operación.",
+                  "Documento que explique el acto que se pretende realizar, por ejemplo una propuesta de compraventa.",
+                  "Justificación de la necesidad o conveniencia del acto para el menor."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículos 577 y 581.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código Civil, artículo 303.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "restitucion-internacional-ninos",
+                "titulo": "Restitución internacional de niños, niñas y adolescentes",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": [
+                  "Es el mecanismo mediante el cual se busca lograr el retorno de un niño, niña o adolescente que fue trasladado o retenido ilícitamente en otro Estado, cuando se cumplen los requisitos establecidos por la normativa internacional aplicable; por ejemplo, la Ley 2524 de 2025 exige, entre otros, el formulario correspondiente, información que permita localizar al niño, copia del registro civil de nacimiento, documento de identidad del solicitante y fotografías recientes.",
+                  "Su finalidad principal es restablecer la situación anterior al traslado o retención ilícita; por ello, el proceso de restitución no equivale a decidir definitivamente quién tendrá la custodia."
+                ],
+                "comoFunciona": [
+                  "La autoridad analiza si el menor tenía su residencia habitual en otro Estado, si el traslado o retención fue ilícito, y si existe alguna de las excepciones que permiten negar la restitución, dependiendo del convenio internacional aplicable. En Colombia este asunto está relacionado principalmente con el Convenio de La Haya de 1980 sobre los aspectos civiles de la sustracción internacional de menores.",
+                  "Una vez radicado el informe de restitución, si el juez lo encuentra completo, debe emitir el mandamiento de restitución en un plazo no mayor de tres (3) días. La persona requerida tendrá tres (3) días, contados desde la notificación, para manifestar si accede al retorno o se opone alegando únicamente las excepciones permitidas por el convenio o norma internacional aplicable."
+                ],
+                "antePresenta": "En los casos judiciales correspondientes interviene el juez de familia; la Ley 1098 de 2006 incluye la restitución internacional dentro de los asuntos atribuidos al juez de familia.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Verificación de los requisitos.",
+                  "Actuación ante la autoridad competente.",
+                  "Intervención de las partes.",
+                  "Práctica de pruebas, cuando sean necesarias.",
+                  "Análisis de las condiciones de restitución y de las excepciones.",
+                  "Decisión."
+                ],
+                "documentos": [
+                  "Registro civil del menor.",
+                  "Documentos de identificación.",
+                  "Pruebas sobre la residencia habitual del niño antes del traslado.",
+                  "Documentos que acrediten la custodia o los derechos de quien solicita la restitución.",
+                  "Pruebas sobre el traslado o retención.",
+                  "Decisiones judiciales o administrativas relacionadas con custodia, si existen.",
+                  "Información que permita identificar el lugar donde se encuentra el menor."
+                ],
+                "material": [
+                  {
+                    "texto": "Ley 2524 de 2025.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 173 de 1994.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 880 de 2004.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 1098 de 2006.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Convenio de La Haya de 1980 sobre los Aspectos Civiles de la Sustracción Internacional de Menores.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Convención Interamericana sobre Restitución Internacional de Menores.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "autorizacion-judicial-adopcion",
+                "titulo": "Autorización judicial requerida en casos de adopción",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el trámite de jurisdicción voluntaria mediante el cual se solicita la autorización judicial que la ley exige en determinados asuntos relacionados con la adopción. Se diferencia del proceso de adopción porque aquí el juez no decreta directamente la adopción, sino que resuelve sobre la autorización específica que la ley exige para el caso concreto; el artículo 577, numeral 7, del Código General del Proceso incluye expresamente esta autorización dentro de los asuntos que se tramitan mediante jurisdicción voluntaria.",
+                "comoFunciona": "La persona interesada presenta la solicitud y acredita las circunstancias que hacen necesaria la autorización; después, el juez revisa los documentos y decide si concede o no la autorización.",
+                "antePresenta": "Ante el juez de familia competente, mediante jurisdicción voluntaria.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Admisión.",
+                  "Aporte y valoración de documentos y pruebas.",
+                  "Intervención de las personas o autoridades que corresponda.",
+                  "Decisión judicial."
+                ],
+                "documentos": [
+                  "Depende del caso concreto; no obstante, en principio se requiere lo siguiente.",
+                  "Documentos de identidad.",
+                  "Registro civil del niño.",
+                  "Documentos que acrediten la situación jurídica del menor.",
+                  "Documentos que expliquen por qué la autorización es necesaria.",
+                  "Las decisiones administrativas o judiciales relacionadas, cuando existan."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículo 577, numeral 7 (incluye expresamente la autorización requerida en caso de adopción dentro de los asuntos de jurisdicción voluntaria).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 1098 de 2006.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "licencia-enajenar-bienes-representados",
+                "titulo": "Licencia para enajenar bienes de representados",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el trámite mediante el cual el padre, madre o guardador solicita autorización judicial para vender o enajenar un bien perteneciente a la persona que representa, cuando la ley exige dicha autorización. En el caso de los menores, se utiliza cuando se pretende realizar un acto sobre sus bienes y la legislación exige control judicial previo.",
+                "comoFunciona": "No existe una controversia que el juez deba resolver entre demandante y demandado: el juez analiza si la persona que representa al menor está facultada para realizar el acto, y si la operación cumple los requisitos legales, como la autorización judicial con conocimiento de causa.",
+                "antePresenta": "Ante el juez de familia competente.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Admisión.",
+                  "Pruebas y documentos.",
+                  "Intervenciones que sean necesarias.",
+                  "Decisión."
+                ],
+                "documentos": [
+                  "Registro civil del menor.",
+                  "Documento que acredite la representación.",
+                  "Certificado de tradición y libertad, si se trata de un inmueble.",
+                  "Avalúo o información del valor del bien.",
+                  "Documento que explique la operación que se pretende realizar.",
+                  "Justificación de la necesidad o conveniencia de la venta.",
+                  "Otros documentos que permitan al juez verificar que el acto beneficia o protege los intereses del representado."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículo 577, numeral 1 (licencia que soliciten los padres o guardadores para enajenar bienes de sus representados, cuando la ley la exija).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código Civil, artículo 303.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "licencia-gravar-bienes-representados",
+                "titulo": "Licencia para gravar bienes de representados",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el trámite mediante el cual el representante de un menor solicita autorización judicial para gravar uno de sus bienes; por ejemplo, cuando legalmente se pretende constituir una garantía sobre este y se requiere licencia judicial.",
+                "comoFunciona": "El juez analiza el acto que se pretende realizar y las razones por las cuales resulta necesario. La finalidad del control judicial es evitar que los bienes del menor sean afectados sin una justificación suficiente.",
+                "antePresenta": "Ante el juez de familia competente.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Admisión.",
+                  "Presentación y práctica de pruebas.",
+                  "Análisis de la necesidad y conveniencia del acto.",
+                  "Decisión judicial."
+                ],
+                "documentos": [
+                  "Registro civil del menor.",
+                  "Documento que acredite la representación legal.",
+                  "Certificado de tradición y libertad del inmueble, si se trata de un bien sujeto a registro.",
+                  "Documento o propuesta del gravamen.",
+                  "Avalúo o información sobre el valor del bien.",
+                  "Justificación de la necesidad del gravamen.",
+                  "Documentos adicionales que permitan establecer las condiciones de la operación."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículo 577, numeral 1 (incluye las licencias para gravar bienes de los representados).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código Civil, artículo 303.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "emancipacion-voluntaria",
+                "titulo": "Emancipación voluntaria",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el trámite mediante el cual se solicita judicialmente la autorización correspondiente para que opere la emancipación voluntaria, en los casos y bajo los requisitos establecidos por el Código Civil. La emancipación voluntaria se produce mediante la declaración de los padres en instrumento público, con el consentimiento del hijo, y requiere autorización judicial con conocimiento de causa, conforme al artículo 313 del Código Civil.",
+                "comoFunciona": "Se presenta la solicitud ante el juez, quien verifica que se cumplan las condiciones legales y que la decisión sea jurídicamente procedente.",
+                "antePresenta": "Ante el juez de familia competente.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Admisión.",
+                  "Verificación de los requisitos.",
+                  "Práctica de pruebas, si son necesarias.",
+                  "Decisión."
+                ],
+                "documentos": [
+                  "Registro civil de nacimiento.",
+                  "Documentos de identidad.",
+                  "Documentos que acrediten el cumplimiento de los requisitos legales.",
+                  "Consentimientos que sean exigidos por la legislación.",
+                  "Las demás pruebas necesarias para demostrar las circunstancias de la emancipación."
+                ],
+                "material": [
+                  {
+                    "texto": "Código Civil, artículo 313.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 577, numeral 2 (licencia para la emancipación voluntaria dentro de la jurisdicción voluntaria).",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "autorizacion-salida-menor-del-pais",
+                "titulo": "Autorización para que un menor salga del país",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": [
+                  "Es la actuación mediante la cual se solicita autorización judicial para que un niño, niña o adolescente pueda salir del territorio colombiano, cuando se presenta la situación prevista por la ley que hace necesaria la intervención del juez; es decir, cuando existe desacuerdo entre sus representantes legales, o entre estos y quien tenga la custodia y el cuidado personal.",
+                  "No debe confundirse con todos los casos de salida del país: cuando existe autorización voluntaria de los padres, el trámite puede realizarse sin acudir al juez."
+                ],
+                "comoFunciona": [
+                  "Cuando uno de los padres no autoriza la salida, o existe la situación que exige intervención judicial, el juez analiza las circunstancias del viaje y decide si la salida resulta compatible con los derechos y el interés superior del menor.",
+                  "No en toda salida del país se necesita la intervención judicial: si ambos padres otorgan voluntariamente la autorización correspondiente, puede realizarse el trámite establecido por la ley sin necesidad de iniciar este proceso judicial."
+                ],
+                "antePresenta": "Ante el juez de familia, en los casos en que la ley atribuye a este la competencia.",
+                "etapas": [
+                  "Presentación de la solicitud.",
+                  "Verificación de los requisitos.",
+                  "Notificación o intervención del otro progenitor, cuando corresponda.",
+                  "Práctica de pruebas.",
+                  "Decisión judicial."
+                ],
+                "documentos": [
+                  "Registro civil de nacimiento del menor.",
+                  "Documento de identidad del menor.",
+                  "Documentos de identidad de los padres.",
+                  "Información del viaje: destino, fechas y motivo.",
+                  "Información sobre la persona que acompañará al menor.",
+                  "Pruebas que expliquen la necesidad del viaje, cuando sean relevantes.",
+                  "Documento que acredite la negativa o imposibilidad de obtener el permiso del otro progenitor, cuando esa sea la razón para acudir al juez."
+                ],
+                "material": [
+                  {
+                    "texto": "Ley 1098 de 2006, artículo 110.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 21, numeral 6.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "proceso-sucesion-liquidatorio",
+                "titulo": "Proceso de sucesión (liquidatorio)",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el proceso mediante el cual se determina quiénes son los herederos y/o legatarios de una persona fallecida (el causante), se identifican y valoran sus bienes y deudas (inventario y avalúos), y finalmente se distribuyen entre los llamados a suceder mediante la partición y adjudicación.",
+                "comoFunciona": "El juez, una vez presentada la demanda con los requisitos legales, declara abierto el proceso de sucesión (artículo 490 CGP) y ordena las notificaciones y emplazamientos correspondientes a quienes puedan tener interés en intervenir. Aunque el trámite es esencialmente de jurisdicción voluntaria (no hay, en principio, «demandado»), pueden surgir controversias específicas durante su curso — como la petición de heredero de mejor o igual derecho (artículo 488 CGP) — que se tramitan como incidente dentro del mismo expediente.",
+                "antePresenta": "Ante el juez del último domicilio del causante en el territorio nacional (artículo 28, numeral 12, CGP); si tuvo varios domicilios, el del asiento principal de sus negocios.",
+                "etapas": [
+                  "Presentación de la demanda de apertura del proceso de sucesión.",
+                  "Auto que declara abierto y radicado el proceso (artículo 490 CGP).",
+                  "Notificación y emplazamiento de quienes se crean con derecho a intervenir.",
+                  "Reconocimiento de herederos, cónyuge/compañero permanente y legatarios.",
+                  "Diligencia de inventarios y avalúos (artículo 501 CGP).",
+                  "Traslado del inventario para objeciones.",
+                  "Trabajo de partición y adjudicación.",
+                  "Sentencia aprobatoria de la partición.",
+                  "Registro de la sentencia (protocolización e inscripción)."
+                ],
+                "documentos": [
+                  "Registro civil de defunción del causante.",
+                  "Registros civiles de nacimiento y/o matrimonio de los presuntos herederos.",
+                  "Relación de bienes y deudas del causante.",
+                  "Testamento, si existe (copia auténtica).",
+                  "Poder al abogado.",
+                  "Certificados de tradición y libertad de los inmuebles, avalúos de otros bienes."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículos 487 y siguientes (trámite general).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 488 (reconocimiento e intervinientes).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 490 (apertura).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 501 (inventarios y avalúos).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 28, numeral 12 (competencia).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código Civil, Libro III (de la sucesión por causa de muerte).",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "sucesion-notarial-mutuo-acuerdo",
+                "titulo": "Sucesión notarial (liquidación de herencia por mutuo acuerdo)",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es la alternativa que permite liquidar ante notario público, sin necesidad de acudir a un juez, las herencias de cualquier cuantía (y la sociedad conyugal, cuando la hay), siempre que exista pleno acuerdo entre todos los herederos, legatarios y el cónyuge o compañero sobreviviente. Es un trámite mucho más rápido y sencillo que el judicial.",
+                "comoFunciona": "El Decreto 902 de 1988 (modificado por el Decreto 1729 de 1989) eliminó la competencia exclusiva de los jueces en la liquidación de herencias, permitiendo acudir a la vía notarial cuando los herederos, legatarios y el cónyuge sobreviviente (o sus cesionarios) están de común acuerdo y lo soliciten por escrito mediante apoderado (abogado titulado e inscrito). El heredero único también puede acogerse a este trámite. Si ya hay un proceso judicial en curso, los interesados pueden optar por trasladarlo a la vía notarial, solicitando al juez la suspensión de la actuación judicial.",
+                "antePresenta": "Se adelanta ante notario, conforme a las reglas de competencia territorial aplicables al trámite sucesoral.",
+                "etapas": [
+                  "Solicitud escrita presentada por apoderado (abogado).",
+                  "Edicto emplazatorio, fijado por 10 días hábiles y publicado, para que se presenten otros interesados (artículo 3, numeral 2, Decreto 902 de 1988).",
+                  "Presentación del inventario y avalúos de los bienes.",
+                  "Elaboración del trabajo de partición y adjudicación (hijuelas).",
+                  "Otorgamiento de la escritura pública que protocoliza la liquidación.",
+                  "Registro de la escritura (para bienes inmuebles)."
+                ],
+                "documentos": [
+                  "Registro civil de defunción del causante.",
+                  "Registros civiles de los herederos y del cónyuge/compañero sobreviviente.",
+                  "Testamento, si lo hay.",
+                  "Inventario de bienes y deudas.",
+                  "Certificados de tradición y libertad de inmuebles.",
+                  "Poder al abogado."
+                ],
+                "material": [
+                  {
+                    "texto": "Decreto 902 de 1988 y Decreto 1729 de 1989 (regulan el trámite notarial).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Decreto Ley 960 de 1970 (Estatuto Notarial).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Artículo 37 del Decreto 2651 de 1991 (adoptado como legislación permanente por el artículo 162 de la Ley 446 de 1998), que permite trasladar un proceso judicial en curso al trámite notarial.",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "patrimonio-familia-inembargable",
+                "titulo": "Patrimonio de familia inembargable",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es la figura mediante la cual se sustrae un bien inmueble, normalmente destinado a vivienda de la familia, de la prenda general de los acreedores (artículo 2488 del Código Civil), haciéndolo inembargable. El bien no sale del patrimonio del constituyente, pero queda sometido a un régimen jurídico especial de protección: no puede ser objeto de embargo, secuestro ni remate para el pago de deudas de los constituyentes.",
+                "comoFunciona": [
+                  "Existen dos modalidades según su origen. El patrimonio de familia obligatorio es aquel cuya constitución está prevista por normas especiales, particularmente en determinados programas de vivienda de interés social, y se rige por las condiciones establecidas en esas normas.",
+                  "El patrimonio de familia voluntario es el que cualquier persona puede constituir sobre un inmueble destinado a vivienda, regulado por la Ley 70 de 1931, modificada por la Ley 495 de 1999. Puede constituirse a favor de una familia conformada por cónyuges o compañeros permanentes y sus hijos menores de edad, o a favor de una familia compuesta únicamente por los cónyuges o compañeros permanentes. La Corte Constitucional (Sentencia C-029 de 2009) extendió esta protección en igualdad de condiciones a las parejas del mismo sexo."
+                ],
+                "antePresenta": [
+                  "Vía notarial (voluntaria): ante el notario del círculo donde esté ubicado el predio, mediante escritura pública, siempre que el inmueble sea de propiedad exclusiva del constituyente (no en proindiviso), que su valor catastral no supere los 250 SMLMV, que esté libre de censo, anticresis o hipoteca (salvo la constituida para la adquisición del inmueble), y que esté libre de embargo (Decreto 1069 de 2015, artículo 2.2.6.9.1).",
+                  "Vía judicial: corresponde al juez de familia en los asuntos que la ley somete a su conocimiento, especialmente cuando se requiere autorización judicial para la cancelación del patrimonio de familia, o cuando están comprometidos los derechos de menores y debe designarse curador ad hoc."
+                ],
+                "etapas": [
+                  "Constitución — vía notarial: si se cumplen los requisitos legales (valor, libertad de gravámenes, propiedad exclusiva), se puede optar directamente por escritura pública otorgada por el padre, la madre, ambos, o un tercero, e inscripción en el registro de instrumentos públicos.",
+                  "Constitución — vía judicial: si no se cumplen los requisitos para la vía notarial, o se requiere por vía judicial, se acude ante el juez de familia mediante el trámite de jurisdicción voluntaria (artículos 577 y siguientes, y 579 y siguientes del CGP).",
+                  "Cancelación voluntaria: cuando se cumplen los requisitos legales, puede adelantarse ante notario.",
+                  "Cancelación judicial: presentación de la demanda de cancelación; admisión (artículos 90, 577 y siguientes del CGP) y trámite conforme a los artículos 579 y siguientes; designación de curador ad hoc para los hijos menores, si es necesario; sentencia de única instancia que autoriza la cancelación; inscripción de la cancelación en el registro de instrumentos públicos."
+                ],
+                "documentos": [
+                  "Escritura pública de constitución del patrimonio de familia (si ya existe).",
+                  "Certificado de tradición y libertad del inmueble.",
+                  "Certificado catastral, para acreditar que no supera los 250 SMLMV (constitución notarial).",
+                  "Registros civiles de los beneficiarios (cónyuge, hijos).",
+                  "Prueba del consentimiento del cónyuge y de los hijos mayores, o designación de curador ad hoc para los menores (cancelación).",
+                  "Poder al abogado (vía judicial)."
+                ],
+                "material": [
+                  {
+                    "texto": "Constitución Política, artículo 42 (patrimonio familiar inalienable e inembargable).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 70 de 1931, modificada por la Ley 91 de 1936, la Ley 495 de 1999 y la Ley 546 de 1999.",
+                    "url": null
+                  },
+                  {
+                    "texto": "Decreto 2817 de 2006, hoy compilado en el Decreto Único Reglamentario 1069 de 2015, artículos 2.2.6.9.1 y siguientes (trámite notarial).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 617, numeral 10 (competencia notarial); artículos 577 y siguientes, y 579 y siguientes (jurisdicción voluntaria).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 21, numeral 4 (competencia del juez de familia en única instancia para la autorización de cancelación del patrimonio de familia inembargable).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 70 de 1931, artículo 23 (cancelación, consentimiento de cónyuge e hijos).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 861 de 2003 (patrimonio de familia especial para madres cabeza de familia).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Corte Constitucional, Sentencia C-029 de 2009 (extiende la protección del patrimonio de familia, en igualdad de condiciones, a las parejas del mismo sexo).",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "afectacion-vivienda-familiar",
+                "titulo": "Afectación a vivienda familiar",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es una figura distinta y complementaria al patrimonio de familia: consiste en que un inmueble adquirido por uno o ambos cónyuges, antes o después del matrimonio, y destinado a la habitación de la familia, queda sujeto a la regla de que solo puede enajenarse o gravarse con el consentimiento libre de ambos cónyuges (doble firma). La afectación a vivienda familiar también produce un efecto de inembargabilidad, aunque la Ley 258 de 1996 contempla excepciones relacionadas principalmente con determinadas hipotecas.",
+                "comoFunciona": [
+                  "Respecto de las viviendas adquiridas con posterioridad a la entrada en vigencia de la Ley 258 de 1996, la afectación opera por ministerio de la ley. No obstante, los cónyuges, de común acuerdo, pueden declarar que no someten el inmueble a dicha afectación.",
+                  "Las disposiciones de la Ley 258 de 1996 se aplican también a los compañeros permanentes cuya unión haya perdurado por lo menos dos años, y esta protección se extiende en igualdad de condiciones a las parejas del mismo sexo conforme a la Sentencia C-029 de 2009.",
+                  "La afectación se extingue automáticamente por muerte real o presunta de uno o ambos cónyuges, salvo que, por justa causa, los herederos menores que habiten el inmueble soliciten al juez que se mantenga, mientras dure la necesidad, sin poder extenderse más allá de que los menores alcancen la mayoría de edad o se emancipen."
+                ],
+                "antePresenta": [
+                  "Vía notarial: cuando hay acuerdo entre los cónyuges, tanto para constituir como para levantar la afectación (artículo 9 de la Ley 258 de 1996), mediante escritura pública sometida a registro.",
+                  "Vía judicial: ante el juez de familia del lugar de ubicación del inmueble, mediante proceso verbal sumario (artículo 10), cuando no hay acuerdo y se invoca alguna causal legal para el levantamiento, o cuando se requiere constituir, modificar o levantar la afectación judicialmente.",
+                  "También puede acumularse dentro de otros procesos ya en curso: declaratoria de ausencia, muerte presunta, interdicción, pérdida o suspensión de la patria potestad, divorcio, separación de cuerpos o de bienes, y liquidación de la sociedad conyugal — en cuyo caso conoce el mismo juez que tramita el proceso principal."
+                ],
+                "etapas": [
+                  "Levantamiento por mutuo acuerdo (vía notarial): solicitud conjunta de ambos cónyuges, otorgamiento de la escritura pública de levantamiento, y registro de la escritura en la Oficina de Registro de Instrumentos Públicos.",
+                  "Levantamiento judicial (sin acuerdo), por alguna de las causales del artículo 4 de la Ley 258 de 1996 (por ejemplo, que exista otra vivienda efectivamente habitada por la familia, o que se disuelva la sociedad conyugal): presentación de la demanda o solicitud, admisión y notificación al otro cónyuge, contestación, audiencia y práctica de pruebas, sentencia que ordena o niega el levantamiento, e inscripción en el registro de instrumentos públicos (reglas del proceso verbal sumario)."
+                ],
+                "documentos": [
+                  "Certificado de tradición y libertad del inmueble.",
+                  "Registro civil de matrimonio o prueba de la unión marital de hecho.",
+                  "Escritura pública de adquisición del inmueble.",
+                  "Prueba de la causal invocada para el levantamiento judicial (por ejemplo, certificado de otra vivienda habitada por la familia, o sentencia/providencia de disolución de la sociedad conyugal).",
+                  "Poder al abogado (vía judicial)."
+                ],
+                "material": [
+                  {
+                    "texto": "Ley 258 de 1996, artículos 1 y 2 (definición y constitución).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 3 (doble firma).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 4 (levantamiento y extinción).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 5 (oponibilidad).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 7 (inembargabilidad).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 9 (procedimiento notarial).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 10 (procedimiento judicial).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 258 de 1996, artículo 12 (compañeros permanentes).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Ley 854 de 2003, artículos 1 y 2 (modifica la definición; extinción de pleno derecho por muerte de los cónyuges y protección de menores).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Corte Constitucional, Sentencia C-560 de 2002 (exequibilidad del texto original del artículo 1).",
+                    "url": null
+                  }
+                ]
+              },
+              {
+                "id": "citacion-judicial-reconocimiento-hijo",
+                "titulo": "Citación judicial para reconocimiento de hijo",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es el trámite mediante el cual un juez emite una orden al supuesto padre o madre para que comparezca ante él con la finalidad de reconocer o no al hijo. El artículo 1, inciso 4, de la Ley 75 de 1968 contempla el reconocimiento hecho «por manifestación expresa y directa hecha ante un juez, aunque el reconocimiento no haya sido el objeto único y principal del acto que lo contiene». Su finalidad principal es restablecer los derechos del hijo y los deberes de los padres para con él — por ejemplo, para que el hijo tenga vocación sucesoral en caso de que el padre fallezca.",
+                "comoFunciona": "Están legitimados para actuar los parientes hasta el cuarto grado de consanguinidad, cualquier persona que haya cuidado al menor (configurándose la figura del hijo de crianza), el defensor de menores, el ministerio público, y el padre o la madre a cargo del menor.",
+                "antePresenta": "Ante un juez de familia en primera instancia, conforme al artículo 21, inciso 5, del Código General del Proceso (citación judicial para el reconocimiento de hijo extramatrimonial, prevista en la ley).",
+                "etapas": [
+                  "Presentación de la solicitud, en la que se menciona que se quiere citar a una persona para que reconozca al hijo/a.",
+                  "Admisión.",
+                  "Citación personal.",
+                  "Intervención de quienes deban participar.",
+                  "Decisión judicial."
+                ],
+                "documentos": [
+                  "Registro civil de nacimiento del hijo.",
+                  "Documento de identidad del solicitante.",
+                  "Datos de identificación del presunto padre o madre.",
+                  "Registro civil que acredite el parentesco, cuando quien solicita sea un pariente del hijo.",
+                  "Poder otorgado al abogado.",
+                  "Pruebas o documentos adicionales que permitan explicar la solicitud."
+                ],
+                "material": [
+                  {
+                    "texto": "Ley 75 de 1968, artículo 1, inciso 4.",
+                    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4828"
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 21, inciso 5.",
+                    "url": "https://leyes.co/codigo_general_del_proceso/21.htm"
+                  }
+                ]
+              },
+              {
+                "id": "liquidacion-sociedad-conyugal",
+                "titulo": "Liquidación de la sociedad conyugal",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es un procedimiento colateral a la disolución de la sociedad conyugal, en el que se elabora un inventario de activos y pasivos con indicación de su valor, con la finalidad de repartirlos en porcentajes iguales o de acuerdo con lo que pacten las partes. Se realiza ante el mismo juez que decretó la disolución de la sociedad conyugal.",
+                "comoFunciona": [
+                  "La Sentencia SC2429 de 2024 de la Corte Suprema de Justicia precisa que el negocio jurídico de disolución de la sociedad conyugal es autónomo, y que, elevado a escritura pública, produce por sí solo la extinción de la sociedad conyugal (con el consiguiente régimen de separación de bienes) y la creación de una masa indivisa de gananciales sobre la cual surge un derecho a favor de cada cónyuge.",
+                  "Está legitimado para actuar cualquiera de los dos cónyuges. El juez ordenará correr traslado de la demanda por diez (10) días al otro cónyuge o compañero permanente, mediante auto que se notificará por estado si la demanda fue formulada dentro de los treinta (30) días siguientes a la ejecutoria de la sentencia que causó la disolución; en caso contrario, la notificación será personal.",
+                  "Sí pueden presentarse excepciones previas, las contempladas en el artículo 100 del Código General del Proceso (numerales 1, 4, 5, 6 y 8), y también puede objetarse el inventario de bienes y deudas. Si fracasan las excepciones previas del demandado, se realiza la notificación a los terceros interesados en el proceso."
+                ],
+                "antePresenta": "Ante el mismo juez que tramitó la disolución de la sociedad conyugal.",
+                "documentos": [
+                  "Registro civil de matrimonio.",
+                  "Sentencia que decretó el divorcio, la separación de bienes, la nulidad, etc.",
+                  "Constancia de ejecución de la sentencia.",
+                  "Documentos de identidad.",
+                  "Poder del abogado, cuando se actúe mediante apoderado."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículo 100 (excepciones previas).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 523 (liquidación de sociedad conyugal o patrimonial a causa de sentencia judicial).",
+                    "url": "https://procesal.uexternado.edu.co/codigo-general/articulo-523-liquidacion-de-sociedad-conyugal-o-patrimonial-a-causa-de-sentencia-judicial/"
+                  },
+                  {
+                    "texto": "Corte Suprema de Justicia, Sentencia SC2429 de 2024.",
+                    "url": "https://www.cortesuprema.gov.co/corte/wp-content/uploads/relatorias/ci/compendio/SC2429-2024%20%5B2013-00320-01%5D.pdf"
+                  }
+                ]
+              },
+              {
+                "id": "liquidacion-sociedad-patrimonial",
+                "titulo": "Liquidación de la sociedad patrimonial",
+                "formato": "declarativoDetallado",
+                "tipoProceso": "Jurisdicción voluntaria",
+                "queEs": "Es un procedimiento colateral a la disolución de la sociedad patrimonial entre compañeros permanentes, en el que se elabora un inventario de activos y pasivos con indicación de su valor, con la finalidad de repartirlos en porcentajes iguales o de acuerdo con lo que pacten las partes. Se realiza ante el mismo juez que decretó la disolución de la sociedad patrimonial.",
+                "comoFunciona": "Está legitimado para actuar cualquiera de los dos compañeros permanentes. El juez ordenará correr traslado de la demanda por diez (10) días al otro compañero permanente, mediante auto que se notificará por estado si la demanda fue formulada dentro de los treinta (30) días siguientes a la ejecutoria de la sentencia que causó la disolución; en caso contrario, la notificación será personal. Sí pueden presentarse excepciones previas (artículo 100 del CGP, numerales 1, 4, 5, 6 y 8) y también puede objetarse el inventario de bienes y deudas.",
+                "antePresenta": "Ante el mismo juez que tramitó la disolución de la sociedad patrimonial.",
+                "documentos": [
+                  "Sentencia que declaró la existencia de la sociedad patrimonial.",
+                  "Sentencia judicial que declaró la disolución.",
+                  "Documentos sobre los activos y pasivos que conforman el patrimonio, como escrituras públicas o tarjetas de propiedad.",
+                  "Documentos que permitan determinar los gananciales."
+                ],
+                "material": [
+                  {
+                    "texto": "Código General del Proceso, artículo 100 (excepciones previas).",
+                    "url": null
+                  },
+                  {
+                    "texto": "Código General del Proceso, artículo 523 (liquidación de sociedad conyugal o patrimonial a causa de sentencia judicial).",
+                    "url": "https://procesal.uexternado.edu.co/codigo-general/articulo-523-liquidacion-de-sociedad-conyugal-o-patrimonial-a-causa-de-sentencia-judicial/"
+                  }
+                ]
+              }
+            ]
         }
       }
     },
